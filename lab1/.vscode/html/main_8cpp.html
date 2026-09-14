@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Rubik&#39;s Cube Simulator: Файл D:/first_lab_ppois_rubick/src/main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Rubik&#39;s Cube Simulator<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('main_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Файл main.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_rubik_cube_8h_source.html">../include/RubikCube.h</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для main.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#a_d_1_2first__lab__ppois__rubick_2src_2main_8cpp" loading="lazy" alt=""/></div>
+<map name="a_d_1_2first__lab__ppois__rubick_2src_2main_8cpp" id="a_d_1_2first__lab__ppois__rubick_2src_2main_8cpp">
+<area shape="rect" title=" " alt="" coords="70,5,212,48"/>
+<area shape="rect" href="_rubik_cube_8h.html" title="Объявление класса RubikCube и вспомогательных структур." alt="" coords="64,96,218,123"/>
+<area shape="poly" title=" " alt="" coords="142,46,144,81,138,79,140,51"/>
+<area shape="rect" title=" " alt="" coords="5,171,77,197"/>
+<area shape="poly" title=" " alt="" coords="99,51,76,71,54,97,44,126,42,156,36,155,39,125,49,95,72,67,103,46"/>
+<area shape="rect" title=" " alt="" coords="209,171,262,197"/>
+<area shape="poly" title=" " alt="" coords="182,46,211,67,233,95,242,125,242,156,237,153,236,126,228,97,207,71,182,51"/>
+<area shape="poly" title=" " alt="" coords="126,123,72,163,69,159,121,124"/>
+<area shape="poly" title=" " alt="" coords="158,121,210,161,205,161,157,126"/>
+<area shape="rect" title=" " alt="" coords="116,171,166,197"/>
+<area shape="poly" title=" " alt="" coords="143,121,143,156,139,154,139,125"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a0d20b69b0ad703df78459e1033d5c1d4" id="r_a0d20b69b0ad703df78459e1033d5c1d4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0d20b69b0ad703df78459e1033d5c1d4">printHelp</a> ()</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Функции</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" border="0" usemap="#amain_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" loading="lazy" alt=""/></div>
+<map name="amain_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" id="amain_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph">
+<area shape="rect" title=" " alt="" coords="10,131,60,157"/>
+<area shape="poly" title=" " alt="" coords="7,131,3,122,6,112,17,106,35,104,54,107,65,114,60,116,52,112,35,109,19,111,10,116,8,121,13,130"/>
+<area shape="rect" href="class_rubik_cube.html#a813fbebc51fac98c774c64bc6e0af1e6" title="Проверка правильной расстановки цветных клеток (состояние победы)." alt="" coords="120,5,265,32"/>
+<area shape="poly" title=" " alt="" coords="40,129,65,86,84,62,106,42,117,37,113,41,109,46,88,66,69,89,45,131"/>
+<area shape="rect" href="class_rubik_cube.html#af7ee00b576c74bad0bc7a11e65a12fb8" title="Загрузка расположения цветов из внешнего текстового файла." alt="" coords="108,56,277,83"/>
+<area shape="poly" title=" " alt="" coords="51,128,77,110,107,92,124,87,120,90,109,97,80,114,55,132"/>
+<area shape="rect" href="main_8cpp.html#a0d20b69b0ad703df78459e1033d5c1d4" title=" " alt="" coords="156,131,229,157"/>
+<area shape="poly" title=" " alt="" coords="60,141,142,142,139,146,61,147"/>
+<area shape="rect" href="class_rubik_cube.html#a6e788d9ae83040d6b9b56bba14d9e36c" title="Случайное перемешивание кубика." alt="" coords="115,181,270,208"/>
+<area shape="poly" title=" " alt="" coords="60,150,109,167,132,176,127,177,107,172,60,155"/>
+<area shape="rect" href="class_rubik_cube.html#a6dc69db384364f3bc37c08c966dee5af" title="Поворот заданной грани на 90 градусов." alt="" coords="325,207,481,233"/>
+<area shape="poly" title=" " alt="" coords="45,155,71,189,89,205,109,218,162,234,219,240,274,239,321,237,326,236,274,244,218,245,161,239,107,222,86,210,67,193,43,160"/>
+<area shape="rect" href="_rubik_cube_8cpp.html#a2828a8d3ff2a78188561699dc8d3bf65" title=" " alt="" coords="358,56,449,83"/>
+<area shape="poly" title=" " alt="" coords="277,67,345,68,340,70,278,72"/>
+<area shape="poly" title=" " alt="" coords="367,55,361,47,366,38,380,31,403,29,428,32,443,41,438,41,427,37,403,35,381,37,369,41,366,47,372,56"/>
+<area shape="poly" title=" " alt="" coords="165,130,160,122,164,112,175,106,192,104,212,107,223,115,218,115,210,112,192,109,176,111,168,116,166,121,170,131"/>
+<area shape="poly" title=" " alt="" coords="270,201,312,209,307,209,270,207"/>
+<area shape="poly" title=" " alt="" coords="367,205,361,198,366,188,380,182,403,180,428,183,443,192,438,191,427,188,403,185,381,187,369,192,366,197,372,207"/>
+<area shape="rect" href="class_rubik_cube.html#aec2d966c7c450cb5d2e519fe6a8a587a" title="Вспомогательный метод для поворота самой плоскости грани 3x3." alt="" coords="529,181,722,208"/>
+<area shape="poly" title=" " alt="" coords="482,208,511,208,517,207,482,214"/>
+<area shape="rect" href="class_rubik_cube.html#a92011cc61d2864b38e01c02cd73b3e18" title="Вспомогательная функция для безопасного преобразования enum Face в индекс массива." alt="" coords="770,207,907,233"/>
+<area shape="poly" title=" " alt="" coords="482,217,757,220,751,220,482,223"/>
+<area shape="poly" title=" " alt="" coords="722,203,757,210,751,210,722,209"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_icgraph.png" border="0" usemap="#amain_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_icgraph" loading="lazy" alt=""/></div>
+<map name="amain_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_icgraph" id="amain_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" title=" " alt="" coords="36,14,34,10,30,8,26,9,24,13,25,29,20,29,19,12,23,5,30,3,37,6,41,14"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0d20b69b0ad703df78459e1033d5c1d4" name="a0d20b69b0ad703df78459e1033d5c1d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d20b69b0ad703df78459e1033d5c1d4">&#9670;&#160;</a></span>printHelp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printHelp </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_a0d20b69b0ad703df78459e1033d5c1d4_cgraph.png" border="0" usemap="#amain_8cpp_a0d20b69b0ad703df78459e1033d5c1d4_cgraph" loading="lazy" alt=""/></div>
+<map name="amain_8cpp_a0d20b69b0ad703df78459e1033d5c1d4_cgraph" id="amain_8cpp_a0d20b69b0ad703df78459e1033d5c1d4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,79,56"/>
+<area shape="poly" title=" " alt="" coords="28,28,27,12,33,5,42,3,52,5,57,14,52,14,49,10,42,8,36,10,32,14,33,29"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_a0d20b69b0ad703df78459e1033d5c1d4_icgraph.png" border="0" usemap="#amain_8cpp_a0d20b69b0ad703df78459e1033d5c1d4_icgraph" loading="lazy" alt=""/></div>
+<map name="amain_8cpp_a0d20b69b0ad703df78459e1033d5c1d4_icgraph" id="amain_8cpp_a0d20b69b0ad703df78459e1033d5c1d4_icgraph">
+<area shape="rect" title=" " alt="" coords="103,29,176,56"/>
+<area shape="poly" title=" " alt="" coords="156,13,151,10,139,8,129,10,123,14,122,20,124,30,120,28,116,20,118,11,126,5,139,3,153,5,161,14"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" title=" " alt="" coords="85,44,55,45,55,40,90,42"/>
+<area shape="poly" title=" " alt="" coords="46,14,41,10,30,8,19,10,14,14,12,20,15,28,10,29,7,20,9,11,17,5,30,3,44,5,52,13"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="main_8cpp.html">main.cpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

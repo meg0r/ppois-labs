@@ -1,0 +1,8 @@
+<map id="RubikCube::randomize" name="RubikCube::randomize">
+<area shape="rect" id="Node000001" title="Случайное перемешивание кубика." alt="" coords="221,55,375,81"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="64,29,114,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,58,114,48,114,43,207,55"/>
+<area shape="rect" id="Node000003" href="$class_rubik_cube.html#acad1b8c3939b039d149f9dd66f6b7443" title=" " alt="" coords="5,80,173,107"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="203,80,173,86,173,81,208,79"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="124,23,125,18,121,14,109,10,89,8,65,11,54,16,54,23,67,33,61,35,49,25,49,14,63,5,89,3,110,4,124,9,130,17,128,26"/>
+</map>

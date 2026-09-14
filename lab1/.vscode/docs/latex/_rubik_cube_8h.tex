@@ -1,0 +1,147 @@
+\doxysection{src/\+include/\+\+Rubik\+Cube.h File Reference}
+\hypertarget{_rubik_cube_8h}{}\label{_rubik_cube_8h}\index{src/include/RubikCube.h@{src/include/RubikCube.h}}
+
+
+Объявление класса \doxylink{class_rubik_cube}{Rubik\+Cube} и вспомогательных структур.  
+
+
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+{\ttfamily \+\#include $<$array$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}}
+\begin{DoxyCompactList}\small\item\em Класс, реализующий модель кубика Рубика 3x3. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \doxymbox{\hyperlink{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color}} \{ \newline
+\doxymbox{\hyperlink{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1ca25a81701fbfa4a1efdf660a950c1d006}{White}}
+, \doxymbox{\hyperlink{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1ca51e6cd92b6c45f9affdc158ecca2b8b8}{Yellow}}
+, \doxymbox{\hyperlink{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1cad382816a3cbeed082c9e216e7392eed1}{Green}}
+, \doxymbox{\hyperlink{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1ca9594eec95be70e7b1710f730fdda33d9}{Blue}}
+, \newline
+\doxymbox{\hyperlink{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1caee38e4d5dd68c4e440825018d549cb47}{Red}}
+, \doxymbox{\hyperlink{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1ca909cea0c97058cfe2e3ea8d675cb08e1}{Orange}}
+ \}
+\begin{DoxyCompactList}\small\item\em Цвета наклеек кубика Рубика. \end{DoxyCompactList}\item 
+enum class \doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294f}{Face}} \{ \newline
+\doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa258f49887ef8d14ac268c92b02503aaa}{Up}}
+, \doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa08a38277b0309070706f6652eeae9a53}{Down}}
+, \doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa5835bab1ade0060909e31a06af2e2cde}{Front}}
+, \doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa0557fa923dcee4d0f86b1409f5c2167f}{Back}}
+, \newline
+\doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa945d5e233cf7d6240f6b783b36a374ff}{Left}}
+, \doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa92b09c7c48c520c3c55e497875da437c}{Right}}
+ \}
+\begin{DoxyCompactList}\small\item\em Грани кубика Рубика (нотация Singmaster). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Объявление класса \doxylink{class_rubik_cube}{Rubik\+Cube} и вспомогательных структур. 
+
+\begin{DoxyAuthor}{Author}
+Твое Имя
+\end{DoxyAuthor}
+Содержит перечисления цветов, граней, а также интерфейс для вращения, валидации, перемешивания и сериализации кубика Рубика 3x3. 
+
+\label{_rubik_cube_8h_doc-enum-members}
+\Hypertarget{_rubik_cube_8h_doc-enum-members}
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1c}\index{RubikCube.h@{RubikCube.h}!Color@{Color}}
+\index{Color@{Color}!RubikCube.h@{RubikCube.h}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \label{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1c} 
+enum class \doxymbox{\hyperlink{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Цвета наклеек кубика Рубика. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{White@{White}!RubikCube.h@{RubikCube.h}}
+\index{RubikCube.h@{RubikCube.h}!White@{White}}
+}\Hypertarget{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1ca25a81701fbfa4a1efdf660a950c1d006}\label{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1ca25a81701fbfa4a1efdf660a950c1d006} 
+White&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Yellow@{Yellow}!RubikCube.h@{RubikCube.h}}
+\index{RubikCube.h@{RubikCube.h}!Yellow@{Yellow}}
+}\Hypertarget{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1ca51e6cd92b6c45f9affdc158ecca2b8b8}\label{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1ca51e6cd92b6c45f9affdc158ecca2b8b8} 
+Yellow&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Green@{Green}!RubikCube.h@{RubikCube.h}}
+\index{RubikCube.h@{RubikCube.h}!Green@{Green}}
+}\Hypertarget{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1cad382816a3cbeed082c9e216e7392eed1}\label{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1cad382816a3cbeed082c9e216e7392eed1} 
+Green&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Blue@{Blue}!RubikCube.h@{RubikCube.h}}
+\index{RubikCube.h@{RubikCube.h}!Blue@{Blue}}
+}\Hypertarget{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1ca9594eec95be70e7b1710f730fdda33d9}\label{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1ca9594eec95be70e7b1710f730fdda33d9} 
+Blue&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Red@{Red}!RubikCube.h@{RubikCube.h}}
+\index{RubikCube.h@{RubikCube.h}!Red@{Red}}
+}\Hypertarget{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1caee38e4d5dd68c4e440825018d549cb47}\label{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1caee38e4d5dd68c4e440825018d549cb47} 
+Red&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Orange@{Orange}!RubikCube.h@{RubikCube.h}}
+\index{RubikCube.h@{RubikCube.h}!Orange@{Orange}}
+}\Hypertarget{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1ca909cea0c97058cfe2e3ea8d675cb08e1}\label{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1ca909cea0c97058cfe2e3ea8d675cb08e1} 
+Orange&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294f}\index{RubikCube.h@{RubikCube.h}!Face@{Face}}
+\index{Face@{Face}!RubikCube.h@{RubikCube.h}}
+\doxysubsubsection{\texorpdfstring{Face}{Face}}
+{\footnotesize\ttfamily \label{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294f} 
+enum class \doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294f}{Face}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Грани кубика Рубика (нотация Singmaster). 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Up@{Up}!RubikCube.h@{RubikCube.h}}
+\index{RubikCube.h@{RubikCube.h}!Up@{Up}}
+}\Hypertarget{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa258f49887ef8d14ac268c92b02503aaa}\label{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa258f49887ef8d14ac268c92b02503aaa} 
+Up&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Down@{Down}!RubikCube.h@{RubikCube.h}}
+\index{RubikCube.h@{RubikCube.h}!Down@{Down}}
+}\Hypertarget{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa08a38277b0309070706f6652eeae9a53}\label{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa08a38277b0309070706f6652eeae9a53} 
+Down&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Front@{Front}!RubikCube.h@{RubikCube.h}}
+\index{RubikCube.h@{RubikCube.h}!Front@{Front}}
+}\Hypertarget{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa5835bab1ade0060909e31a06af2e2cde}\label{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa5835bab1ade0060909e31a06af2e2cde} 
+Front&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Back@{Back}!RubikCube.h@{RubikCube.h}}
+\index{RubikCube.h@{RubikCube.h}!Back@{Back}}
+}\Hypertarget{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa0557fa923dcee4d0f86b1409f5c2167f}\label{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa0557fa923dcee4d0f86b1409f5c2167f} 
+Back&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Left@{Left}!RubikCube.h@{RubikCube.h}}
+\index{RubikCube.h@{RubikCube.h}!Left@{Left}}
+}\Hypertarget{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa945d5e233cf7d6240f6b783b36a374ff}\label{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa945d5e233cf7d6240f6b783b36a374ff} 
+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Right@{Right}!RubikCube.h@{RubikCube.h}}
+\index{RubikCube.h@{RubikCube.h}!Right@{Right}}
+}\Hypertarget{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa92b09c7c48c520c3c55e497875da437c}\label{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa92b09c7c48c520c3c55e497875da437c} 
+Right&\\
+\hline
+
+\end{DoxyEnumFields}

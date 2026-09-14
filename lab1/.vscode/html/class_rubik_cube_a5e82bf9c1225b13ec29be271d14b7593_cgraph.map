@@ -1,0 +1,5 @@
+<map id="RubikCube::operator==" name="RubikCube::operator==">
+<area shape="rect" id="Node000001" title="Операторы сравнения двух кубиков на полное совпадение расположения цветов." alt="" coords="5,5,163,32"/>
+<area shape="rect" id="Node000002" href="$class_rubik_cube.html#a69ff5477763b85c8cdaf605ce19114ab" title="Конструктор по умолчанию." alt="" coords="211,5,370,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,16,198,19,192,19,163,21"/>
+</map>

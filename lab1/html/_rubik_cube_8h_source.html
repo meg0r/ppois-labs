@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Rubik&#39;s Cube Simulator: Исходный файл D:/first_lab_ppois_rubick/include/RubikCube.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Rubik&#39;s Cube Simulator<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_rubik_cube_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">RubikCube.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_rubik_cube_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1c">   19</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1ca25a81701fbfa4a1efdf660a950c1d006">   20</a></span>    <a class="code hl_enumvalue" href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1ca25a81701fbfa4a1efdf660a950c1d006">White</a>,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1ca51e6cd92b6c45f9affdc158ecca2b8b8">   21</a></span>    <a class="code hl_enumvalue" href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1ca51e6cd92b6c45f9affdc158ecca2b8b8">Yellow</a>,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1cad382816a3cbeed082c9e216e7392eed1">   22</a></span>    <a class="code hl_enumvalue" href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1cad382816a3cbeed082c9e216e7392eed1">Green</a>,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1ca9594eec95be70e7b1710f730fdda33d9">   23</a></span>    <a class="code hl_enumvalue" href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1ca9594eec95be70e7b1710f730fdda33d9">Blue</a>,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1caee38e4d5dd68c4e440825018d549cb47">   24</a></span>    <a class="code hl_enumvalue" href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1caee38e4d5dd68c4e440825018d549cb47">Red</a>,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1ca909cea0c97058cfe2e3ea8d675cb08e1">   25</a></span>    <a class="code hl_enumvalue" href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1ca909cea0c97058cfe2e3ea8d675cb08e1">Orange</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294f">   32</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294f">Face</a> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294fa258f49887ef8d14ac268c92b02503aaa">   33</a></span>    <a class="code hl_enumvalue" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294fa258f49887ef8d14ac268c92b02503aaa">Up</a>,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294fa08a38277b0309070706f6652eeae9a53">   34</a></span>    <a class="code hl_enumvalue" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294fa08a38277b0309070706f6652eeae9a53">Down</a>,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294fa5835bab1ade0060909e31a06af2e2cde">   35</a></span>    <a class="code hl_enumvalue" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294fa5835bab1ade0060909e31a06af2e2cde">Front</a>,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294fa0557fa923dcee4d0f86b1409f5c2167f">   36</a></span>    <a class="code hl_enumvalue" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294fa0557fa923dcee4d0f86b1409f5c2167f">Back</a>,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294fa945d5e233cf7d6240f6b783b36a374ff">   37</a></span>    <a class="code hl_enumvalue" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294fa945d5e233cf7d6240f6b783b36a374ff">Left</a>,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294fa92b09c7c48c520c3c55e497875da437c">   38</a></span>    <a class="code hl_enumvalue" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294fa92b09c7c48c520c3c55e497875da437c">Right</a></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="};">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_rubik_cube.html">   47</a></span><span class="keyword">class </span><a class="code hl_function" href="class_rubik_cube.html#a69ff5477763b85c8cdaf605ce19114ab">RubikCube</a> {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_rubik_cube.html#a376d6530719f4e6d19c3fff1afeae1cd">   53</a></span>    std::array&lt;std::array&lt;Color, 9&gt;, 6&gt; <a class="code hl_variable" href="class_rubik_cube.html#a376d6530719f4e6d19c3fff1afeae1cd">state_</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_rubik_cube.html#a92011cc61d2864b38e01c02cd73b3e18">   58</a></span>    <span class="keyword">static</span> std::size_t <a class="code hl_function" href="class_rubik_cube.html#a92011cc61d2864b38e01c02cd73b3e18">toIndex</a>(<a class="code hl_enumeration" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294f">Face</a> face) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(face);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_rubik_cube.html#aec2d966c7c450cb5d2e519fe6a8a587a">rotateFaceMatrix</a>(<a class="code hl_enumeration" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294f">Face</a> face, <span class="keywordtype">bool</span> clockwise);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_function" href="class_rubik_cube.html#a69ff5477763b85c8cdaf605ce19114ab">RubikCube</a>();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_rubik_cube.html#a0ccfed256f8ba1b3198fac553dd05911">   76</a></span>    <a class="code hl_function" href="class_rubik_cube.html#a0ccfed256f8ba1b3198fac553dd05911">RubikCube</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_rubik_cube.html#a69ff5477763b85c8cdaf605ce19114ab">RubikCube</a>&amp; other) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_rubik_cube.html#a95fed4776637e8dafe28a05ca64e9ee0">   77</a></span>    <a class="code hl_function" href="class_rubik_cube.html#a69ff5477763b85c8cdaf605ce19114ab">RubikCube</a>&amp; <a class="code hl_function" href="class_rubik_cube.html#a95fed4776637e8dafe28a05ca64e9ee0">operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_rubik_cube.html#a69ff5477763b85c8cdaf605ce19114ab">RubikCube</a>&amp; other) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_rubik_cube.html#a5f28eac8b018310c78da83058e4f6b0b">   78</a></span>    <a class="code hl_function" href="class_rubik_cube.html#a5f28eac8b018310c78da83058e4f6b0b">RubikCube</a>(<a class="code hl_function" href="class_rubik_cube.html#a69ff5477763b85c8cdaf605ce19114ab">RubikCube</a>&amp;&amp; other) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_rubik_cube.html#a5a6d380fea632fd8db5b156022a96b4c">   79</a></span>    <a class="code hl_function" href="class_rubik_cube.html#a69ff5477763b85c8cdaf605ce19114ab">RubikCube</a>&amp; <a class="code hl_function" href="class_rubik_cube.html#a5a6d380fea632fd8db5b156022a96b4c">operator=</a>(<a class="code hl_function" href="class_rubik_cube.html#a69ff5477763b85c8cdaf605ce19114ab">RubikCube</a>&amp;&amp; other) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_rubik_cube.html#acad1b8c3939b039d149f9dd66f6b7443">   80</a></span>    <a class="code hl_function" href="class_rubik_cube.html#acad1b8c3939b039d149f9dd66f6b7443">~RubikCube</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_rubik_cube.html#a6e788d9ae83040d6b9b56bba14d9e36c">randomize</a>();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_rubik_cube.html#af7ee00b576c74bad0bc7a11e65a12fb8">loadFromFile</a>(<span class="keyword">const</span> std::string&amp; filePath);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_rubik_cube.html#a6dc69db384364f3bc37c08c966dee5af">rotateFace</a>(<a class="code hl_enumeration" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294f">Face</a> face, <span class="keywordtype">bool</span> clockwise = <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_rubik_cube.html#a813fbebc51fac98c774c64bc6e0af1e6">isSolved</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span></div>
+<div class="foldopen" id="foldopen00113" data-start="{" data-end="}">
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="class_rubik_cube.html#a5e82bf9c1225b13ec29be271d14b7593">  113</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_rubik_cube.html#a5e82bf9c1225b13ec29be271d14b7593">operator==</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_rubik_cube.html#a69ff5477763b85c8cdaf605ce19114ab">RubikCube</a>&amp; rhs)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_rubik_cube.html#a376d6530719f4e6d19c3fff1afeae1cd">state_</a> == rhs.<a class="code hl_variable" href="class_rubik_cube.html#a376d6530719f4e6d19c3fff1afeae1cd">state_</a>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    }</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="class_rubik_cube.html#ab5a548521a4688fbdb6f6161e32551fe">  117</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_rubik_cube.html#ab5a548521a4688fbdb6f6161e32551fe">operator!=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_rubik_cube.html#a69ff5477763b85c8cdaf605ce19114ab">RubikCube</a>&amp; rhs)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == rhs);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    }</div>
+</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">friend</span> std::ostream&amp; <a class="code hl_function" href="_rubik_cube_8cpp.html#aefac84a10c9021688de5474cec83034a">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code hl_class" href="class_rubik_cube.html">RubikCube</a>&amp; cube);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keyword">friend</span> std::istream&amp; <a class="code hl_function" href="_rubik_cube_8cpp.html#a74298a0831b2fd8fdec1d808b06c9792">operator&gt;&gt;</a>(std::istream&amp; is, <a class="code hl_class" href="class_rubik_cube.html">RubikCube</a>&amp; cube);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>};</div>
+</div>
+<div class="ttc" id="a_rubik_cube_8cpp_html_a74298a0831b2fd8fdec1d808b06c9792"><div class="ttname"><a href="_rubik_cube_8cpp.html#a74298a0831b2fd8fdec1d808b06c9792">operator&gt;&gt;</a></div><div class="ttdeci">std::istream &amp; operator&gt;&gt;(std::istream &amp;is, RubikCube &amp;cube)</div><div class="ttdef"><b>Определения</b> RubikCube.cpp:235</div></div>
+<div class="ttc" id="a_rubik_cube_8cpp_html_aefac84a10c9021688de5474cec83034a"><div class="ttname"><a href="_rubik_cube_8cpp.html#aefac84a10c9021688de5474cec83034a">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const RubikCube &amp;cube)</div><div class="ttdef"><b>Определения</b> RubikCube.cpp:217</div></div>
+<div class="ttc" id="a_rubik_cube_8h_html_ab87bacfdad76e61b9412d7124be44c1c"><div class="ttname"><a href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a></div><div class="ttdeci">Color</div><div class="ttdoc">Цвета наклеек кубика Рубика.</div><div class="ttdef"><b>Определения</b> RubikCube.h:19</div></div>
+<div class="ttc" id="a_rubik_cube_8h_html_ab87bacfdad76e61b9412d7124be44c1ca25a81701fbfa4a1efdf660a950c1d006"><div class="ttname"><a href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1ca25a81701fbfa4a1efdf660a950c1d006">Color::White</a></div><div class="ttdeci">@ White</div><div class="ttdef"><b>Определения</b> RubikCube.h:20</div></div>
+<div class="ttc" id="a_rubik_cube_8h_html_ab87bacfdad76e61b9412d7124be44c1ca51e6cd92b6c45f9affdc158ecca2b8b8"><div class="ttname"><a href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1ca51e6cd92b6c45f9affdc158ecca2b8b8">Color::Yellow</a></div><div class="ttdeci">@ Yellow</div><div class="ttdef"><b>Определения</b> RubikCube.h:21</div></div>
+<div class="ttc" id="a_rubik_cube_8h_html_ab87bacfdad76e61b9412d7124be44c1ca909cea0c97058cfe2e3ea8d675cb08e1"><div class="ttname"><a href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1ca909cea0c97058cfe2e3ea8d675cb08e1">Color::Orange</a></div><div class="ttdeci">@ Orange</div><div class="ttdef"><b>Определения</b> RubikCube.h:25</div></div>
+<div class="ttc" id="a_rubik_cube_8h_html_ab87bacfdad76e61b9412d7124be44c1ca9594eec95be70e7b1710f730fdda33d9"><div class="ttname"><a href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1ca9594eec95be70e7b1710f730fdda33d9">Color::Blue</a></div><div class="ttdeci">@ Blue</div><div class="ttdef"><b>Определения</b> RubikCube.h:23</div></div>
+<div class="ttc" id="a_rubik_cube_8h_html_ab87bacfdad76e61b9412d7124be44c1cad382816a3cbeed082c9e216e7392eed1"><div class="ttname"><a href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1cad382816a3cbeed082c9e216e7392eed1">Color::Green</a></div><div class="ttdeci">@ Green</div><div class="ttdef"><b>Определения</b> RubikCube.h:22</div></div>
+<div class="ttc" id="a_rubik_cube_8h_html_ab87bacfdad76e61b9412d7124be44c1caee38e4d5dd68c4e440825018d549cb47"><div class="ttname"><a href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1caee38e4d5dd68c4e440825018d549cb47">Color::Red</a></div><div class="ttdeci">@ Red</div><div class="ttdef"><b>Определения</b> RubikCube.h:24</div></div>
+<div class="ttc" id="a_rubik_cube_8h_html_ad3fc1d97a3c41ea9d58d0ab14f75294f"><div class="ttname"><a href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294f">Face</a></div><div class="ttdeci">Face</div><div class="ttdoc">Грани кубика Рубика (нотация Singmaster).</div><div class="ttdef"><b>Определения</b> RubikCube.h:32</div></div>
+<div class="ttc" id="a_rubik_cube_8h_html_ad3fc1d97a3c41ea9d58d0ab14f75294fa0557fa923dcee4d0f86b1409f5c2167f"><div class="ttname"><a href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294fa0557fa923dcee4d0f86b1409f5c2167f">Face::Back</a></div><div class="ttdeci">@ Back</div><div class="ttdef"><b>Определения</b> RubikCube.h:36</div></div>
+<div class="ttc" id="a_rubik_cube_8h_html_ad3fc1d97a3c41ea9d58d0ab14f75294fa08a38277b0309070706f6652eeae9a53"><div class="ttname"><a href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294fa08a38277b0309070706f6652eeae9a53">Face::Down</a></div><div class="ttdeci">@ Down</div><div class="ttdef"><b>Определения</b> RubikCube.h:34</div></div>
+<div class="ttc" id="a_rubik_cube_8h_html_ad3fc1d97a3c41ea9d58d0ab14f75294fa258f49887ef8d14ac268c92b02503aaa"><div class="ttname"><a href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294fa258f49887ef8d14ac268c92b02503aaa">Face::Up</a></div><div class="ttdeci">@ Up</div><div class="ttdef"><b>Определения</b> RubikCube.h:33</div></div>
+<div class="ttc" id="a_rubik_cube_8h_html_ad3fc1d97a3c41ea9d58d0ab14f75294fa5835bab1ade0060909e31a06af2e2cde"><div class="ttname"><a href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294fa5835bab1ade0060909e31a06af2e2cde">Face::Front</a></div><div class="ttdeci">@ Front</div><div class="ttdef"><b>Определения</b> RubikCube.h:35</div></div>
+<div class="ttc" id="a_rubik_cube_8h_html_ad3fc1d97a3c41ea9d58d0ab14f75294fa92b09c7c48c520c3c55e497875da437c"><div class="ttname"><a href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294fa92b09c7c48c520c3c55e497875da437c">Face::Right</a></div><div class="ttdeci">@ Right</div><div class="ttdef"><b>Определения</b> RubikCube.h:38</div></div>
+<div class="ttc" id="a_rubik_cube_8h_html_ad3fc1d97a3c41ea9d58d0ab14f75294fa945d5e233cf7d6240f6b783b36a374ff"><div class="ttname"><a href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294fa945d5e233cf7d6240f6b783b36a374ff">Face::Left</a></div><div class="ttdeci">@ Left</div><div class="ttdef"><b>Определения</b> RubikCube.h:37</div></div>
+<div class="ttc" id="aclass_rubik_cube_html"><div class="ttname"><a href="class_rubik_cube.html">RubikCube</a></div><div class="ttdoc">Класс, реализующий модель кубика Рубика 3x3.</div><div class="ttdef"><b>Определения</b> RubikCube.h:47</div></div>
+<div class="ttc" id="aclass_rubik_cube_html_a0ccfed256f8ba1b3198fac553dd05911"><div class="ttname"><a href="class_rubik_cube.html#a0ccfed256f8ba1b3198fac553dd05911">RubikCube::RubikCube</a></div><div class="ttdeci">RubikCube(const RubikCube &amp;other)=default</div></div>
+<div class="ttc" id="aclass_rubik_cube_html_a376d6530719f4e6d19c3fff1afeae1cd"><div class="ttname"><a href="class_rubik_cube.html#a376d6530719f4e6d19c3fff1afeae1cd">RubikCube::state_</a></div><div class="ttdeci">std::array&lt; std::array&lt; Color, 9 &gt;, 6 &gt; state_</div><div class="ttdoc">Внутреннее состояние: 6 граней, на каждой по 9 клеток (3x3).</div><div class="ttdef"><b>Определения</b> RubikCube.h:53</div></div>
+<div class="ttc" id="aclass_rubik_cube_html_a5a6d380fea632fd8db5b156022a96b4c"><div class="ttname"><a href="class_rubik_cube.html#a5a6d380fea632fd8db5b156022a96b4c">RubikCube::operator=</a></div><div class="ttdeci">RubikCube &amp; operator=(RubikCube &amp;&amp;other)=default</div></div>
+<div class="ttc" id="aclass_rubik_cube_html_a5e82bf9c1225b13ec29be271d14b7593"><div class="ttname"><a href="class_rubik_cube.html#a5e82bf9c1225b13ec29be271d14b7593">RubikCube::operator==</a></div><div class="ttdeci">bool operator==(const RubikCube &amp;rhs) const</div><div class="ttdoc">Операторы сравнения двух кубиков на полное совпадение расположения цветов.</div><div class="ttdef"><b>Определения</b> RubikCube.h:113</div></div>
+<div class="ttc" id="aclass_rubik_cube_html_a5f28eac8b018310c78da83058e4f6b0b"><div class="ttname"><a href="class_rubik_cube.html#a5f28eac8b018310c78da83058e4f6b0b">RubikCube::RubikCube</a></div><div class="ttdeci">RubikCube(RubikCube &amp;&amp;other)=default</div></div>
+<div class="ttc" id="aclass_rubik_cube_html_a69ff5477763b85c8cdaf605ce19114ab"><div class="ttname"><a href="class_rubik_cube.html#a69ff5477763b85c8cdaf605ce19114ab">RubikCube::RubikCube</a></div><div class="ttdeci">RubikCube()</div><div class="ttdoc">Конструктор по умолчанию.</div><div class="ttdef"><b>Определения</b> RubikCube.cpp:37</div></div>
+<div class="ttc" id="aclass_rubik_cube_html_a6dc69db384364f3bc37c08c966dee5af"><div class="ttname"><a href="class_rubik_cube.html#a6dc69db384364f3bc37c08c966dee5af">RubikCube::rotateFace</a></div><div class="ttdeci">void rotateFace(Face face, bool clockwise=true)</div><div class="ttdoc">Поворот заданной грани на 90 градусов.</div><div class="ttdef"><b>Определения</b> RubikCube.cpp:77</div></div>
+<div class="ttc" id="aclass_rubik_cube_html_a6e788d9ae83040d6b9b56bba14d9e36c"><div class="ttname"><a href="class_rubik_cube.html#a6e788d9ae83040d6b9b56bba14d9e36c">RubikCube::randomize</a></div><div class="ttdeci">void randomize()</div><div class="ttdoc">Случайное перемешивание кубика.</div><div class="ttdef"><b>Определения</b> RubikCube.cpp:144</div></div>
+<div class="ttc" id="aclass_rubik_cube_html_a813fbebc51fac98c774c64bc6e0af1e6"><div class="ttname"><a href="class_rubik_cube.html#a813fbebc51fac98c774c64bc6e0af1e6">RubikCube::isSolved</a></div><div class="ttdeci">bool isSolved() const</div><div class="ttdoc">Проверка правильной расстановки цветных клеток (состояние победы).</div><div class="ttdef"><b>Определения</b> RubikCube.cpp:162</div></div>
+<div class="ttc" id="aclass_rubik_cube_html_a92011cc61d2864b38e01c02cd73b3e18"><div class="ttname"><a href="class_rubik_cube.html#a92011cc61d2864b38e01c02cd73b3e18">RubikCube::toIndex</a></div><div class="ttdeci">static std::size_t toIndex(Face face)</div><div class="ttdoc">Вспомогательная функция для безопасного преобразования enum Face в индекс массива.</div><div class="ttdef"><b>Определения</b> RubikCube.h:58</div></div>
+<div class="ttc" id="aclass_rubik_cube_html_a95fed4776637e8dafe28a05ca64e9ee0"><div class="ttname"><a href="class_rubik_cube.html#a95fed4776637e8dafe28a05ca64e9ee0">RubikCube::operator=</a></div><div class="ttdeci">RubikCube &amp; operator=(const RubikCube &amp;other)=default</div></div>
+<div class="ttc" id="aclass_rubik_cube_html_ab5a548521a4688fbdb6f6161e32551fe"><div class="ttname"><a href="class_rubik_cube.html#ab5a548521a4688fbdb6f6161e32551fe">RubikCube::operator!=</a></div><div class="ttdeci">bool operator!=(const RubikCube &amp;rhs) const</div><div class="ttdef"><b>Определения</b> RubikCube.h:117</div></div>
+<div class="ttc" id="aclass_rubik_cube_html_acad1b8c3939b039d149f9dd66f6b7443"><div class="ttname"><a href="class_rubik_cube.html#acad1b8c3939b039d149f9dd66f6b7443">RubikCube::~RubikCube</a></div><div class="ttdeci">~RubikCube()=default</div></div>
+<div class="ttc" id="aclass_rubik_cube_html_aec2d966c7c450cb5d2e519fe6a8a587a"><div class="ttname"><a href="class_rubik_cube.html#aec2d966c7c450cb5d2e519fe6a8a587a">RubikCube::rotateFaceMatrix</a></div><div class="ttdeci">void rotateFaceMatrix(Face face, bool clockwise)</div><div class="ttdoc">Вспомогательный метод для поворота самой плоскости грани 3x3.</div><div class="ttdef"><b>Определения</b> RubikCube.cpp:56</div></div>
+<div class="ttc" id="aclass_rubik_cube_html_af7ee00b576c74bad0bc7a11e65a12fb8"><div class="ttname"><a href="class_rubik_cube.html#af7ee00b576c74bad0bc7a11e65a12fb8">RubikCube::loadFromFile</a></div><div class="ttdeci">bool loadFromFile(const std::string &amp;filePath)</div><div class="ttdoc">Загрузка расположения цветов из внешнего текстового файла.</div><div class="ttdef"><b>Определения</b> RubikCube.cpp:178</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a href="_rubik_cube_8h.html">RubikCube.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<map id="UnitTest::TestRunner" name="UnitTest::TestRunner">
+<area shape="rect" id="Node000001" title=" " alt="" coords="156,203,301,229"/>
+<area shape="rect" id="Node000002" href="$class_unit_test_1_1_test_reporter.html" title=" " alt="" coords="5,5,159,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,44,66,88,67,110,74,129,95,154,121,174,149,189,180,202,174,202,147,194,118,178,91,158,70,132,62,111,60,88,70,49"/>
+<area shape="rect" id="Node000003" href="$class_unit_test_1_1_test_results.html" title=" " alt="" coords="154,104,303,131"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="114,38,212,102,207,105,113,44"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,145,231,204,226,201,227,148"/>
+<area shape="rect" id="Node000004" href="$class_unit_test_1_1_timer.html" title=" " alt="" coords="326,104,438,131"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="354,139,294,181,253,205,251,200,291,176,349,141"/>
+</map>

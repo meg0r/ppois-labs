@@ -1,0 +1,74 @@
+\doxysection{Rubik\+Cube.\+h}
+\hypertarget{_rubik_cube_8h_source}{}\label{_rubik_cube_8h_source}\index{src/include/RubikCube.h@{src/include/RubikCube.h}}
+\doxymbox{\hyperlink{_rubik_cube_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <array>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{enum\ class}\ \doxymbox{\hyperlink{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color}}\{}
+\DoxyCodeLine{00020\ \ \ \ \ \doxymbox{\hyperlink{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1ca25a81701fbfa4a1efdf660a950c1d006}{White}},}
+\DoxyCodeLine{00021\ \ \ \ \ \doxymbox{\hyperlink{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1ca51e6cd92b6c45f9affdc158ecca2b8b8}{Yellow}},}
+\DoxyCodeLine{00022\ \ \ \ \ \doxymbox{\hyperlink{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1cad382816a3cbeed082c9e216e7392eed1}{Green}},}
+\DoxyCodeLine{00023\ \ \ \ \ \doxymbox{\hyperlink{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1ca9594eec95be70e7b1710f730fdda33d9}{Blue}},}
+\DoxyCodeLine{00024\ \ \ \ \ \doxymbox{\hyperlink{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1caee38e4d5dd68c4e440825018d549cb47}{Red}},}
+\DoxyCodeLine{00025\ \ \ \ \ \doxymbox{\hyperlink{_rubik_cube_8h_ab87bacfdad76e61b9412d7124be44c1ca909cea0c97058cfe2e3ea8d675cb08e1}{Orange}}}
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{enum\ class}\ \doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294f}{Face}}\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa258f49887ef8d14ac268c92b02503aaa}{Up}},}
+\DoxyCodeLine{00034\ \ \ \ \ \doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa08a38277b0309070706f6652eeae9a53}{Down}},}
+\DoxyCodeLine{00035\ \ \ \ \ \doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa5835bab1ade0060909e31a06af2e2cde}{Front}},}
+\DoxyCodeLine{00036\ \ \ \ \ \doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa0557fa923dcee4d0f86b1409f5c2167f}{Back}},}
+\DoxyCodeLine{00037\ \ \ \ \ \doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa945d5e233cf7d6240f6b783b36a374ff}{Left}},}
+\DoxyCodeLine{00038\ \ \ \ \ \doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294fa92b09c7c48c520c3c55e497875da437c}{Right}}}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_rubik_cube_a69ff5477763b85c8cdaf605ce19114ab}{RubikCube}}\ \{}
+\DoxyCodeLine{00048\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00053\ \ \ \ \ std::array<std::array<Color,\ 9>,\ 6>\ state\_;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{static}\ std::size\_t\ toIndex(\doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294f}{Face}}\ face)\ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}std::size\_t\textcolor{keyword}{>}(face);}
+\DoxyCodeLine{00060\ \ \ \ \ \}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ rotateFaceMatrix(\doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294f}{Face}}\ face,\ \textcolor{keywordtype}{bool}\ clockwise);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00074\ \ \ \ \ \doxymbox{\hyperlink{class_rubik_cube_a69ff5477763b85c8cdaf605ce19114ab}{RubikCube}}();}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \doxymbox{\hyperlink{class_rubik_cube_a0ccfed256f8ba1b3198fac553dd05911}{RubikCube}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_rubik_cube_a69ff5477763b85c8cdaf605ce19114ab}{RubikCube}}\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00077\ \ \ \ \ \doxymbox{\hyperlink{class_rubik_cube_a69ff5477763b85c8cdaf605ce19114ab}{RubikCube}}\&\ \doxymbox{\hyperlink{class_rubik_cube_a95fed4776637e8dafe28a05ca64e9ee0}{operator=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_rubik_cube_a69ff5477763b85c8cdaf605ce19114ab}{RubikCube}}\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00078\ \ \ \ \ \doxymbox{\hyperlink{class_rubik_cube_a5f28eac8b018310c78da83058e4f6b0b}{RubikCube}}(\doxymbox{\hyperlink{class_rubik_cube_a69ff5477763b85c8cdaf605ce19114ab}{RubikCube}}\&\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00079\ \ \ \ \ \doxymbox{\hyperlink{class_rubik_cube_a69ff5477763b85c8cdaf605ce19114ab}{RubikCube}}\&\ \doxymbox{\hyperlink{class_rubik_cube_a5a6d380fea632fd8db5b156022a96b4c}{operator=}}(\doxymbox{\hyperlink{class_rubik_cube_a69ff5477763b85c8cdaf605ce19114ab}{RubikCube}}\&\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00080\ \ \ \ \ \doxymbox{\hyperlink{class_rubik_cube_acad1b8c3939b039d149f9dd66f6b7443}{\string~RubikCube}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_rubik_cube_a6e788d9ae83040d6b9b56bba14d9e36c}{randomize}}();}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_rubik_cube_af7ee00b576c74bad0bc7a11e65a12fb8}{loadFromFile}}(\textcolor{keyword}{const}\ std::string\&\ filePath);}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_rubik_cube_a6dc69db384364f3bc37c08c966dee5af}{rotateFace}}(\doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294f}{Face}}\ face,\ \textcolor{keywordtype}{bool}\ clockwise\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_rubik_cube_a813fbebc51fac98c774c64bc6e0af1e6}{isSolved}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_rubik_cube_a5e82bf9c1225b13ec29be271d14b7593}{operator==}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_rubik_cube_a69ff5477763b85c8cdaf605ce19114ab}{RubikCube}}\&\ rhs)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ state\_\ ==\ rhs.state\_;}
+\DoxyCodeLine{00115\ \ \ \ \ \}}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_rubik_cube_ab5a548521a4688fbdb6f6161e32551fe}{operator!=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_rubik_cube_a69ff5477763b85c8cdaf605ce19114ab}{RubikCube}}\&\ rhs)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !(*\textcolor{keyword}{this}\ ==\ rhs);}
+\DoxyCodeLine{00119\ \ \ \ \ \}}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \doxymbox{\hyperlink{_rubik_cube_8cpp_aefac84a10c9021688de5474cec83034a}{operator<<}}(std::ostream\&\ os,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_rubik_cube}{RubikCube}}\&\ cube);}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keyword}{friend}\ std::istream\&\ \doxymbox{\hyperlink{_rubik_cube_8cpp_a74298a0831b2fd8fdec1d808b06c9792}{operator>>}}(std::istream\&\ is,\ \doxymbox{\hyperlink{class_rubik_cube}{RubikCube}}\&\ cube);}
+\DoxyCodeLine{00130\ \};}
+
+\end{DoxyCode}

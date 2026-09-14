@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Rubik&#39;s Cube Simulator: Класс UnitTest::DeferredTestResult</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Rubik&#39;s Cube Simulator<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_unit_test_1_1_deferred_test_result.html','','class_unit_test_1_1_deferred_test_result-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс UnitTest::DeferredTestResult</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_deferred_test_result_8h_source.html">DeferredTestResult.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:aaaf67f7d2db74653ec83f3460e30ebd6" id="r_aaaf67f7d2db74653ec83f3460e30ebd6"><td class="memItemLeft">typedef std::vector&lt; <a class="el" href="class_unit_test_1_1_deferred_test_failure.html">DeferredTestFailure</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aaaf67f7d2db74653ec83f3460e30ebd6">FailureVec</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aa9176ae2d6884ac31861638ad3c2eb56" id="r_aa9176ae2d6884ac31861638ad3c2eb56"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aa9176ae2d6884ac31861638ad3c2eb56">DeferredTestResult</a> ()</td></tr>
+<tr class="memitem:a6b047fe986a44af3b966df4495f62f8f" id="r_a6b047fe986a44af3b966df4495f62f8f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a6b047fe986a44af3b966df4495f62f8f">DeferredTestResult</a> (char const *suite, char const *test)</td></tr>
+<tr class="memitem:a126fa9578c3b39ca56cc3d1fd7c0146a" id="r_a126fa9578c3b39ca56cc3d1fd7c0146a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a126fa9578c3b39ca56cc3d1fd7c0146a">~DeferredTestResult</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:ad9c83c05fb8c2d81753ed5e765db0bc3" id="r_ad9c83c05fb8c2d81753ed5e765db0bc3"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ad9c83c05fb8c2d81753ed5e765db0bc3">suiteName</a></td></tr>
+<tr class="memitem:a2e491a75905c60c3c3b1022060a5a1f0" id="r_a2e491a75905c60c3c3b1022060a5a1f0"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a2e491a75905c60c3c3b1022060a5a1f0">testName</a></td></tr>
+<tr class="memitem:a191bbff9b19585cee1b87f7e56311da9" id="r_a191bbff9b19585cee1b87f7e56311da9"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a191bbff9b19585cee1b87f7e56311da9">failureFile</a></td></tr>
+<tr class="memitem:a39042498a0a8bbba2817cf97978b8c91" id="r_a39042498a0a8bbba2817cf97978b8c91"><td class="memItemLeft"><a class="el" href="#aaaf67f7d2db74653ec83f3460e30ebd6">FailureVec</a>&#160;</td><td class="memItemRight"><a class="el" href="#a39042498a0a8bbba2817cf97978b8c91">failures</a></td></tr>
+<tr class="memitem:a09cb77930cd0ee30c05118bfebb27f51" id="r_a09cb77930cd0ee30c05118bfebb27f51"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a09cb77930cd0ee30c05118bfebb27f51">timeElapsed</a></td></tr>
+<tr class="memitem:a29d12313c586cc950f8a36e0b742124f" id="r_a29d12313c586cc950f8a36e0b742124f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a29d12313c586cc950f8a36e0b742124f">failed</a></td></tr>
+</table>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Определения типов</h2>
+<a id="aaaf67f7d2db74653ec83f3460e30ebd6" name="aaaf67f7d2db74653ec83f3460e30ebd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf67f7d2db74653ec83f3460e30ebd6">&#9670;&#160;</a></span>FailureVec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt; <a class="el" href="class_unit_test_1_1_deferred_test_failure.html">DeferredTestFailure</a> &gt; <a class="el" href="#aaaf67f7d2db74653ec83f3460e30ebd6">UnitTest::DeferredTestResult::FailureVec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="aa9176ae2d6884ac31861638ad3c2eb56" name="aa9176ae2d6884ac31861638ad3c2eb56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9176ae2d6884ac31861638ad3c2eb56">&#9670;&#160;</a></span>DeferredTestResult() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnitTest::DeferredTestResult::DeferredTestResult </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_deferred_test_result_aa9176ae2d6884ac31861638ad3c2eb56_icgraph.png" border="0" usemap="#aclass_unit_test_1_1_deferred_test_result_aa9176ae2d6884ac31861638ad3c2eb56_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_deferred_test_result_aa9176ae2d6884ac31861638ad3c2eb56_icgraph" id="aclass_unit_test_1_1_deferred_test_result_aa9176ae2d6884ac31861638ad3c2eb56_icgraph">
+<area shape="rect" title=" " alt="" coords="257,5,448,48"/>
+<area shape="rect" href="class_unit_test_1_1_deferred_test_reporter.html#a52d0919400bafb36de8299796d7e8307" title=" " alt="" coords="5,5,209,48"/>
+<area shape="poly" title=" " alt="" coords="238,27,209,29,209,24,243,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6b047fe986a44af3b966df4495f62f8f" name="a6b047fe986a44af3b966df4495f62f8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b047fe986a44af3b966df4495f62f8f">&#9670;&#160;</a></span>DeferredTestResult() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnitTest::DeferredTestResult::DeferredTestResult </td>
+          <td>(</td>
+          <td class="paramtype">char const *</td>          <td class="paramname"><span class="paramname"><em>suite</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *</td>          <td class="paramname"><span class="paramname"><em>test</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a126fa9578c3b39ca56cc3d1fd7c0146a" name="a126fa9578c3b39ca56cc3d1fd7c0146a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a126fa9578c3b39ca56cc3d1fd7c0146a">&#9670;&#160;</a></span>~DeferredTestResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnitTest::DeferredTestResult::~DeferredTestResult </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a29d12313c586cc950f8a36e0b742124f" name="a29d12313c586cc950f8a36e0b742124f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29d12313c586cc950f8a36e0b742124f">&#9670;&#160;</a></span>failed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UnitTest::DeferredTestResult::failed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a191bbff9b19585cee1b87f7e56311da9" name="a191bbff9b19585cee1b87f7e56311da9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a191bbff9b19585cee1b87f7e56311da9">&#9670;&#160;</a></span>failureFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string UnitTest::DeferredTestResult::failureFile</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39042498a0a8bbba2817cf97978b8c91" name="a39042498a0a8bbba2817cf97978b8c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39042498a0a8bbba2817cf97978b8c91">&#9670;&#160;</a></span>failures</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aaaf67f7d2db74653ec83f3460e30ebd6">FailureVec</a> UnitTest::DeferredTestResult::failures</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9c83c05fb8c2d81753ed5e765db0bc3" name="ad9c83c05fb8c2d81753ed5e765db0bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9c83c05fb8c2d81753ed5e765db0bc3">&#9670;&#160;</a></span>suiteName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string UnitTest::DeferredTestResult::suiteName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e491a75905c60c3c3b1022060a5a1f0" name="a2e491a75905c60c3c3b1022060a5a1f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e491a75905c60c3c3b1022060a5a1f0">&#9670;&#160;</a></span>testName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string UnitTest::DeferredTestResult::testName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09cb77930cd0ee30c05118bfebb27f51" name="a09cb77930cd0ee30c05118bfebb27f51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09cb77930cd0ee30c05118bfebb27f51">&#9670;&#160;</a></span>timeElapsed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float UnitTest::DeferredTestResult::timeElapsed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>D:/first_lab_ppois_rubick/unittest-cpp/UnitTest++/<a class="el" href="_deferred_test_result_8h_source.html">DeferredTestResult.h</a></li>
+<li>D:/first_lab_ppois_rubick/unittest-cpp/UnitTest++/<a class="el" href="_deferred_test_result_8cpp.html">DeferredTestResult.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_unit_test.html">UnitTest</a></li><li class="navelem"><a href="class_unit_test_1_1_deferred_test_result.html">DeferredTestResult</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

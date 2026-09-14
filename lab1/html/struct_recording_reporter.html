@@ -1,0 +1,615 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Rubik&#39;s Cube Simulator: Структура RecordingReporter</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Rubik&#39;s Cube Simulator<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_recording_reporter.html','','struct_recording_reporter-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Структура RecordingReporter</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_recording_reporter_8h_source.html">RecordingReporter.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:RecordingReporter:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_recording_reporter__inherit__graph.png" border="0" usemap="#a_recording_reporter_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_recording_reporter_inherit__map" id="a_recording_reporter_inherit__map">
+<area shape="rect" title=" " alt="" coords="17,80,147,107"/>
+<area shape="rect" href="class_unit_test_1_1_test_reporter.html" title=" " alt="" coords="5,5,159,32"/>
+<area shape="poly" title=" " alt="" coords="84,46,85,81,79,79,80,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса RecordingReporter:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_recording_reporter__coll__graph.png" border="0" usemap="#a_recording_reporter_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_recording_reporter_coll__map" id="a_recording_reporter_coll__map">
+<area shape="rect" title=" " alt="" coords="17,80,147,107"/>
+<area shape="rect" href="class_unit_test_1_1_test_reporter.html" title=" " alt="" coords="5,5,159,32"/>
+<area shape="poly" title=" " alt="" coords="84,46,85,81,79,79,80,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a95e35da00ce7d0da9825a23112361f41" id="r_a95e35da00ce7d0da9825a23112361f41"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a95e35da00ce7d0da9825a23112361f41">RecordingReporter</a> ()</td></tr>
+<tr class="memitem:a54f2108962d66c3d619cbe183b06a697" id="r_a54f2108962d66c3d619cbe183b06a697"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a54f2108962d66c3d619cbe183b06a697">ReportTestStart</a> (<a class="el" href="class_unit_test_1_1_test_details.html">UnitTest::TestDetails</a> const &amp;test)</td></tr>
+<tr class="memitem:a8d71a40d918bf2394fc0771b152b4da3" id="r_a8d71a40d918bf2394fc0771b152b4da3"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a8d71a40d918bf2394fc0771b152b4da3">ReportFailure</a> (<a class="el" href="class_unit_test_1_1_test_details.html">UnitTest::TestDetails</a> const &amp;test, char const *failure)</td></tr>
+<tr class="memitem:a076db0aaf4089fb2f4ed1afc58e1f5b3" id="r_a076db0aaf4089fb2f4ed1afc58e1f5b3"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a076db0aaf4089fb2f4ed1afc58e1f5b3">ReportTestFinish</a> (<a class="el" href="class_unit_test_1_1_test_details.html">UnitTest::TestDetails</a> const &amp;test, float testDuration)</td></tr>
+<tr class="memitem:a48ee25cf86b9e1dcb4f3bccaca022169" id="r_a48ee25cf86b9e1dcb4f3bccaca022169"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a48ee25cf86b9e1dcb4f3bccaca022169">ReportSummary</a> (int totalTestCount, int failedTestCount, int failureCount, float secondsElapsed)</td></tr>
+<tr class="inherit_header pub_methods_class_unit_test_1_1_test_reporter"><td colspan="2">Открытые члены унаследованные от <a class="el" href="class_unit_test_1_1_test_reporter.html">UnitTest::TestReporter</a></td></tr>
+<tr class="memitem:a3412ee15c2c808d388e4e2a9ebda1564 pub_methods_class_unit_test_1_1_test_reporter" id="r_a3412ee15c2c808d388e4e2a9ebda1564"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="class_unit_test_1_1_test_reporter.html#a3412ee15c2c808d388e4e2a9ebda1564">~TestReporter</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a27b2782320861b3d25158021b3e54859" id="r_a27b2782320861b3d25158021b3e54859"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a27b2782320861b3d25158021b3e54859">testRunCount</a></td></tr>
+<tr class="memitem:a51904891bff9de877dc9b70be57ef74c" id="r_a51904891bff9de877dc9b70be57ef74c"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#a51904891bff9de877dc9b70be57ef74c">lastStartedSuite</a> [<a class="el" href="#a215b50860a7878146a502cd640a5760eae4bb7bb0bd5b6a7bc130c503b32c795c">kMaxStringLength</a>]</td></tr>
+<tr class="memitem:af88b0f10c3bf4682e461b3bee65f2bae" id="r_af88b0f10c3bf4682e461b3bee65f2bae"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#af88b0f10c3bf4682e461b3bee65f2bae">lastStartedTest</a> [<a class="el" href="#a215b50860a7878146a502cd640a5760eae4bb7bb0bd5b6a7bc130c503b32c795c">kMaxStringLength</a>]</td></tr>
+<tr class="memitem:a0bb590848441de20544dfa7681779266" id="r_a0bb590848441de20544dfa7681779266"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a0bb590848441de20544dfa7681779266">testFailedCount</a></td></tr>
+<tr class="memitem:a9996349ac2742047496b3888bb021489" id="r_a9996349ac2742047496b3888bb021489"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#a9996349ac2742047496b3888bb021489">lastFailedFile</a> [<a class="el" href="#a215b50860a7878146a502cd640a5760eae4bb7bb0bd5b6a7bc130c503b32c795c">kMaxStringLength</a>]</td></tr>
+<tr class="memitem:a72a38433a031165d2a49f42347500b65" id="r_a72a38433a031165d2a49f42347500b65"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a72a38433a031165d2a49f42347500b65">lastFailedLine</a></td></tr>
+<tr class="memitem:a5343637d20d52156662a9ac26ef08b53" id="r_a5343637d20d52156662a9ac26ef08b53"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#a5343637d20d52156662a9ac26ef08b53">lastFailedSuite</a> [<a class="el" href="#a215b50860a7878146a502cd640a5760eae4bb7bb0bd5b6a7bc130c503b32c795c">kMaxStringLength</a>]</td></tr>
+<tr class="memitem:a7fd128c233a57bc3e1d7d62b6f2f874f" id="r_a7fd128c233a57bc3e1d7d62b6f2f874f"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#a7fd128c233a57bc3e1d7d62b6f2f874f">lastFailedTest</a> [<a class="el" href="#a215b50860a7878146a502cd640a5760eae4bb7bb0bd5b6a7bc130c503b32c795c">kMaxStringLength</a>]</td></tr>
+<tr class="memitem:a78a8e2ca635c0cc3194cd444047c13c9" id="r_a78a8e2ca635c0cc3194cd444047c13c9"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#a78a8e2ca635c0cc3194cd444047c13c9">lastFailedMessage</a> [<a class="el" href="#a215b50860a7878146a502cd640a5760eae4bb7bb0bd5b6a7bc130c503b32c795c">kMaxStringLength</a>]</td></tr>
+<tr class="memitem:aef8e0e0c72acb13de124f1981f575823" id="r_aef8e0e0c72acb13de124f1981f575823"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aef8e0e0c72acb13de124f1981f575823">testFinishedCount</a></td></tr>
+<tr class="memitem:af37bc616262eb5ed8bc50376bc268f0c" id="r_af37bc616262eb5ed8bc50376bc268f0c"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#af37bc616262eb5ed8bc50376bc268f0c">lastFinishedSuite</a> [<a class="el" href="#a215b50860a7878146a502cd640a5760eae4bb7bb0bd5b6a7bc130c503b32c795c">kMaxStringLength</a>]</td></tr>
+<tr class="memitem:a48022ac92513d5ba00a795a316ae00b2" id="r_a48022ac92513d5ba00a795a316ae00b2"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#a48022ac92513d5ba00a795a316ae00b2">lastFinishedTest</a> [<a class="el" href="#a215b50860a7878146a502cd640a5760eae4bb7bb0bd5b6a7bc130c503b32c795c">kMaxStringLength</a>]</td></tr>
+<tr class="memitem:a152d60d01b6222bc1d2dc716194666eb" id="r_a152d60d01b6222bc1d2dc716194666eb"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a152d60d01b6222bc1d2dc716194666eb">lastFinishedTestTime</a></td></tr>
+<tr class="memitem:a244a5e003f9752f956c4e2fe2733e52d" id="r_a244a5e003f9752f956c4e2fe2733e52d"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a244a5e003f9752f956c4e2fe2733e52d">summaryTotalTestCount</a></td></tr>
+<tr class="memitem:a0c5a5536aaba612c4e7a97308ca8ddc2" id="r_a0c5a5536aaba612c4e7a97308ca8ddc2"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a0c5a5536aaba612c4e7a97308ca8ddc2">summaryFailedTestCount</a></td></tr>
+<tr class="memitem:ae5b682f675907c53d1c0134a5d6b10bb" id="r_ae5b682f675907c53d1c0134a5d6b10bb"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae5b682f675907c53d1c0134a5d6b10bb">summaryFailureCount</a></td></tr>
+<tr class="memitem:aeb4fdb43f94b59127905f9b99b1f0f29" id="r_aeb4fdb43f94b59127905f9b99b1f0f29"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#aeb4fdb43f94b59127905f9b99b1f0f29">summarySecondsElapsed</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-types" class="groupheader"><a id="pri-types" name="pri-types"></a>
+Закрытые типы</h2></td></tr>
+<tr class="memitem:a215b50860a7878146a502cd640a5760e" id="r_a215b50860a7878146a502cd640a5760e"><td class="memItemLeft"><a class="el" href="#a215b50860a7878146a502cd640a5760e">enum </a>&#160;</td><td class="memItemRight">{ <a class="el" href="#a215b50860a7878146a502cd640a5760eae4bb7bb0bd5b6a7bc130c503b32c795c">kMaxStringLength</a> = 256
+ }</td></tr>
+</table>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Перечисления</h2>
+<a id="a215b50860a7878146a502cd640a5760e" name="a215b50860a7878146a502cd640a5760e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a215b50860a7878146a502cd640a5760e">&#9670;&#160;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a215b50860a7878146a502cd640a5760eae4bb7bb0bd5b6a7bc130c503b32c795c" name="a215b50860a7878146a502cd640a5760eae4bb7bb0bd5b6a7bc130c503b32c795c"></a>kMaxStringLength&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a95e35da00ce7d0da9825a23112361f41" name="a95e35da00ce7d0da9825a23112361f41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95e35da00ce7d0da9825a23112361f41">&#9670;&#160;</a></span>RecordingReporter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RecordingReporter::RecordingReporter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a8d71a40d918bf2394fc0771b152b4da3" name="a8d71a40d918bf2394fc0771b152b4da3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d71a40d918bf2394fc0771b152b4da3">&#9670;&#160;</a></span>ReportFailure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RecordingReporter::ReportFailure </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_unit_test_1_1_test_details.html">UnitTest::TestDetails</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>test</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *</td>          <td class="paramname"><span class="paramname"><em>failure</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_unit_test_1_1_test_reporter.html#a55195826cc03302f7a54f728c79102d5">UnitTest::TestReporter</a>.</p>
+
+</div>
+</div>
+<a id="a48ee25cf86b9e1dcb4f3bccaca022169" name="a48ee25cf86b9e1dcb4f3bccaca022169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48ee25cf86b9e1dcb4f3bccaca022169">&#9670;&#160;</a></span>ReportSummary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RecordingReporter::ReportSummary </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>totalTestCount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>failedTestCount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>failureCount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>secondsElapsed</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_unit_test_1_1_test_reporter.html#a8f5010c52b4be55ac4796e24cc669274">UnitTest::TestReporter</a>.</p>
+
+</div>
+</div>
+<a id="a076db0aaf4089fb2f4ed1afc58e1f5b3" name="a076db0aaf4089fb2f4ed1afc58e1f5b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a076db0aaf4089fb2f4ed1afc58e1f5b3">&#9670;&#160;</a></span>ReportTestFinish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RecordingReporter::ReportTestFinish </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_unit_test_1_1_test_details.html">UnitTest::TestDetails</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>test</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>testDuration</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_unit_test_1_1_test_reporter.html#a6492379c31985a77a22f1ccf684e44da">UnitTest::TestReporter</a>.</p>
+
+</div>
+</div>
+<a id="a54f2108962d66c3d619cbe183b06a697" name="a54f2108962d66c3d619cbe183b06a697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f2108962d66c3d619cbe183b06a697">&#9670;&#160;</a></span>ReportTestStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RecordingReporter::ReportTestStart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_unit_test_1_1_test_details.html">UnitTest::TestDetails</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>test</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_unit_test_1_1_test_reporter.html#a94f1ab9311190188a2f96f8c2da785b1">UnitTest::TestReporter</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a9996349ac2742047496b3888bb021489" name="a9996349ac2742047496b3888bb021489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9996349ac2742047496b3888bb021489">&#9670;&#160;</a></span>lastFailedFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char RecordingReporter::lastFailedFile[<a class="el" href="#a215b50860a7878146a502cd640a5760eae4bb7bb0bd5b6a7bc130c503b32c795c">kMaxStringLength</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72a38433a031165d2a49f42347500b65" name="a72a38433a031165d2a49f42347500b65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72a38433a031165d2a49f42347500b65">&#9670;&#160;</a></span>lastFailedLine</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RecordingReporter::lastFailedLine</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78a8e2ca635c0cc3194cd444047c13c9" name="a78a8e2ca635c0cc3194cd444047c13c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a8e2ca635c0cc3194cd444047c13c9">&#9670;&#160;</a></span>lastFailedMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char RecordingReporter::lastFailedMessage[<a class="el" href="#a215b50860a7878146a502cd640a5760eae4bb7bb0bd5b6a7bc130c503b32c795c">kMaxStringLength</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5343637d20d52156662a9ac26ef08b53" name="a5343637d20d52156662a9ac26ef08b53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5343637d20d52156662a9ac26ef08b53">&#9670;&#160;</a></span>lastFailedSuite</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char RecordingReporter::lastFailedSuite[<a class="el" href="#a215b50860a7878146a502cd640a5760eae4bb7bb0bd5b6a7bc130c503b32c795c">kMaxStringLength</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7fd128c233a57bc3e1d7d62b6f2f874f" name="a7fd128c233a57bc3e1d7d62b6f2f874f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fd128c233a57bc3e1d7d62b6f2f874f">&#9670;&#160;</a></span>lastFailedTest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char RecordingReporter::lastFailedTest[<a class="el" href="#a215b50860a7878146a502cd640a5760eae4bb7bb0bd5b6a7bc130c503b32c795c">kMaxStringLength</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af37bc616262eb5ed8bc50376bc268f0c" name="af37bc616262eb5ed8bc50376bc268f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af37bc616262eb5ed8bc50376bc268f0c">&#9670;&#160;</a></span>lastFinishedSuite</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char RecordingReporter::lastFinishedSuite[<a class="el" href="#a215b50860a7878146a502cd640a5760eae4bb7bb0bd5b6a7bc130c503b32c795c">kMaxStringLength</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48022ac92513d5ba00a795a316ae00b2" name="a48022ac92513d5ba00a795a316ae00b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48022ac92513d5ba00a795a316ae00b2">&#9670;&#160;</a></span>lastFinishedTest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char RecordingReporter::lastFinishedTest[<a class="el" href="#a215b50860a7878146a502cd640a5760eae4bb7bb0bd5b6a7bc130c503b32c795c">kMaxStringLength</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a152d60d01b6222bc1d2dc716194666eb" name="a152d60d01b6222bc1d2dc716194666eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a152d60d01b6222bc1d2dc716194666eb">&#9670;&#160;</a></span>lastFinishedTestTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RecordingReporter::lastFinishedTestTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51904891bff9de877dc9b70be57ef74c" name="a51904891bff9de877dc9b70be57ef74c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51904891bff9de877dc9b70be57ef74c">&#9670;&#160;</a></span>lastStartedSuite</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char RecordingReporter::lastStartedSuite[<a class="el" href="#a215b50860a7878146a502cd640a5760eae4bb7bb0bd5b6a7bc130c503b32c795c">kMaxStringLength</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af88b0f10c3bf4682e461b3bee65f2bae" name="af88b0f10c3bf4682e461b3bee65f2bae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af88b0f10c3bf4682e461b3bee65f2bae">&#9670;&#160;</a></span>lastStartedTest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char RecordingReporter::lastStartedTest[<a class="el" href="#a215b50860a7878146a502cd640a5760eae4bb7bb0bd5b6a7bc130c503b32c795c">kMaxStringLength</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c5a5536aaba612c4e7a97308ca8ddc2" name="a0c5a5536aaba612c4e7a97308ca8ddc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c5a5536aaba612c4e7a97308ca8ddc2">&#9670;&#160;</a></span>summaryFailedTestCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RecordingReporter::summaryFailedTestCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5b682f675907c53d1c0134a5d6b10bb" name="ae5b682f675907c53d1c0134a5d6b10bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5b682f675907c53d1c0134a5d6b10bb">&#9670;&#160;</a></span>summaryFailureCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RecordingReporter::summaryFailureCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb4fdb43f94b59127905f9b99b1f0f29" name="aeb4fdb43f94b59127905f9b99b1f0f29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb4fdb43f94b59127905f9b99b1f0f29">&#9670;&#160;</a></span>summarySecondsElapsed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RecordingReporter::summarySecondsElapsed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a244a5e003f9752f956c4e2fe2733e52d" name="a244a5e003f9752f956c4e2fe2733e52d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a244a5e003f9752f956c4e2fe2733e52d">&#9670;&#160;</a></span>summaryTotalTestCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RecordingReporter::summaryTotalTestCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0bb590848441de20544dfa7681779266" name="a0bb590848441de20544dfa7681779266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bb590848441de20544dfa7681779266">&#9670;&#160;</a></span>testFailedCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RecordingReporter::testFailedCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef8e0e0c72acb13de124f1981f575823" name="aef8e0e0c72acb13de124f1981f575823"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef8e0e0c72acb13de124f1981f575823">&#9670;&#160;</a></span>testFinishedCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RecordingReporter::testFinishedCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27b2782320861b3d25158021b3e54859" name="a27b2782320861b3d25158021b3e54859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27b2782320861b3d25158021b3e54859">&#9670;&#160;</a></span>testRunCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RecordingReporter::testRunCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li>D:/first_lab_ppois_rubick/unittest-cpp/tests/<a class="el" href="_recording_reporter_8h_source.html">RecordingReporter.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="struct_recording_reporter.html">RecordingReporter</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<map id="ScopedCurrentTest" name="ScopedCurrentTest">
+<area shape="rect" id="Node000001" title=" " alt="" coords="101,203,234,229"/>
+<area shape="rect" id="Node000002" href="$class_unit_test_1_1_test_results.html" title=" " alt="" coords="8,104,156,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,143,112,177,144,202,139,202,108,180,90,148"/>
+<area shape="rect" id="Node000003" href="$class_unit_test_1_1_test_reporter.html" title=" " alt="" coords="5,5,159,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="83,45,85,104,79,103,81,50"/>
+<area shape="rect" id="Node000004" href="$class_unit_test_1_1_test_details.html" title=" " alt="" coords="180,104,325,131"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="245,144,225,180,194,205,192,200,221,177,241,147"/>
+</map>

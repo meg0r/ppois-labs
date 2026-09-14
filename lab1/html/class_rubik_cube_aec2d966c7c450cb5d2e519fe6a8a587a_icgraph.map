@@ -1,0 +1,17 @@
+<map id="RubikCube::rotateFaceMatrix" name="RubikCube::rotateFaceMatrix">
+<area shape="rect" id="Node000001" title="Вспомогательный метод для поворота самой плоскости грани 3x3." alt="" coords="725,55,917,81"/>
+<area shape="rect" id="Node000002" href="$class_rubik_cube.html#a6dc69db384364f3bc37c08c966dee5af" title="Поворот заданной грани на 90 градусов." alt="" coords="520,55,677,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="707,68,677,71,677,65,712,68"/>
+<area shape="poly" id="edge8_Node000002_Node000002" title=" " alt="" coords="632,39,621,36,598,33,577,35,566,40,563,45,569,55,564,53,558,46,562,36,576,30,599,28,623,31,637,40"/>
+<area shape="rect" id="Node000003" href="$src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="162,29,211,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="523,51,472,45,398,41,324,40,212,44,211,38,324,34,398,35,473,40,529,51"/>
+<area shape="rect" id="Node000005" href="$class_rubik_cube.html#a6e788d9ae83040d6b9b56bba14d9e36c" title="Случайное перемешивание кубика." alt="" coords="318,55,472,81"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="502,68,473,71,473,65,508,68"/>
+<area shape="rect" id="Node000006" href="$class_rubik_cube.html#acad1b8c3939b039d149f9dd66f6b7443" title=" " alt="" coords="103,92,270,119"/>
+<area shape="poly" id="edge9_Node000002_Node000006" title=" " alt="" coords="526,85,473,96,367,105,270,108,270,103,367,99,472,91,521,85"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="211,14,203,10,186,8,170,10,162,15,160,20,164,29,159,28,154,21,158,11,169,5,186,3,205,5,217,14"/>
+<area shape="rect" id="Node000004" href="$unittest-cpp_2tests_2main_8cpp.html#a7e16548afc479c8cfb8e1a49412655dd" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="145,45,55,45,54,40,148,40"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="300,57,211,48,211,43,305,56"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="306,84,265,94,265,89,300,85"/>
+</map>

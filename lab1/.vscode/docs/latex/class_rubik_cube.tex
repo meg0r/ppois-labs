@@ -1,0 +1,207 @@
+\doxysection{Rubik\+Cube Class Reference}
+\hypertarget{class_rubik_cube}{}\label{class_rubik_cube}\index{RubikCube@{RubikCube}}
+
+
+Класс, реализующий модель кубика Рубика 3x3.  
+
+
+
+
+{\ttfamily \+\#include $<$Rubik\+Cube.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_rubik_cube_a69ff5477763b85c8cdaf605ce19114ab}{Rubik\+Cube}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор по умолчанию. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_rubik_cube_a0ccfed256f8ba1b3198fac553dd05911}{Rubik\+Cube}} (const \doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \&other)=default
+\item 
+\doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \& \doxymbox{\hyperlink{class_rubik_cube_a95fed4776637e8dafe28a05ca64e9ee0}{operator=}} (const \doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \&other)=default
+\item 
+\doxymbox{\hyperlink{class_rubik_cube_a5f28eac8b018310c78da83058e4f6b0b}{Rubik\+Cube}} (\doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \&\&other)=default
+\item 
+\doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \& \doxymbox{\hyperlink{class_rubik_cube_a5a6d380fea632fd8db5b156022a96b4c}{operator=}} (\doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \&\&other)=default
+\item 
+\doxymbox{\hyperlink{class_rubik_cube_acad1b8c3939b039d149f9dd66f6b7443}{\texorpdfstring{$\sim$}{\string~}\+Rubik\+Cube}} ()=default
+\item 
+void \doxymbox{\hyperlink{class_rubik_cube_a6e788d9ae83040d6b9b56bba14d9e36c}{randomize}} ()
+\begin{DoxyCompactList}\small\item\em Случайное перемешивание кубика. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_rubik_cube_af7ee00b576c74bad0bc7a11e65a12fb8}{load\+From\+File}} (const std::\+string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Загрузка расположения цветов из внешнего текстового файла. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_rubik_cube_a6dc69db384364f3bc37c08c966dee5af}{rotate\+Face}} (\doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294f}{Face}} face, bool clockwise=true)
+\begin{DoxyCompactList}\small\item\em Поворот заданной грани на 90 градусов. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_rubik_cube_a813fbebc51fac98c774c64bc6e0af1e6}{is\+Solved}} () const
+\begin{DoxyCompactList}\small\item\em Проверка правильной расстановки цветных клеток (состояние победы). \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_rubik_cube_a5e82bf9c1225b13ec29be271d14b7593}{operator==}} (const \doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Операторы сравнения двух кубиков на полное совпадение расположения цветов. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_rubik_cube_ab5a548521a4688fbdb6f6161e32551fe}{operator!=}} (const \doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \&rhs) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std::\+ostream \& \doxymbox{\hyperlink{class_rubik_cube_aefac84a10c9021688de5474cec83034a}{operator$<$$<$}} (std::\+ostream \&os, const \doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \&cube)
+\begin{DoxyCompactList}\small\item\em Потоковый вывод текстовой развертки кубика. \end{DoxyCompactList}\item 
+std::\+istream \& \doxymbox{\hyperlink{class_rubik_cube_a74298a0831b2fd8fdec1d808b06c9792}{operator$>$$>$}} (std::\+istream \&is, \doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \&cube)
+\begin{DoxyCompactList}\small\item\em Потоковый ввод состояния кубика. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, реализующий модель кубика Рубика 3x3. 
+
+Обеспечивает контроль инварианта собранности, поворот граней, генерацию случайных перестановок и потоковый ввод-\/вывод. 
+
+\label{class_rubik_cube_doc-constructors}
+\Hypertarget{class_rubik_cube_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_rubik_cube_a69ff5477763b85c8cdaf605ce19114ab}\index{RubikCube@{RubikCube}!RubikCube@{RubikCube}}
+\index{RubikCube@{RubikCube}!RubikCube@{RubikCube}}
+\doxysubsubsection{\texorpdfstring{RubikCube()}{RubikCube()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_rubik_cube_a69ff5477763b85c8cdaf605ce19114ab} 
+Rubik\+Cube::\+\+Rubik\+Cube (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор по умолчанию. 
+
+Создает идеально собранный кубик (каждая грань монохромна). \Hypertarget{class_rubik_cube_a0ccfed256f8ba1b3198fac553dd05911}\index{RubikCube@{RubikCube}!RubikCube@{RubikCube}}
+\index{RubikCube@{RubikCube}!RubikCube@{RubikCube}}
+\doxysubsubsection{\texorpdfstring{RubikCube()}{RubikCube()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_rubik_cube_a0ccfed256f8ba1b3198fac553dd05911} 
+Rubik\+Cube::\+\+Rubik\+Cube (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_rubik_cube_a5f28eac8b018310c78da83058e4f6b0b}\index{RubikCube@{RubikCube}!RubikCube@{RubikCube}}
+\index{RubikCube@{RubikCube}!RubikCube@{RubikCube}}
+\doxysubsubsection{\texorpdfstring{RubikCube()}{RubikCube()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_rubik_cube_a5f28eac8b018310c78da83058e4f6b0b} 
+Rubik\+Cube::\+\+Rubik\+Cube (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_rubik_cube_acad1b8c3939b039d149f9dd66f6b7443}\index{RubikCube@{RubikCube}!````~RubikCube@{\texorpdfstring{$\sim$}{\string~}RubikCube}}
+\index{````~RubikCube@{\texorpdfstring{$\sim$}{\string~}RubikCube}!RubikCube@{RubikCube}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}RubikCube()}{\string~RubikCube()}}
+{\footnotesize\ttfamily \label{class_rubik_cube_acad1b8c3939b039d149f9dd66f6b7443} 
+Rubik\+Cube::\+\texorpdfstring{$\sim$}{\string~}\+Rubik\+Cube (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\label{class_rubik_cube_doc-func-members}
+\Hypertarget{class_rubik_cube_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_rubik_cube_a813fbebc51fac98c774c64bc6e0af1e6}\index{RubikCube@{RubikCube}!isSolved@{isSolved}}
+\index{isSolved@{isSolved}!RubikCube@{RubikCube}}
+\doxysubsubsection{\texorpdfstring{isSolved()}{isSolved()}}
+{\footnotesize\ttfamily \label{class_rubik_cube_a813fbebc51fac98c774c64bc6e0af1e6} 
+bool Rubik\+Cube::\+is\+Solved (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Проверка правильной расстановки цветных клеток (состояние победы). 
+
+\begin{DoxyReturn}{Returns}
+true, если все 6 граней являются одноцветными, иначе false. 
+\end{DoxyReturn}
+\Hypertarget{class_rubik_cube_af7ee00b576c74bad0bc7a11e65a12fb8}\index{RubikCube@{RubikCube}!loadFromFile@{loadFromFile}}
+\index{loadFromFile@{loadFromFile}!RubikCube@{RubikCube}}
+\doxysubsubsection{\texorpdfstring{loadFromFile()}{loadFromFile()}}
+{\footnotesize\ttfamily \label{class_rubik_cube_af7ee00b576c74bad0bc7a11e65a12fb8} 
+bool Rubik\+Cube::\+load\+From\+File (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{file\+Path}{}\end{DoxyParamCaption})}
+
+
+
+Загрузка расположения цветов из внешнего текстового файла. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxymbox{\texttt{in}}  & {\em file\+Path} & Путь к файлу конфигурации. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, если файл успешно прочитан и инвариант цветов соблюден (по 9 каждого цвета). 
+
+false, если файл поврежден, не существует или содержит ошибки. 
+\end{DoxyReturn}
+\Hypertarget{class_rubik_cube_ab5a548521a4688fbdb6f6161e32551fe}\index{RubikCube@{RubikCube}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!RubikCube@{RubikCube}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{class_rubik_cube_ab5a548521a4688fbdb6f6161e32551fe} 
+bool Rubik\+Cube::\+operator!= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \&}]{rhs}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_rubik_cube_a95fed4776637e8dafe28a05ca64e9ee0}\index{RubikCube@{RubikCube}!operator=@{operator=}}
+\index{operator=@{operator=}!RubikCube@{RubikCube}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_rubik_cube_a95fed4776637e8dafe28a05ca64e9ee0} 
+\doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \& Rubik\+Cube::\+operator= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_rubik_cube_a5a6d380fea632fd8db5b156022a96b4c}\index{RubikCube@{RubikCube}!operator=@{operator=}}
+\index{operator=@{operator=}!RubikCube@{RubikCube}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_rubik_cube_a5a6d380fea632fd8db5b156022a96b4c} 
+\doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \& Rubik\+Cube::\+operator= (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_rubik_cube_a5e82bf9c1225b13ec29be271d14b7593}\index{RubikCube@{RubikCube}!operator==@{operator==}}
+\index{operator==@{operator==}!RubikCube@{RubikCube}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_rubik_cube_a5e82bf9c1225b13ec29be271d14b7593} 
+bool Rubik\+Cube::\+operator== (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \&}]{rhs}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Операторы сравнения двух кубиков на полное совпадение расположения цветов. 
+
+\Hypertarget{class_rubik_cube_a6e788d9ae83040d6b9b56bba14d9e36c}\index{RubikCube@{RubikCube}!randomize@{randomize}}
+\index{randomize@{randomize}!RubikCube@{RubikCube}}
+\doxysubsubsection{\texorpdfstring{randomize()}{randomize()}}
+{\footnotesize\ttfamily \label{class_rubik_cube_a6e788d9ae83040d6b9b56bba14d9e36c} 
+void Rubik\+Cube::\+randomize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Случайное перемешивание кубика. 
+
+Генерирует последовательность из валидных поворотов, сохраняя математическую разрешимость состояния. \Hypertarget{class_rubik_cube_a6dc69db384364f3bc37c08c966dee5af}\index{RubikCube@{RubikCube}!rotateFace@{rotateFace}}
+\index{rotateFace@{rotateFace}!RubikCube@{RubikCube}}
+\doxysubsubsection{\texorpdfstring{rotateFace()}{rotateFace()}}
+{\footnotesize\ttfamily \label{class_rubik_cube_a6dc69db384364f3bc37c08c966dee5af} 
+void Rubik\+Cube::\+rotate\+Face (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{_rubik_cube_8h_ad3fc1d97a3c41ea9d58d0ab14f75294f}{Face}}}]{face}{, }\item[{bool}]{clockwise}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+Поворот заданной грани на 90 градусов. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxymbox{\texttt{in}}  & {\em face} & Грань для поворота (Up, Down, Front, Back, Left, Right). \\
+\hline
+\doxymbox{\texttt{in}}  & {\em clockwise} & Направление: true — по часовой стрелке, false — против часовой. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_rubik_cube_doc-related-members}
+\Hypertarget{class_rubik_cube_doc-related-members}
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_rubik_cube_aefac84a10c9021688de5474cec83034a}\index{RubikCube@{RubikCube}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!RubikCube@{RubikCube}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{class_rubik_cube_aefac84a10c9021688de5474cec83034a} 
+std::\+ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std::\+ostream \&}]{os}{, }\item[{const \doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \&}]{cube}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Потоковый вывод текстовой развертки кубика. 
+
+\Hypertarget{class_rubik_cube_a74298a0831b2fd8fdec1d808b06c9792}\index{RubikCube@{RubikCube}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!RubikCube@{RubikCube}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily \label{class_rubik_cube_a74298a0831b2fd8fdec1d808b06c9792} 
+std::\+istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std::\+istream \&}]{is}{, }\item[{\doxymbox{\hyperlink{class_rubik_cube}{Rubik\+Cube}} \&}]{cube}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Потоковый ввод состояния кубика. 
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/\+include/\doxymbox{\hyperlink{_rubik_cube_8h}{Rubik\+Cube.\+h}}\item 
+src/\doxymbox{\hyperlink{_rubik_cube_8cpp}{Rubik\+Cube.\+cpp}}\end{DoxyCompactItemize}

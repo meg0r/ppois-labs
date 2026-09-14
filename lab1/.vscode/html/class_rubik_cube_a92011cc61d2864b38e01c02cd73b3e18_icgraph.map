@@ -1,0 +1,18 @@
+<map id="RubikCube::toIndex" name="RubikCube::toIndex">
+<area shape="rect" id="Node000001" title="Вспомогательная функция для безопасного преобразования enum Face в индекс массива." alt="" coords="868,67,1005,93"/>
+<area shape="rect" id="Node000002" href="$class_rubik_cube.html#a6dc69db384364f3bc37c08c966dee5af" title="Поворот заданной грани на 90 градусов." alt="" coords="423,67,579,93"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="850,80,580,83,580,77,855,80"/>
+<area shape="rect" id="Node000006" href="$class_rubik_cube.html#aec2d966c7c450cb5d2e519fe6a8a587a" title="Вспомогательный метод для поворота самой плоскости грани 3x3." alt="" coords="627,92,820,119"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="855,90,821,96,820,91,850,90"/>
+<area shape="poly" id="edge7_Node000002_Node000002" title=" " alt="" coords="534,51,524,48,501,45,480,47,468,52,466,57,471,67,466,65,460,58,465,48,479,42,501,40,525,43,540,52"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="64,29,114,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="423,63,375,57,227,47,114,45,114,40,227,41,375,52,429,63"/>
+<area shape="rect" id="Node000004" href="$class_rubik_cube.html#a6e788d9ae83040d6b9b56bba14d9e36c" title="Случайное перемешивание кубика." alt="" coords="221,67,375,93"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="405,80,376,83,376,77,410,80"/>
+<area shape="rect" id="Node000005" href="$class_rubik_cube.html#acad1b8c3939b039d149f9dd66f6b7443" title=" " alt="" coords="5,92,173,119"/>
+<area shape="poly" id="edge8_Node000002_Node000005" title=" " alt="" coords="431,97,375,108,270,113,173,112,173,107,270,108,375,103,426,97"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="124,23,125,18,121,14,109,10,89,8,65,11,54,16,54,23,67,33,61,35,49,25,49,14,63,5,89,3,110,4,124,9,130,17,128,26"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="203,65,114,50,114,44,208,62"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="203,92,173,98,173,93,208,91"/>
+<area shape="poly" id="edge10_Node000006_Node000002" title=" " alt="" coords="609,93,580,92,580,86,615,93"/>
+</map>

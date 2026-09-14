@@ -1,0 +1,16 @@
+<map id="charToColor" name="charToColor">
+<area shape="rect" id="Node000001" title=" " alt="" coords="535,92,627,119"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="610,76,601,73,581,71,563,73,553,77,550,83,555,93,550,90,545,83,549,74,561,67,581,65,602,68,615,77"/>
+<area shape="rect" id="Node000002" href="$class_rubik_cube.html#af7ee00b576c74bad0bc7a11e65a12fb8" title="Загрузка расположения цветов из внешнего текстового файла." alt="" coords="318,55,487,81"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="517,93,469,85,470,79,523,93"/>
+<area shape="rect" id="Node000006" href="$class_rubik_cube.html#a74298a0831b2fd8fdec1d808b06c9792" title="Потоковый ввод состояния кубика." alt="" coords="324,129,481,156"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="523,118,470,131,469,126,517,118"/>
+<area shape="rect" id="Node000003" href="$src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="162,29,211,56"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="300,57,212,48,211,43,305,55"/>
+<area shape="rect" id="Node000005" href="$class_rubik_cube.html#acad1b8c3939b039d149f9dd66f6b7443" title=" " alt="" coords="103,80,270,107"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="300,80,271,86,270,81,305,79"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="211,14,203,10,186,8,170,10,162,15,160,20,164,29,159,28,154,21,158,11,169,5,186,3,205,5,217,14"/>
+<area shape="rect" id="Node000004" href="$unittest-cpp_2tests_2main_8cpp.html#a7e16548afc479c8cfb8e1a49412655dd" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="145,45,55,45,54,40,148,40"/>
+<area shape="poly" id="edge8_Node000006_Node000006" title=" " alt="" coords="432,114,422,110,403,108,384,110,374,115,372,120,377,130,372,128,367,121,370,111,383,105,403,103,424,105,437,115"/>
+</map>

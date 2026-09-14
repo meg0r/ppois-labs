@@ -1,0 +1,16 @@
+<map id="UnitTest::TestReporter::ReportTestFinish" name="UnitTest::TestReporter::ReportTestFinish">
+<area shape="rect" id="Node000001" title=" " alt="" coords="941,55,1094,97"/>
+<area shape="rect" id="Node000002" href="$class_unit_test_1_1_test_results.html#a0b35af87ce16d6064bc3cef5b6d85d0f" title=" " alt="" coords="716,21,864,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="923,63,865,56,865,51,929,63"/>
+<area shape="rect" id="Node000007" href="$class_unit_test_1_1_throwing_test_reporter.html#a486471a71f2eb1e4c6cb6da06c05c399" title=" " alt="" coords="687,88,893,131"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="929,89,894,97,893,92,923,90"/>
+<area shape="rect" id="Node000003" href="$class_unit_test_1_1_test_runner.html#a5cf671ce5d7348a9907e0beed8d9e01a" title=" " alt="" coords="493,21,639,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="698,43,639,45,639,40,703,42"/>
+<area shape="rect" id="Node000004" href="$class_unit_test_1_1_test_runner.html#a7a394abb0a1699654e20157a5c31918f" title=" " alt="" coords="300,21,445,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="475,43,446,45,446,40,481,42"/>
+<area shape="rect" id="Node000005" href="$namespace_unit_test.html#a08a349c935f82a63e8fb834fddfbb93f" title=" " alt="" coords="103,29,252,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="282,43,253,45,252,40,287,42"/>
+<area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="201,14,193,10,177,8,162,10,154,14,152,20,157,29,151,28,147,21,150,11,161,5,177,3,195,5,206,14"/>
+<area shape="rect" id="Node000006" href="$unittest-cpp_2tests_2main_8cpp.html#a7e16548afc479c8cfb8e1a49412655dd" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="85,44,56,45,54,40,89,41"/>
+</map>
