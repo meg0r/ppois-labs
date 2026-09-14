@@ -1,0 +1,170 @@
+\doxysection{Turing\+Machine Class Reference}
+\hypertarget{class_turing_machine}{}\label{class_turing_machine}\index{TuringMachine@{TuringMachine}}
+
+
+{\ttfamily \+\#include $<$Turing\+Machine.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_turing_machine_a2f76be531512e16a8feb77de532b9a2e}{Turing\+Machine}} (\doxymbox{\hyperlink{class_alphabet}{Alphabet}} alphabet, \doxymbox{\hyperlink{class_program}{Program}} program, int64\+\_\+t start\+\_\+pos=0)
+\begin{DoxyCompactList}\small\item\em Конструктор машины Тьюринга. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_turing_machine_a702385c9b819d33eda6412f6b166ea10}{reset}} (std::\+string\+\_\+view input="{}"{}, int64\+\_\+t start\+\_\+pos=0)
+\begin{DoxyCompactList}\small\item\em Сбрасывает машину в исходное состояние и загружает слово на ленту. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_turing_machine_a5abd5fff93c1ff762615dbdb94a67dda}{step}} ()
+\begin{DoxyCompactList}\small\item\em Выполняет ровно один такт работы машины. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312}{Execution\+Status}} \doxymbox{\hyperlink{class_turing_machine_a3d119c37e0be2a5f9861cf6427f58aae}{run}} (std::\+size\+\_\+t max\+\_\+steps=100 \textquotesingle{}000)
+\begin{DoxyCompactList}\small\item\em Выполняет цикл шагов в пределах заданной квоты max\+\_\+steps. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_turing_machine_aace3f12c8ab31ca28c44a94384270e6e}{is\+Halted}} () const noexcept
+\item 
+\doxymbox{\hyperlink{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312}{Execution\+Status}} \doxymbox{\hyperlink{class_turing_machine_a756c6219693c2e05118e86f32fa337b0}{get\+Status}} () const noexcept
+\item 
+const \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} \& \doxymbox{\hyperlink{class_turing_machine_a0f25854043f5e5b52e3dbd814d253e22}{get\+Current\+State}} () const noexcept
+\item 
+std::\+size\+\_\+t \doxymbox{\hyperlink{class_turing_machine_a68156e81cca58a70922f609033acfb3d}{get\+Step\+Count}} () const noexcept
+\item 
+const \doxymbox{\hyperlink{class_tape}{Tape}} \& \doxymbox{\hyperlink{class_turing_machine_a323b3e2e534e850fb8fae83dac0e0c47}{get\+Tape}} () const noexcept
+\item 
+const \doxymbox{\hyperlink{class_head}{Head}} \& \doxymbox{\hyperlink{class_turing_machine_a30e5026c857b458342c785ba6f8043d2}{get\+Head}} () const noexcept
+\item 
+const \doxymbox{\hyperlink{class_program}{Program}} \& \doxymbox{\hyperlink{class_turing_machine_a5c6d42b3dbb2a9d1ea977dcdc2cbdad4}{get\+Program}} () const noexcept
+\item 
+const \doxymbox{\hyperlink{class_alphabet}{Alphabet}} \& \doxymbox{\hyperlink{class_turing_machine_a07a0ec0181d0584ebf5291b1f078d32b}{get\+Alphabet}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\label{class_turing_machine_doc-constructors}
+\Hypertarget{class_turing_machine_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_turing_machine_a2f76be531512e16a8feb77de532b9a2e}\index{TuringMachine@{TuringMachine}!TuringMachine@{TuringMachine}}
+\index{TuringMachine@{TuringMachine}!TuringMachine@{TuringMachine}}
+\doxysubsubsection{\texorpdfstring{TuringMachine()}{TuringMachine()}}
+{\footnotesize\ttfamily \label{class_turing_machine_a2f76be531512e16a8feb77de532b9a2e} 
+Turing\+Machine::\+\+Turing\+Machine (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_alphabet}{Alphabet}}}]{alphabet}{, }\item[{\doxymbox{\hyperlink{class_program}{Program}}}]{program}{, }\item[{int64\+\_\+t}]{start\+\_\+pos}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+Конструктор машины Тьюринга. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alphabet} & Алфавит (передается во владение ленте \doxylink{class_tape}{Tape}). \\
+\hline
+{\em program} & Таблица правил переходов. \\
+\hline
+{\em start\+\_\+pos} & Начальная позиция каретки (по умолчанию 0). \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_turing_machine_doc-func-members}
+\Hypertarget{class_turing_machine_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_turing_machine_a07a0ec0181d0584ebf5291b1f078d32b}\index{TuringMachine@{TuringMachine}!getAlphabet@{getAlphabet}}
+\index{getAlphabet@{getAlphabet}!TuringMachine@{TuringMachine}}
+\doxysubsubsection{\texorpdfstring{getAlphabet()}{getAlphabet()}}
+{\footnotesize\ttfamily \label{class_turing_machine_a07a0ec0181d0584ebf5291b1f078d32b} 
+const \doxymbox{\hyperlink{class_alphabet}{Alphabet}} \& Turing\+Machine::\+get\+Alphabet (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_turing_machine_a0f25854043f5e5b52e3dbd814d253e22}\index{TuringMachine@{TuringMachine}!getCurrentState@{getCurrentState}}
+\index{getCurrentState@{getCurrentState}!TuringMachine@{TuringMachine}}
+\doxysubsubsection{\texorpdfstring{getCurrentState()}{getCurrentState()}}
+{\footnotesize\ttfamily \label{class_turing_machine_a0f25854043f5e5b52e3dbd814d253e22} 
+const \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} \& Turing\+Machine::\+get\+Current\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_turing_machine_a30e5026c857b458342c785ba6f8043d2}\index{TuringMachine@{TuringMachine}!getHead@{getHead}}
+\index{getHead@{getHead}!TuringMachine@{TuringMachine}}
+\doxysubsubsection{\texorpdfstring{getHead()}{getHead()}}
+{\footnotesize\ttfamily \label{class_turing_machine_a30e5026c857b458342c785ba6f8043d2} 
+const \doxymbox{\hyperlink{class_head}{Head}} \& Turing\+Machine::\+get\+Head (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_turing_machine_a5c6d42b3dbb2a9d1ea977dcdc2cbdad4}\index{TuringMachine@{TuringMachine}!getProgram@{getProgram}}
+\index{getProgram@{getProgram}!TuringMachine@{TuringMachine}}
+\doxysubsubsection{\texorpdfstring{getProgram()}{getProgram()}}
+{\footnotesize\ttfamily \label{class_turing_machine_a5c6d42b3dbb2a9d1ea977dcdc2cbdad4} 
+const \doxymbox{\hyperlink{class_program}{Program}} \& Turing\+Machine::\+get\+Program (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_turing_machine_a756c6219693c2e05118e86f32fa337b0}\index{TuringMachine@{TuringMachine}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!TuringMachine@{TuringMachine}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily \label{class_turing_machine_a756c6219693c2e05118e86f32fa337b0} 
+\doxymbox{\hyperlink{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312}{Execution\+Status}} Turing\+Machine::\+get\+Status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_turing_machine_a68156e81cca58a70922f609033acfb3d}\index{TuringMachine@{TuringMachine}!getStepCount@{getStepCount}}
+\index{getStepCount@{getStepCount}!TuringMachine@{TuringMachine}}
+\doxysubsubsection{\texorpdfstring{getStepCount()}{getStepCount()}}
+{\footnotesize\ttfamily \label{class_turing_machine_a68156e81cca58a70922f609033acfb3d} 
+std::\+size\+\_\+t Turing\+Machine::\+get\+Step\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_turing_machine_a323b3e2e534e850fb8fae83dac0e0c47}\index{TuringMachine@{TuringMachine}!getTape@{getTape}}
+\index{getTape@{getTape}!TuringMachine@{TuringMachine}}
+\doxysubsubsection{\texorpdfstring{getTape()}{getTape()}}
+{\footnotesize\ttfamily \label{class_turing_machine_a323b3e2e534e850fb8fae83dac0e0c47} 
+const \doxymbox{\hyperlink{class_tape}{Tape}} \& Turing\+Machine::\+get\+Tape (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_turing_machine_aace3f12c8ab31ca28c44a94384270e6e}\index{TuringMachine@{TuringMachine}!isHalted@{isHalted}}
+\index{isHalted@{isHalted}!TuringMachine@{TuringMachine}}
+\doxysubsubsection{\texorpdfstring{isHalted()}{isHalted()}}
+{\footnotesize\ttfamily \label{class_turing_machine_aace3f12c8ab31ca28c44a94384270e6e} 
+bool Turing\+Machine::\+is\+Halted (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_turing_machine_a702385c9b819d33eda6412f6b166ea10}\index{TuringMachine@{TuringMachine}!reset@{reset}}
+\index{reset@{reset}!TuringMachine@{TuringMachine}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_turing_machine_a702385c9b819d33eda6412f6b166ea10} 
+void Turing\+Machine::\+reset (\begin{DoxyParamCaption}\item[{std::\+string\+\_\+view}]{input}{ = {\ttfamily "{}"{}}, }\item[{int64\+\_\+t}]{start\+\_\+pos}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+Сбрасывает машину в исходное состояние и загружает слово на ленту. 
+
+Очищает ленту, устанавливает позицию каретки, переводит состояние в initial\+\_\+state, обнуляет счетчик шагов и переводит статус в Running (или Halted\+By\+State, если initial == halt).
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Входное слово. \\
+\hline
+{\em start\+\_\+pos} & Начальная координата первого символа и каретки. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_turing_machine_a3d119c37e0be2a5f9861cf6427f58aae}\index{TuringMachine@{TuringMachine}!run@{run}}
+\index{run@{run}!TuringMachine@{TuringMachine}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_turing_machine_a3d119c37e0be2a5f9861cf6427f58aae} 
+\doxymbox{\hyperlink{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312}{Execution\+Status}} Turing\+Machine::\+run (\begin{DoxyParamCaption}\item[{std::\+size\+\_\+t}]{max\+\_\+steps}{ = {\ttfamily 100\textquotesingle{}000}}\end{DoxyParamCaption})}
+
+
+
+Выполняет цикл шагов в пределах заданной квоты max\+\_\+steps. 
+
+Если лимит исчерпан, возвращает \doxylink{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312a08e68aafadb44dce2269d49976d66461}{Execution\+Status::\+\+Max\+Steps\+Exceeded}. При этом внутренний статус машины остается Running (выполнение можно продолжить следующим вызовом).
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+\_\+steps} & Квота шагов на текущий вызов. Значение 0 не выполняет шагов. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Итоговый статус (Halted\+By\+State, Halted\+No\+Rule, Running или Max\+Steps\+Exceeded). 
+\end{DoxyReturn}
+\Hypertarget{class_turing_machine_a5abd5fff93c1ff762615dbdb94a67dda}\index{TuringMachine@{TuringMachine}!step@{step}}
+\index{step@{step}!TuringMachine@{TuringMachine}}
+\doxysubsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily \label{class_turing_machine_a5abd5fff93c1ff762615dbdb94a67dda} 
+bool Turing\+Machine::\+step (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Выполняет ровно один такт работы машины. 
+
+Если такт успешно выполнен и привел к halt-\/состоянию, счетчик инкрементируется, статус переходит в Halted\+By\+State, метод возвращает false. Если правило перехода отсутствует, никакого действия не совершается: счетчик НЕ инкрементируется, статус переходит в Halted\+No\+Rule, метод возвращает false.
+
+\begin{DoxyReturn}{Returns}
+true, если шаг выполнен и машина все еще Running; иначе false. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+include/\doxymbox{\hyperlink{_turing_machine_8hpp}{Turing\+Machine.\+hpp}}\item 
+src/\doxymbox{\hyperlink{_turing_machine_8cpp}{Turing\+Machine.\+cpp}}\end{DoxyCompactItemize}

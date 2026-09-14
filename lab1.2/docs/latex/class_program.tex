@@ -1,0 +1,179 @@
+\doxysection{Program Class Reference}
+\hypertarget{class_program}{}\label{class_program}\index{Program@{Program}}
+
+
+{\ttfamily \+\#include $<$Program.\+hpp$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \doxymbox{\hyperlink{class_program_a6ea9ab77ffcab68ad90fbbb267f7357b}{Rule\+Key}} = std::\+pair$<$\doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}}, char$>$
+\begin{DoxyCompactList}\small\item\em Ключ таблицы: (текущее состояние, обозреваемый символ). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_program_af4921832ac59b89bbd70720b89b849cc}{Program}} (\doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} init\+\_\+state="{}q0"{}, \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} halt\+\_\+state="{}halt"{})
+\begin{DoxyCompactList}\small\item\em Конструктор программы. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_program_ab79b0612fc31804aea8503c5fdc7a83a}{add\+Rule}} (const \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} \&state, char symbol, const \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} \&next\+\_\+state, char write\+\_\+symbol, \doxymbox{\hyperlink{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} dir)
+\begin{DoxyCompactList}\small\item\em Добавляет правило в таблицу. Если правило для пары (state, symbol) уже есть — заменяет его. \end{DoxyCompactList}\item 
+std::\+optional$<$ \doxymbox{\hyperlink{struct_transition_action}{Transition\+Action}} $>$ \doxymbox{\hyperlink{class_program_a0973a8c5f2190124a6930fb483ac6c03}{get\+Action}} (const \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} \&state, char symbol) const
+\begin{DoxyCompactList}\small\item\em Ищет действие для текущего состояния и считанного символа. \end{DoxyCompactList}\item 
+std::\+size\+\_\+t \doxymbox{\hyperlink{class_program_abec9334ff4926f6b65e5d2d5f7307020}{load\+From\+Stream}} (std::\+istream \&is)
+\begin{DoxyCompactList}\small\item\em Загружает правила из текстового потока. Формат строки: $<$cur\+\_\+state$>$ $<$read\+\_\+sym$>$ $<$next\+\_\+state$>$ $<$write\+\_\+sym$>$ $<$dir$>$ Пустые строки и комментарии \textquotesingle{}\#\textquotesingle{} пропускаются. Пробельные символы ленты не поддерживаются. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_program_a759ee3aa2dd131b339660f2d217dd08d}{is\+Halt\+State}} (const \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} \&state) const noexcept
+\begin{DoxyCompactList}\small\item\em Проверяет, является ли состояние терминальным (halt). \end{DoxyCompactList}\item 
+const \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} \& \doxymbox{\hyperlink{class_program_a5f861c0b0e01d495592bbfc3c0020f5a}{get\+Initial\+State}} () const noexcept
+\item 
+const \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} \& \doxymbox{\hyperlink{class_program_a89f32d785bf37377bf757f5e6c6ccc74}{get\+Halt\+State}} () const noexcept
+\item 
+std::\+size\+\_\+t \doxymbox{\hyperlink{class_program_aa8eca5ac0b95b84a446e991c55f226bb}{size}} () const noexcept
+\item 
+bool \doxymbox{\hyperlink{class_program_a622fdf4984dd86eb0eaf215b4adf8573}{empty}} () const noexcept
+\item 
+void \doxymbox{\hyperlink{class_program_a21dabd504ff36d9c6d44c981c2809261}{clear}} () noexcept
+\item 
+const Rule\+Table \& \doxymbox{\hyperlink{class_program_acd02ccd74960ea7db7abf77b48dfe52d}{get\+All\+Rules}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\label{class_program_doc-typedef-members}
+\Hypertarget{class_program_doc-typedef-members}
+\doxysubsection{Member Typedef Documentation}
+\Hypertarget{class_program_a6ea9ab77ffcab68ad90fbbb267f7357b}\index{Program@{Program}!RuleKey@{RuleKey}}
+\index{RuleKey@{RuleKey}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{RuleKey}{RuleKey}}
+{\footnotesize\ttfamily \label{class_program_a6ea9ab77ffcab68ad90fbbb267f7357b} 
+using \doxymbox{\hyperlink{class_program_a6ea9ab77ffcab68ad90fbbb267f7357b}{Program::\+\+Rule\+Key}} = std::\+pair$<$\doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}}, char$>$}
+
+
+
+Ключ таблицы: (текущее состояние, обозреваемый символ). 
+
+
+
+\label{class_program_doc-constructors}
+\Hypertarget{class_program_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_program_af4921832ac59b89bbd70720b89b849cc}\index{Program@{Program}!Program@{Program}}
+\index{Program@{Program}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{Program()}{Program()}}
+{\footnotesize\ttfamily \label{class_program_af4921832ac59b89bbd70720b89b849cc} 
+Program::\+\+Program (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}}}]{init\+\_\+state}{ = {\ttfamily "{}q0"{}}, }\item[{\doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}}}]{halt\+\_\+state}{ = {\ttfamily "{}halt"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Конструктор программы. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em init\+\_\+state} & Имя начального состояния. \\
+\hline
+{\em halt\+\_\+state} & Имя терминального состояния. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_program_doc-func-members}
+\Hypertarget{class_program_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_program_ab79b0612fc31804aea8503c5fdc7a83a}\index{Program@{Program}!addRule@{addRule}}
+\index{addRule@{addRule}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{addRule()}{addRule()}}
+{\footnotesize\ttfamily \label{class_program_ab79b0612fc31804aea8503c5fdc7a83a} 
+void Program::\+add\+Rule (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} \&}]{state}{, }\item[{char}]{symbol}{, }\item[{const \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} \&}]{next\+\_\+state}{, }\item[{char}]{write\+\_\+symbol}{, }\item[{\doxymbox{\hyperlink{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}}]{dir}{}\end{DoxyParamCaption})}
+
+
+
+Добавляет правило в таблицу. Если правило для пары (state, symbol) уже есть — заменяет его. 
+
+\begin{DoxyNote}{Note}
+Внутри используется std::\+map::\+insert\+\_\+or\+\_\+assign, так как дефолтный конструктор \doxylink{struct_transition_action}{Transition\+Action} удален. 
+\end{DoxyNote}
+\Hypertarget{class_program_a21dabd504ff36d9c6d44c981c2809261}\index{Program@{Program}!clear@{clear}}
+\index{clear@{clear}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_program_a21dabd504ff36d9c6d44c981c2809261} 
+void Program::\+clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_program_a622fdf4984dd86eb0eaf215b4adf8573}\index{Program@{Program}!empty@{empty}}
+\index{empty@{empty}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily \label{class_program_a622fdf4984dd86eb0eaf215b4adf8573} 
+bool Program::\+empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_program_a0973a8c5f2190124a6930fb483ac6c03}\index{Program@{Program}!getAction@{getAction}}
+\index{getAction@{getAction}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{getAction()}{getAction()}}
+{\footnotesize\ttfamily \label{class_program_a0973a8c5f2190124a6930fb483ac6c03} 
+std::\+optional$<$ \doxymbox{\hyperlink{struct_transition_action}{Transition\+Action}} $>$ Program::\+get\+Action (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} \&}]{state}{, }\item[{char}]{symbol}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Ищет действие для текущего состояния и считанного символа. 
+
+\begin{DoxyReturn}{Returns}
+std::\+optional с действием или std::\+nullopt, если правило не найдено (останов). 
+\end{DoxyReturn}
+\Hypertarget{class_program_acd02ccd74960ea7db7abf77b48dfe52d}\index{Program@{Program}!getAllRules@{getAllRules}}
+\index{getAllRules@{getAllRules}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{getAllRules()}{getAllRules()}}
+{\footnotesize\ttfamily \label{class_program_acd02ccd74960ea7db7abf77b48dfe52d} 
+const Program::\+\+Rule\+Table \& Program::\+get\+All\+Rules (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_program_a89f32d785bf37377bf757f5e6c6ccc74}\index{Program@{Program}!getHaltState@{getHaltState}}
+\index{getHaltState@{getHaltState}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{getHaltState()}{getHaltState()}}
+{\footnotesize\ttfamily \label{class_program_a89f32d785bf37377bf757f5e6c6ccc74} 
+const \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} \& Program::\+get\+Halt\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_program_a5f861c0b0e01d495592bbfc3c0020f5a}\index{Program@{Program}!getInitialState@{getInitialState}}
+\index{getInitialState@{getInitialState}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{getInitialState()}{getInitialState()}}
+{\footnotesize\ttfamily \label{class_program_a5f861c0b0e01d495592bbfc3c0020f5a} 
+const \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} \& Program::\+get\+Initial\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_program_a759ee3aa2dd131b339660f2d217dd08d}\index{Program@{Program}!isHaltState@{isHaltState}}
+\index{isHaltState@{isHaltState}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{isHaltState()}{isHaltState()}}
+{\footnotesize\ttfamily \label{class_program_a759ee3aa2dd131b339660f2d217dd08d} 
+bool Program::\+is\+Halt\+State (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} \&}]{state}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Проверяет, является ли состояние терминальным (halt). 
+
+\Hypertarget{class_program_abec9334ff4926f6b65e5d2d5f7307020}\index{Program@{Program}!loadFromStream@{loadFromStream}}
+\index{loadFromStream@{loadFromStream}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{loadFromStream()}{loadFromStream()}}
+{\footnotesize\ttfamily \label{class_program_abec9334ff4926f6b65e5d2d5f7307020} 
+std::\+size\+\_\+t Program::\+load\+From\+Stream (\begin{DoxyParamCaption}\item[{std::\+istream \&}]{is}{}\end{DoxyParamCaption})}
+
+
+
+Загружает правила из текстового потока. Формат строки: $<$cur\+\_\+state$>$ $<$read\+\_\+sym$>$ $<$next\+\_\+state$>$ $<$write\+\_\+sym$>$ $<$dir$>$ Пустые строки и комментарии \textquotesingle{}\#\textquotesingle{} пропускаются. Пробельные символы ленты не поддерживаются. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & Входной поток (файл или stringstream). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Количество успешно загруженных правил. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+runtime\+\_\+error} & При синтаксической ошибке или неизвестном направлении. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_program_aa8eca5ac0b95b84a446e991c55f226bb}\index{Program@{Program}!size@{size}}
+\index{size@{size}!Program@{Program}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{class_program_aa8eca5ac0b95b84a446e991c55f226bb} 
+std::\+size\+\_\+t Program::\+size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+include/\doxymbox{\hyperlink{_program_8hpp}{Program.\+hpp}}\item 
+src/\doxymbox{\hyperlink{_program_8cpp}{Program.\+cpp}}\end{DoxyCompactItemize}

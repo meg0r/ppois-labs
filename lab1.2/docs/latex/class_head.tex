@@ -1,0 +1,158 @@
+\doxysection{Head Class Reference}
+\hypertarget{class_head}{}\label{class_head}\index{Head@{Head}}
+
+
+{\ttfamily \+\#include $<$Head.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_head_a95a42cc8725fd4b5eb39724d9558e553}{Head}} (int64\+\_\+t start\+\_\+pos=0) noexcept
+\begin{DoxyCompactList}\small\item\em Конструктор каретки. \end{DoxyCompactList}\item 
+int64\+\_\+t \doxymbox{\hyperlink{class_head_a2732cba6b74ca593c4f8048a96814c89}{get\+Position}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Получить текущую позицию каретки. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_head_a3afbafc305c4bc3c25af02c15466ea42}{set\+Position}} (int64\+\_\+t pos) noexcept
+\begin{DoxyCompactList}\small\item\em Установить произвольную позицию каретки. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_head}{Head}} \& \doxymbox{\hyperlink{class_head_a651f055e9239877e7f4fc18f5eb75c11}{operator++}} () noexcept
+\begin{DoxyCompactList}\small\item\em Префиксный инкремент (++head). Сдвиг вправо. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_head}{Head}} \doxymbox{\hyperlink{class_head_a54d669b0c3c095d50a9a884c03e0627a}{operator++}} (int) noexcept
+\begin{DoxyCompactList}\small\item\em Постфиксный инкремент (head++). Сдвиг вправо. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_head}{Head}} \& \doxymbox{\hyperlink{class_head_a51796c9e3b03e2573fd03a7f9c1715d8}{operator-\/-\/}} () noexcept
+\begin{DoxyCompactList}\small\item\em Префиксный декремент (--head). Сдвиг влево. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_head}{Head}} \doxymbox{\hyperlink{class_head_a2a32ccfb3f080098af8c2cce94b1e533}{operator-\/-\/}} (int) noexcept
+\begin{DoxyCompactList}\small\item\em Постфиксный декремент (head--). Сдвиг влево. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_head_ac7b5e64126143833e8656973fd9e0117}{operator==}} (const \doxymbox{\hyperlink{class_head}{Head}} \&other) const noexcept
+\begin{DoxyCompactList}\small\item\em Сравнение позиций двух кареток на равенство. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_head_aedbc8e9222b7eeccf70a41a1cf1efe26}{operator!=}} (const \doxymbox{\hyperlink{class_head}{Head}} \&other) const noexcept
+\begin{DoxyCompactList}\small\item\em Сравнение позиций двух кареток на неравенство. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{class_head_doc-constructors}
+\Hypertarget{class_head_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_head_a95a42cc8725fd4b5eb39724d9558e553}\index{Head@{Head}!Head@{Head}}
+\index{Head@{Head}!Head@{Head}}
+\doxysubsubsection{\texorpdfstring{Head()}{Head()}}
+{\footnotesize\ttfamily \label{class_head_a95a42cc8725fd4b5eb39724d9558e553} 
+Head::\+\+Head (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{start\+\_\+pos}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [noexcept]}}
+
+
+
+Конструктор каретки. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+\_\+pos} & Начальная позиция на ленте (по умолчанию 0). \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_head_doc-func-members}
+\Hypertarget{class_head_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_head_a2732cba6b74ca593c4f8048a96814c89}\index{Head@{Head}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Head@{Head}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \label{class_head_a2732cba6b74ca593c4f8048a96814c89} 
+int64\+\_\+t Head::\+get\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Получить текущую позицию каретки. 
+
+\begin{DoxyReturn}{Returns}
+Индекс текущей ячейки. 
+\end{DoxyReturn}
+\Hypertarget{class_head_aedbc8e9222b7eeccf70a41a1cf1efe26}\index{Head@{Head}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Head@{Head}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{class_head_aedbc8e9222b7eeccf70a41a1cf1efe26} 
+bool Head::\+operator!= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_head}{Head}} \&}]{other}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Сравнение позиций двух кареток на неравенство. 
+
+\Hypertarget{class_head_a651f055e9239877e7f4fc18f5eb75c11}\index{Head@{Head}!operator++@{operator++}}
+\index{operator++@{operator++}!Head@{Head}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_head_a651f055e9239877e7f4fc18f5eb75c11} 
+\doxymbox{\hyperlink{class_head}{Head}} \& Head::\+operator++ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Префиксный инкремент (++head). Сдвиг вправо. 
+
+\begin{DoxyReturn}{Returns}
+Ссылка на текущий объект после сдвига. 
+\end{DoxyReturn}
+\Hypertarget{class_head_a54d669b0c3c095d50a9a884c03e0627a}\index{Head@{Head}!operator++@{operator++}}
+\index{operator++@{operator++}!Head@{Head}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_head_a54d669b0c3c095d50a9a884c03e0627a} 
+\doxymbox{\hyperlink{class_head}{Head}} Head::\+operator++ (\begin{DoxyParamCaption}\item[{int}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Постфиксный инкремент (head++). Сдвиг вправо. 
+
+\begin{DoxyReturn}{Returns}
+Копия объекта до сдвига. 
+\end{DoxyReturn}
+\Hypertarget{class_head_a51796c9e3b03e2573fd03a7f9c1715d8}\index{Head@{Head}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Head@{Head}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_head_a51796c9e3b03e2573fd03a7f9c1715d8} 
+\doxymbox{\hyperlink{class_head}{Head}} \& Head::\+operator-\/-\/ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Префиксный декремент (--head). Сдвиг влево. 
+
+\begin{DoxyReturn}{Returns}
+Ссылка на текущий объект после сдвига. 
+\end{DoxyReturn}
+\Hypertarget{class_head_a2a32ccfb3f080098af8c2cce94b1e533}\index{Head@{Head}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Head@{Head}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_head_a2a32ccfb3f080098af8c2cce94b1e533} 
+\doxymbox{\hyperlink{class_head}{Head}} Head::\+operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Постфиксный декремент (head--). Сдвиг влево. 
+
+\begin{DoxyReturn}{Returns}
+Копия объекта до сдвига. 
+\end{DoxyReturn}
+\Hypertarget{class_head_ac7b5e64126143833e8656973fd9e0117}\index{Head@{Head}!operator==@{operator==}}
+\index{operator==@{operator==}!Head@{Head}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_head_ac7b5e64126143833e8656973fd9e0117} 
+bool Head::\+operator== (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_head}{Head}} \&}]{other}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Сравнение позиций двух кареток на равенство. 
+
+\Hypertarget{class_head_a3afbafc305c4bc3c25af02c15466ea42}\index{Head@{Head}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Head@{Head}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily \label{class_head_a3afbafc305c4bc3c25af02c15466ea42} 
+void Head::\+set\+Position (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{pos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Установить произвольную позицию каретки. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Новый индекс ячейки. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+include/\doxymbox{\hyperlink{_head_8hpp}{Head.\+hpp}}\item 
+src/\doxymbox{\hyperlink{_head_8cpp}{Head.\+cpp}}\end{DoxyCompactItemize}

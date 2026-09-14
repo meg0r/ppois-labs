@@ -1,0 +1,98 @@
+\doxysection{Transition\+Action Struct Reference}
+\hypertarget{struct_transition_action}{}\label{struct_transition_action}\index{TransitionAction@{TransitionAction}}
+
+
+Действие, выполняемое при срабатывании правила.  
+
+
+
+
+{\ttfamily \+\#include $<$Transition.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{struct_transition_action_a022cd3ed7498de5838579ce07da36783}{Transition\+Action}} ()=delete
+\item 
+\doxymbox{\hyperlink{struct_transition_action_a18ad8a355c036c17780dc06826827899}{Transition\+Action}} (\doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} ns, char ws, \doxymbox{\hyperlink{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} d)
+\item 
+bool \doxymbox{\hyperlink{struct_transition_action_afdfdf44f3645f20b48d96074a2dadd99}{operator==}} (const \doxymbox{\hyperlink{struct_transition_action}{Transition\+Action}} \&other) const noexcept
+\item 
+bool \doxymbox{\hyperlink{struct_transition_action_a71fd8ecb8bafcf1953b760c81bf581bc}{operator!=}} (const \doxymbox{\hyperlink{struct_transition_action}{Transition\+Action}} \&other) const noexcept
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} \doxymbox{\hyperlink{struct_transition_action_aa4c9c69cd9423112dd2bdee2568df274}{next\+\_\+state}}
+\item 
+char \doxymbox{\hyperlink{struct_transition_action_ade0dd8c4dc4df4bfd14fe52535880e08}{write\+\_\+symbol}}
+\item 
+\doxymbox{\hyperlink{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} \doxymbox{\hyperlink{struct_transition_action_af92a2a4ab98e50842b18c924e2df5310}{move\+\_\+direction}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Действие, выполняемое при срабатывании правила. 
+
+Создаётся только целиком — дефолтный конструктор удалён, чтобы исключить появление неполных правил с пустыми полями. 
+
+\label{struct_transition_action_doc-constructors}
+\Hypertarget{struct_transition_action_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_transition_action_a022cd3ed7498de5838579ce07da36783}\index{TransitionAction@{TransitionAction}!TransitionAction@{TransitionAction}}
+\index{TransitionAction@{TransitionAction}!TransitionAction@{TransitionAction}}
+\doxysubsubsection{\texorpdfstring{TransitionAction()}{TransitionAction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_transition_action_a022cd3ed7498de5838579ce07da36783} 
+Transition\+Action::\+\+Transition\+Action (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{struct_transition_action_a18ad8a355c036c17780dc06826827899}\index{TransitionAction@{TransitionAction}!TransitionAction@{TransitionAction}}
+\index{TransitionAction@{TransitionAction}!TransitionAction@{TransitionAction}}
+\doxysubsubsection{\texorpdfstring{TransitionAction()}{TransitionAction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_transition_action_a18ad8a355c036c17780dc06826827899} 
+Transition\+Action::\+\+Transition\+Action (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}}}]{ns}{, }\item[{char}]{ws}{, }\item[{\doxymbox{\hyperlink{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}}]{d}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{struct_transition_action_doc-func-members}
+\Hypertarget{struct_transition_action_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_transition_action_a71fd8ecb8bafcf1953b760c81bf581bc}\index{TransitionAction@{TransitionAction}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!TransitionAction@{TransitionAction}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{struct_transition_action_a71fd8ecb8bafcf1953b760c81bf581bc} 
+bool Transition\+Action::\+operator!= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{struct_transition_action}{Transition\+Action}} \&}]{other}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{struct_transition_action_afdfdf44f3645f20b48d96074a2dadd99}\index{TransitionAction@{TransitionAction}!operator==@{operator==}}
+\index{operator==@{operator==}!TransitionAction@{TransitionAction}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{struct_transition_action_afdfdf44f3645f20b48d96074a2dadd99} 
+bool Transition\+Action::\+operator== (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{struct_transition_action}{Transition\+Action}} \&}]{other}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+\label{struct_transition_action_doc-variable-members}
+\Hypertarget{struct_transition_action_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_transition_action_af92a2a4ab98e50842b18c924e2df5310}\index{TransitionAction@{TransitionAction}!move\_direction@{move\_direction}}
+\index{move\_direction@{move\_direction}!TransitionAction@{TransitionAction}}
+\doxysubsubsection{\texorpdfstring{move\_direction}{move\_direction}}
+{\footnotesize\ttfamily \label{struct_transition_action_af92a2a4ab98e50842b18c924e2df5310} 
+\doxymbox{\hyperlink{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} Transition\+Action::\+move\+\_\+direction}
+
+\Hypertarget{struct_transition_action_aa4c9c69cd9423112dd2bdee2568df274}\index{TransitionAction@{TransitionAction}!next\_state@{next\_state}}
+\index{next\_state@{next\_state}!TransitionAction@{TransitionAction}}
+\doxysubsubsection{\texorpdfstring{next\_state}{next\_state}}
+{\footnotesize\ttfamily \label{struct_transition_action_aa4c9c69cd9423112dd2bdee2568df274} 
+\doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} Transition\+Action::\+next\+\_\+state}
+
+\Hypertarget{struct_transition_action_ade0dd8c4dc4df4bfd14fe52535880e08}\index{TransitionAction@{TransitionAction}!write\_symbol@{write\_symbol}}
+\index{write\_symbol@{write\_symbol}!TransitionAction@{TransitionAction}}
+\doxysubsubsection{\texorpdfstring{write\_symbol}{write\_symbol}}
+{\footnotesize\ttfamily \label{struct_transition_action_ade0dd8c4dc4df4bfd14fe52535880e08} 
+char Transition\+Action::\+write\+\_\+symbol}
+
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/\doxymbox{\hyperlink{_transition_8hpp}{Transition.\+hpp}}\end{DoxyCompactItemize}

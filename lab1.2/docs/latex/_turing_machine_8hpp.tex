@@ -1,0 +1,78 @@
+\doxysection{include/\+\+Turing\+Machine.hpp File Reference}
+\hypertarget{_turing_machine_8hpp}{}\label{_turing_machine_8hpp}\index{include/TuringMachine.hpp@{include/TuringMachine.hpp}}
+
+
+Фасад симулятора детерминированной машины Тьюринга.  
+
+
+{\ttfamily \+\#include "{}Head.\+hpp"{}}\newline
+{\ttfamily \+\#include "{}Program.\+hpp"{}}\newline
+{\ttfamily \+\#include "{}Tape.\+hpp"{}}\newline
+{\ttfamily \+\#include "{}Transition.\+hpp"{}}\newline
+{\ttfamily \+\#include $<$cstddef$>$}\newline
+{\ttfamily \+\#include $<$cstdint$>$}\newline
+{\ttfamily \+\#include $<$string\+\_\+view$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{class_turing_machine}{Turing\+Machine}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \doxymbox{\hyperlink{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312}{Execution\+Status}} \{ \doxymbox{\hyperlink{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312a5bda814c4aedb126839228f1a3d92f09}{Running}}
+, \doxymbox{\hyperlink{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312ad434d718d2f4d03a83764a4f814a6d9e}{Halted\+By\+State}}
+, \doxymbox{\hyperlink{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312a33801e5018ae3b58b35ee96ad03dcb7a}{Halted\+No\+Rule}}
+, \doxymbox{\hyperlink{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312a08e68aafadb44dce2269d49976d66461}{Max\+Steps\+Exceeded}}
+ \}
+\begin{DoxyCompactList}\small\item\em Статус выполнения машины Тьюринга. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Фасад симулятора детерминированной машины Тьюринга. 
+
+Машина функционирует как вычислитель. Терминальный останов происходит исключительно в двух случаях:
+\begin{DoxyEnumerate}
+\item Достигнуто терминальное halt-\/состояние (Halted\+By\+State).
+\item В таблице отсутствует правило для пары (state, symbol) (Halted\+No\+Rule). 
+\end{DoxyEnumerate}
+
+\label{_turing_machine_8hpp_doc-enum-members}
+\Hypertarget{_turing_machine_8hpp_doc-enum-members}
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312}\index{TuringMachine.hpp@{TuringMachine.hpp}!ExecutionStatus@{ExecutionStatus}}
+\index{ExecutionStatus@{ExecutionStatus}!TuringMachine.hpp@{TuringMachine.hpp}}
+\doxysubsubsection{\texorpdfstring{ExecutionStatus}{ExecutionStatus}}
+{\footnotesize\ttfamily \label{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312} 
+enum class \doxymbox{\hyperlink{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312}{Execution\+Status}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Статус выполнения машины Тьюринга. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Running@{Running}!TuringMachine.hpp@{TuringMachine.hpp}}
+\index{TuringMachine.hpp@{TuringMachine.hpp}!Running@{Running}}
+}\Hypertarget{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312a5bda814c4aedb126839228f1a3d92f09}\label{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312a5bda814c4aedb126839228f1a3d92f09} 
+Running&Машина активна и готова к следующему шагу \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HaltedByState@{HaltedByState}!TuringMachine.hpp@{TuringMachine.hpp}}
+\index{TuringMachine.hpp@{TuringMachine.hpp}!HaltedByState@{HaltedByState}}
+}\Hypertarget{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312ad434d718d2f4d03a83764a4f814a6d9e}\label{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312ad434d718d2f4d03a83764a4f814a6d9e} 
+Halted\+By\+State&Терминальный останов: достигнуто halt-\/состояние \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HaltedNoRule@{HaltedNoRule}!TuringMachine.hpp@{TuringMachine.hpp}}
+\index{TuringMachine.hpp@{TuringMachine.hpp}!HaltedNoRule@{HaltedNoRule}}
+}\Hypertarget{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312a33801e5018ae3b58b35ee96ad03dcb7a}\label{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312a33801e5018ae3b58b35ee96ad03dcb7a} 
+Halted\+No\+Rule&Терминальный останов: нет перехода для (state, symbol). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MaxStepsExceeded@{MaxStepsExceeded}!TuringMachine.hpp@{TuringMachine.hpp}}
+\index{TuringMachine.hpp@{TuringMachine.hpp}!MaxStepsExceeded@{MaxStepsExceeded}}
+}\Hypertarget{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312a08e68aafadb44dce2269d49976d66461}\label{_turing_machine_8hpp_a4025238a929e7e4ab4d9d86bf766f312a08e68aafadb44dce2269d49976d66461} 
+Max\+Steps\+Exceeded&Исчерпана квота шагов вызова run() (статус машины: Running). \\
+\hline
+
+\end{DoxyEnumFields}
