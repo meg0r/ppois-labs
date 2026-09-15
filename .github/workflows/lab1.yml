@@ -51,19 +51,29 @@ jobs:
 
       - name: Build (Debug)
         run: |
-          cmake -B lab1/build -S lab1 -DCMAKE_BUILD_TYPE=Debug
+          cmake -B lab1/build -S lab1 -DCMAKE_BUILD_TYPE=Debug -DCMAKE_POLICY_VERSION_MINIMUM=3.5
           cmake --build lab1/build --config Debug
 
       - name: Run Tests & Check Coverage
+        shell: powershell
         run: |
-          $testExe = (Get-ChildItem -Path "lab1\build" -Filter "*test*.exe" -Recurse | Where-Object { $_.FullName -notmatch "CMakeFiles" } | Select-Object -First 1).FullName
-          
+          $testExeItem = Get-ChildItem -Path "lab1\build" -Filter "*test*.exe" -Recurse | Where-Object { 
+              $_.FullName -notmatch "CMakeFiles" -and $_.Name -notmatch "CMake" 
+          } | Select-Object -First 1
+
+          if (-not $testExeItem) {
+              Write-Error "Test executable not found in lab1\build!"
+              exit 1
+          }
+
+          $testExe = $testExeItem.FullName
+
           OpenCppCoverage.exe `
-            --sources "$PWD\lab1\src" `
-            --sources "$PWD\lab1\include" `
+            --sources "$env:GITHUB_WORKSPACE\lab1\src" `
+            --sources "$env:GITHUB_WORKSPACE\lab1\include" `
             --export_type=html:lab1/coverage_report `
             --threshold=90 `
-            -- $testExe
+            -- "$testExe"
 
       - name: Upload Coverage Report
         uses: actions/upload-artifact@v4
@@ -95,13 +105,22 @@ jobs:
 
       - name: Build (Release)
         run: |
-          cmake -B lab1/build_release -S lab1 -DCMAKE_BUILD_TYPE=Release
+          cmake -B lab1/build_release -S lab1 -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5
           cmake --build lab1/build_release --config Release
 
       - name: Package Binary
+        shell: powershell
         run: |
-          $appExe = (Get-ChildItem -Path "lab1\build_release" -Filter "*.exe" -Recurse | Where-Object { $_.Name -notmatch "test" -and $_.FullName -notmatch "CMakeFiles" } | Select-Object -First 1).FullName
-          Compress-Archive -Path $appExe -DestinationPath "rubik_cube_windows_x64.zip" -Force
+          $appExeItem = Get-ChildItem -Path "lab1\build_release" -Filter "*.exe" -Recurse | Where-Object { 
+              $_.Name -notmatch "test" -and $_.FullName -notmatch "CMakeFiles" -and $_.Name -notmatch "CMake" 
+          } | Select-Object -First 1
+
+          if (-not $appExeItem) {
+              Write-Error "Release binary not found in lab1\build_release!"
+              exit 1
+          }
+
+          Compress-Archive -Path $appExeItem.FullName -DestinationPath "rubik_cube_windows_x64.zip" -Force
 
       - name: Publish Release
         uses: softprops/action-gh-release@v2
