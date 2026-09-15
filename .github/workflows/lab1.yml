@@ -21,8 +21,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          submodules: recursive
 
       - name: Install Tools
         run: |
@@ -42,6 +40,14 @@ jobs:
             --suppress=useStlAlgorithm `
             --error-exitcode=1 `
             -I lab1/include lab1/src
+
+      - name: Prepare UnitTest++
+        shell: powershell
+        run: |
+          if (-not (Test-Path "lab1\unittest-cpp\CMakeLists.txt")) {
+              Remove-Item -Recurse -Force -ErrorAction SilentlyContinue "lab1\unittest-cpp"
+              git clone --depth=1 https://github.com/unittest-cpp/unittest-cpp.git "lab1\unittest-cpp"
+          }
 
       - name: Build (Debug)
         run: |
@@ -78,8 +84,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          submodules: recursive
+
+      - name: Prepare UnitTest++ (Release)
+        shell: powershell
+        run: |
+          if (-not (Test-Path "lab1\unittest-cpp\CMakeLists.txt")) {
+              Remove-Item -Recurse -Force -ErrorAction SilentlyContinue "lab1\unittest-cpp"
+              git clone --depth=1 https://github.com/unittest-cpp/unittest-cpp.git "lab1\unittest-cpp"
+          }
 
       - name: Build (Release)
         run: |
