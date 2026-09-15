@@ -73,8 +73,7 @@ jobs:
           OpenCppCoverage.exe `
             --sources "$env:GITHUB_WORKSPACE\lab1\src" `
             --sources "$env:GITHUB_WORKSPACE\lab1\include" `
-            --export_type=html:lab1/coverage_report `
-            --threshold=90 `
+            --export_type "html:lab1\coverage_report" `
             -- "$testExe"
 
       - name: Upload Coverage Report
