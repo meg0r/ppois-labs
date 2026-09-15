@@ -51,7 +51,7 @@ jobs:
 
       - name: Build (Debug)
         run: |
-          cmake -B lab1/build -S lab1 -DCMAKE_BUILD_TYPE=Debug -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+          cmake -B lab1/build -S lab1 -DCMAKE_BUILD_TYPE=Debug '-DCMAKE_POLICY_VERSION_MINIMUM=3.5'
           cmake --build lab1/build --config Debug
 
       - name: Run Tests & Check Coverage
@@ -105,7 +105,7 @@ jobs:
 
       - name: Build (Release)
         run: |
-          cmake -B lab1/build_release -S lab1 -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+          cmake -B lab1/build_release -S lab1 -DCMAKE_BUILD_TYPE=Release '-DCMAKE_POLICY_VERSION_MINIMUM=3.5'
           cmake --build lab1/build_release --config Release
 
       - name: Package Binary
