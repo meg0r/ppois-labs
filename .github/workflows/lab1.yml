@@ -1,0 +1,94 @@
+name: Lab 1 CI/CD
+
+on:
+  push:
+    paths:
+      - 'lab1/**'
+      - '.github/workflows/lab1.yml'
+    branches: [ main, "feature/**" ]
+    tags:
+      - 'v1.*'
+  pull_request:
+    paths:
+      - 'lab1/**'
+    branches: [ main ]
+
+jobs:
+  build-test-lint:
+    name: Build, Test, Lint & Coverage
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Tools
+        run: |
+          choco install cppcheck --yes --no-progress
+          choco install opencppcoverage --yes --no-progress
+          "C:\Program Files\Cppcheck" | Out-File -FilePath $env:GITHUB_PATH -Encoding ascii -Append
+          "C:\Program Files\OpenCppCoverage" | Out-File -FilePath $env:GITHUB_PATH -Encoding ascii -Append
+
+      - name: Lint (Cppcheck)
+        run: |
+          cppcheck --enable=warning,style,performance,portability `
+            --inline-suppr `
+            --suppress=missingInclude `
+            --suppress=missingIncludeSystem `
+            --suppress=unmatchedSuppression `
+            --error-exitcode=1 `
+            -I lab1/include lab1/src
+
+      - name: Build (Debug)
+        run: |
+          cmake -B lab1/build -S lab1 -DCMAKE_BUILD_TYPE=Debug
+          cmake --build lab1/build --config Debug
+
+      - name: Run Tests & Check Coverage
+        run: |
+          $testExe = (Get-ChildItem -Path "lab1\build" -Filter "*test*.exe" -Recurse | Where-Object { $_.FullName -notmatch "CMakeFiles" } | Select-Object -First 1).FullName
+          
+          OpenCppCoverage.exe `
+            --sources "$PWD\lab1\src" `
+            --sources "$PWD\lab1\include" `
+            --export_type=html:lab1/coverage_report `
+            --threshold=90 `
+            -- $testExe
+
+      - name: Upload Coverage Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lab1-coverage-report
+          path: lab1/coverage_report/
+          if-no-files-found: ignore
+
+  release:
+    name: Release Artifact
+    needs: build-test-lint
+    if: startsWith(github.ref, 'refs/tags/v1.')
+    runs-on: windows-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build (Release)
+        run: |
+          cmake -B lab1/build_release -S lab1 -DCMAKE_BUILD_TYPE=Release
+          cmake --build lab1/build_release --config Release
+
+      - name: Package Binary
+        run: |
+          $appExe = (Get-ChildItem -Path "lab1\build_release" -Filter "*.exe" -Recurse | Where-Object { $_.Name -notmatch "test" -and $_.FullName -notmatch "CMakeFiles" } | Select-Object -First 1).FullName
+          Compress-Archive -Path $appExe -DestinationPath "rubik_cube_windows_x64.zip" -Force
+
+      - name: Publish Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: rubik_cube_windows_x64.zip
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
