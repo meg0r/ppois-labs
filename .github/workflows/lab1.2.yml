@@ -1,0 +1,134 @@
+name: Lab 1.2 CI/CD
+
+on:
+  push:
+    paths:
+      - 'lab1.2/**'
+      - '.github/workflows/lab1.2.yml'
+    branches: [ main, "feature/**" ]
+    tags:
+      - 'v1.2.*'
+  pull_request:
+    paths:
+      - 'lab1.2/**'
+    branches: [ main ]
+
+jobs:
+  build-test-lint:
+    name: Build, Test, Lint & Coverage
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Tools
+        run: |
+          choco install cppcheck --yes --no-progress
+          choco install opencppcoverage --yes --no-progress
+          "C:\Program Files\Cppcheck" | Out-File -FilePath $env:GITHUB_PATH -Encoding ascii -Append
+          "C:\Program Files\OpenCppCoverage" | Out-File -FilePath $env:GITHUB_PATH -Encoding ascii -Append
+
+      - name: Lint (Cppcheck)
+        run: |
+          cppcheck --enable=warning,style,performance,portability `
+            --inline-suppr `
+            --suppress=missingInclude `
+            --suppress=missingIncludeSystem `
+            --suppress=unmatchedSuppression `
+            --suppress=constVariable `
+            --suppress=useStlAlgorithm `
+            --error-exitcode=1 `
+            -I lab1.2/include lab1.2/src
+
+      - name: Prepare UnitTest++
+        shell: powershell
+        run: |
+          if (-not (Test-Path "lab1.2\unittest-cpp\CMakeLists.txt")) {
+              Remove-Item -Recurse -Force -ErrorAction SilentlyContinue "lab1.2\unittest-cpp"
+              git clone --depth=1 https://github.com/unittest-cpp/unittest-cpp.git "lab1.2\unittest-cpp"
+          }
+          $cmPath = "lab1.2\unittest-cpp\CMakeLists.txt"
+          (Get-Content $cmPath) -replace "-W\w+", "" | Set-Content $cmPath
+
+      - name: Build (Debug)
+        run: |
+          cmake -B lab1.2/build -S lab1.2 -DCMAKE_BUILD_TYPE=Debug '-DCMAKE_POLICY_VERSION_MINIMUM=3.5'
+          cmake --build lab1.2/build --config Debug
+
+      - name: Run Tests & Check Coverage
+        shell: powershell
+        run: |
+          $testExeItem = Get-ChildItem -Path "lab1.2\build" -Filter "*test*.exe" -Recurse | Where-Object { 
+              $_.FullName -notmatch "CMakeFiles" -and $_.Name -notmatch "CMake" 
+          } | Select-Object -First 1
+
+          if (-not $testExeItem) {
+              Write-Error "Test executable not found in lab1.2\build!"
+              exit 1
+          }
+
+          $testExe = $testExeItem.FullName
+
+          OpenCppCoverage.exe `
+            --sources "$env:GITHUB_WORKSPACE\lab1.2\src" `
+            --sources "$env:GITHUB_WORKSPACE\lab1.2\include" `
+            --export_type "html:lab1.2\coverage_report" `
+            -- "$testExe"
+
+      - name: Upload Coverage Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lab1.2-coverage-report
+          path: lab1.2/coverage_report/
+          if-no-files-found: ignore
+
+  release:
+    name: Release Artifact
+    needs: build-test-lint
+    if: startsWith(github.ref, 'refs/tags/v1.2.')
+    runs-on: windows-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Prepare UnitTest++ (Release)
+        shell: powershell
+        run: |
+          if (-not (Test-Path "lab1.2\unittest-cpp\CMakeLists.txt")) {
+              Remove-Item -Recurse -Force -ErrorAction SilentlyContinue "lab1.2\unittest-cpp"
+              git clone --depth=1 https://github.com/unittest-cpp/unittest-cpp.git "lab1.2\unittest-cpp"
+          }
+          $cmPath = "lab1.2\unittest-cpp\CMakeLists.txt"
+          (Get-Content $cmPath) -replace "-W\w+", "" | Set-Content $cmPath
+
+      - name: Build (Release)
+        run: |
+          cmake -B lab1.2/build_release -S lab1.2 -DCMAKE_BUILD_TYPE=Release '-DCMAKE_POLICY_VERSION_MINIMUM=3.5'
+          cmake --build lab1.2/build_release --config Release
+
+      - name: Package Binary
+        shell: powershell
+        run: |
+          $appExeItem = Get-ChildItem -Path "lab1.2\build_release" -Filter "*.exe" -Recurse | Where-Object { 
+              $_.Name -notmatch "test" -and $_.FullName -notmatch "CMakeFiles" -and $_.Name -notmatch "CMake" 
+          } | Select-Object -First 1
+
+          if (-not $appExeItem) {
+              Write-Error "Release binary not found in lab1.2\build_release!"
+              exit 1
+          }
+
+          Compress-Archive -Path $appExeItem.FullName -DestinationPath "lab1_2_windows_x64.zip" -Force
+
+      - name: Publish Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: lab1_2_windows_x64.zip
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
