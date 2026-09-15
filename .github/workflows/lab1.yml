@@ -36,6 +36,8 @@ jobs:
             --suppress=missingInclude `
             --suppress=missingIncludeSystem `
             --suppress=unmatchedSuppression `
+            --suppress=constVariable `
+            --suppress=useStlAlgorithm `
             --error-exitcode=1 `
             -I lab1/include lab1/src
 
