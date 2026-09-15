@@ -48,6 +48,8 @@ jobs:
               Remove-Item -Recurse -Force -ErrorAction SilentlyContinue "lab1\unittest-cpp"
               git clone --depth=1 https://github.com/unittest-cpp/unittest-cpp.git "lab1\unittest-cpp"
           }
+          $cmPath = "lab1\unittest-cpp\CMakeLists.txt"
+          (Get-Content $cmPath) -replace "-W\w+", "" | Set-Content $cmPath
 
       - name: Build (Debug)
         run: |
@@ -102,6 +104,8 @@ jobs:
               Remove-Item -Recurse -Force -ErrorAction SilentlyContinue "lab1\unittest-cpp"
               git clone --depth=1 https://github.com/unittest-cpp/unittest-cpp.git "lab1\unittest-cpp"
           }
+          $cmPath = "lab1\unittest-cpp\CMakeLists.txt"
+          (Get-Content $cmPath) -replace "-W\w+", "" | Set-Content $cmPath
 
       - name: Build (Release)
         run: |
