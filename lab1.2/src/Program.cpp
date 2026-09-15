@@ -31,7 +31,6 @@ std::size_t Program::loadFromStream(std::istream& is) {
     std::size_t loaded_count = 0;
 
     while (std::getline(is, line)) {
-        // Пропуск пустых строк и комментариев
         if (line.empty() || line.front() == '#') {
             continue;
         }

@@ -21,11 +21,8 @@ class Program {
 public:
     /// Ключ таблицы: (текущее состояние, обозреваемый символ)
     using RuleKey = std::pair<State, char>;
-    /// Таблица правил
-    /**
-     * @brief Удаляет правило для заданной пары (состояние, символ).
-     * @return true, если правило существовало и было удалено, иначе false.
-     */
+    /// Таблица правил переходов
+    using RuleTable = std::map<RuleKey, TransitionAction>;
 
 private:
     RuleTable rules_;       ///< Набор правил переходов
@@ -45,8 +42,13 @@ public:
      * @note Внутри используется std::map::insert_or_assign, так как дефолтный конструктор TransitionAction удален.
      */
     void addRule(const State& state, char symbol,
-                 const State& next_state, char write_symbol, Direction dir);
+                  const State& next_state, char write_symbol, Direction dir);
 
+    /**
+     * @brief Удаляет правило для заданной пары (состояние, символ).
+     * @return true, если правило существовало и было удалено, иначе false.
+     */
+    bool removeRule(const State& state, char symbol);
 
     /**
      * @brief Ищет действие для текущего состояния и считанного символа.
