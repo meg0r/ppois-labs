@@ -1,0 +1,610 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Rubik&#39;s Cube Simulator: Класс UnitTest::TestRunner</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Rubik&#39;s Cube Simulator<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_unit_test_1_1_test_runner.html','','class_unit_test_1_1_test_runner-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс UnitTest::TestRunner</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_test_runner_8h_source.html">TestRunner.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса UnitTest::TestRunner:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_test_runner__coll__graph.png" border="0" usemap="#a_unit_test_1_1_test_runner_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_unit_test_1_1_test_runner_coll__map" id="a_unit_test_1_1_test_runner_coll__map">
+<area shape="rect" title=" " alt="" coords="156,203,301,229"/>
+<area shape="rect" href="class_unit_test_1_1_test_reporter.html" title=" " alt="" coords="5,5,159,32"/>
+<area shape="poly" title=" " alt="" coords="72,44,66,88,67,110,74,129,95,154,121,174,149,189,180,202,174,202,147,194,118,178,91,158,70,132,62,111,60,88,70,49"/>
+<area shape="rect" href="class_unit_test_1_1_test_results.html" title=" " alt="" coords="154,104,303,131"/>
+<area shape="poly" title=" " alt="" coords="114,38,212,102,207,105,113,44"/>
+<area shape="poly" title=" " alt="" coords="231,145,231,204,226,201,227,148"/>
+<area shape="rect" href="class_unit_test_1_1_timer.html" title=" " alt="" coords="326,104,438,131"/>
+<area shape="poly" title=" " alt="" coords="354,139,294,181,253,205,251,200,291,176,349,141"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:abef5ed23197231f816a6aa63ec0ba535" id="r_abef5ed23197231f816a6aa63ec0ba535"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#abef5ed23197231f816a6aa63ec0ba535">TestRunner</a> (<a class="el" href="class_unit_test_1_1_test_reporter.html">TestReporter</a> &amp;reporter)</td></tr>
+<tr class="memitem:ad73246549efec634edcf1250a73a1b13" id="r_ad73246549efec634edcf1250a73a1b13"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ad73246549efec634edcf1250a73a1b13">~TestRunner</a> ()</td></tr>
+<tr class="memitem:a7a394abb0a1699654e20157a5c31918f" id="r_a7a394abb0a1699654e20157a5c31918f"><td class="memTemplParams" colspan="2">template&lt;class Predicate&gt; </td></tr>
+<tr class="memitem:a7a394abb0a1699654e20157a5c31918f template"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a7a394abb0a1699654e20157a5c31918f">RunTestsIf</a> (<a class="el" href="class_unit_test_1_1_test_list.html">TestList</a> const &amp;list, char const *suiteName, const Predicate &amp;predicate, int maxTestTimeInMs) const</td></tr>
+<tr class="memitem:ad2309a825bc2bd7c023a86ce6fe25558" id="r_ad2309a825bc2bd7c023a86ce6fe25558"><td class="memItemLeft"><a class="el" href="class_unit_test_1_1_test_results.html">TestResults</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ad2309a825bc2bd7c023a86ce6fe25558">GetTestResults</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a14201b919c838330d24c08e94eac31a5" id="r_a14201b919c838330d24c08e94eac31a5"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a14201b919c838330d24c08e94eac31a5">Finish</a> () const</td></tr>
+<tr class="memitem:a1759788c34445789d45a10abf762d3bd" id="r_a1759788c34445789d45a10abf762d3bd"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1759788c34445789d45a10abf762d3bd">IsTestInSuite</a> (const <a class="el" href="class_unit_test_1_1_test.html">Test</a> *const curTest, char const *suiteName) const</td></tr>
+<tr class="memitem:a5cf671ce5d7348a9907e0beed8d9e01a" id="r_a5cf671ce5d7348a9907e0beed8d9e01a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5cf671ce5d7348a9907e0beed8d9e01a">RunTest</a> (<a class="el" href="class_unit_test_1_1_test_results.html">TestResults</a> *const result, <a class="el" href="class_unit_test_1_1_test.html">Test</a> *const curTest, int const maxTestTimeInMs) const</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a1ab241a7c159759444027b4cd81e0b59" id="r_a1ab241a7c159759444027b4cd81e0b59"><td class="memItemLeft"><a class="el" href="class_unit_test_1_1_test_reporter.html">TestReporter</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a1ab241a7c159759444027b4cd81e0b59">m_reporter</a></td></tr>
+<tr class="memitem:ac79b223bb46094cc85acd5280e521102" id="r_ac79b223bb46094cc85acd5280e521102"><td class="memItemLeft"><a class="el" href="class_unit_test_1_1_test_results.html">TestResults</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ac79b223bb46094cc85acd5280e521102">m_result</a></td></tr>
+<tr class="memitem:a49226fc85caddec70f0899f84ae6cbfb" id="r_a49226fc85caddec70f0899f84ae6cbfb"><td class="memItemLeft"><a class="el" href="class_unit_test_1_1_timer.html">Timer</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a49226fc85caddec70f0899f84ae6cbfb">m_timer</a></td></tr>
+</table>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="abef5ed23197231f816a6aa63ec0ba535" name="abef5ed23197231f816a6aa63ec0ba535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abef5ed23197231f816a6aa63ec0ba535">&#9670;&#160;</a></span>TestRunner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnitTest::TestRunner::TestRunner </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_unit_test_1_1_test_reporter.html">TestReporter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>reporter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_test_runner_abef5ed23197231f816a6aa63ec0ba535_cgraph.png" border="0" usemap="#aclass_unit_test_1_1_test_runner_abef5ed23197231f816a6aa63ec0ba535_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_test_runner_abef5ed23197231f816a6aa63ec0ba535_cgraph" id="aclass_unit_test_1_1_test_runner_abef5ed23197231f816a6aa63ec0ba535_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,151,48"/>
+<area shape="rect" href="class_unit_test_1_1_timer.html#acb9c2831775e37497e40f3df652eb9d9" title=" " alt="" coords="199,13,346,40"/>
+<area shape="poly" title=" " alt="" coords="151,24,185,26,180,27,151,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad73246549efec634edcf1250a73a1b13" name="ad73246549efec634edcf1250a73a1b13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad73246549efec634edcf1250a73a1b13">&#9670;&#160;</a></span>~TestRunner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnitTest::TestRunner::~TestRunner </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a14201b919c838330d24c08e94eac31a5" name="a14201b919c838330d24c08e94eac31a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14201b919c838330d24c08e94eac31a5">&#9670;&#160;</a></span>Finish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UnitTest::TestRunner::Finish </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_test_runner_a14201b919c838330d24c08e94eac31a5_cgraph.png" border="0" usemap="#aclass_unit_test_1_1_test_runner_a14201b919c838330d24c08e94eac31a5_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_test_runner_a14201b919c838330d24c08e94eac31a5_cgraph" id="aclass_unit_test_1_1_test_runner_a14201b919c838330d24c08e94eac31a5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,131,151,173"/>
+<area shape="rect" href="class_unit_test_1_1_test_results.html#aa6bbe9f8067b3533fbe1007b1989971b" title=" " alt="" coords="224,5,372,48"/>
+<area shape="poly" title=" " alt="" coords="101,128,144,93,197,58,212,53,207,56,200,62,147,97,105,132"/>
+<area shape="rect" href="class_unit_test_1_1_test_results.html#add30458e4cdd5907c9d192beb9999bf9" title=" " alt="" coords="224,72,372,115"/>
+<area shape="poly" title=" " alt="" coords="150,130,211,115,206,119,152,135"/>
+<area shape="rect" href="class_unit_test_1_1_timer.html#a2db92a1fe2b44811712d2efd27b27f63" title=" " alt="" coords="199,139,397,165"/>
+<area shape="poly" title=" " alt="" coords="150,149,185,151,180,153,152,155"/>
+<area shape="rect" href="class_unit_test_1_1_test_results.html#a4b62fedc088220b7816db33421652e8b" title=" " alt="" coords="224,189,372,232"/>
+<area shape="poly" title=" " alt="" coords="151,169,211,186,206,188,151,174"/>
+<area shape="rect" href="class_unit_test_1_1_test_reporter.html#a8f5010c52b4be55ac4796e24cc669274" title=" " alt="" coords="221,256,374,299"/>
+<area shape="poly" title=" " alt="" coords="103,171,147,207,200,242,212,250,207,249,197,246,144,211,102,177"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_test_runner_a14201b919c838330d24c08e94eac31a5_icgraph.png" border="0" usemap="#aclass_unit_test_1_1_test_runner_a14201b919c838330d24c08e94eac31a5_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_test_runner_a14201b919c838330d24c08e94eac31a5_icgraph" id="aclass_unit_test_1_1_test_runner_a14201b919c838330d24c08e94eac31a5_icgraph">
+<area shape="rect" title=" " alt="" coords="493,21,639,64"/>
+<area shape="rect" href="class_unit_test_1_1_test_runner.html#a7a394abb0a1699654e20157a5c31918f" title=" " alt="" coords="300,21,445,64"/>
+<area shape="poly" title=" " alt="" coords="475,43,446,45,446,40,481,43"/>
+<area shape="rect" href="namespace_unit_test.html#a08a349c935f82a63e8fb834fddfbb93f" title=" " alt="" coords="103,29,252,56"/>
+<area shape="poly" title=" " alt="" coords="282,43,252,45,252,40,287,43"/>
+<area shape="poly" title=" " alt="" coords="201,14,193,10,177,8,162,10,154,14,152,20,156,30,151,28,147,21,150,11,161,5,177,3,195,5,206,14"/>
+<area shape="rect" href="unittest-cpp_2tests_2main_8cpp.html#a7e16548afc479c8cfb8e1a49412655dd" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" title=" " alt="" coords="85,44,55,45,54,40,90,42"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad2309a825bc2bd7c023a86ce6fe25558" name="ad2309a825bc2bd7c023a86ce6fe25558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2309a825bc2bd7c023a86ce6fe25558">&#9670;&#160;</a></span>GetTestResults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_unit_test_1_1_test_results.html">TestResults</a> * UnitTest::TestRunner::GetTestResults </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1759788c34445789d45a10abf762d3bd" name="a1759788c34445789d45a10abf762d3bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1759788c34445789d45a10abf762d3bd">&#9670;&#160;</a></span>IsTestInSuite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UnitTest::TestRunner::IsTestInSuite </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_unit_test_1_1_test.html">Test</a> *const</td>          <td class="paramname"><span class="paramname"><em>curTest</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *</td>          <td class="paramname"><span class="paramname"><em>suiteName</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_test_runner_a1759788c34445789d45a10abf762d3bd_icgraph.png" border="0" usemap="#aclass_unit_test_1_1_test_runner_a1759788c34445789d45a10abf762d3bd_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_test_runner_a1759788c34445789d45a10abf762d3bd_icgraph" id="aclass_unit_test_1_1_test_runner_a1759788c34445789d45a10abf762d3bd_icgraph">
+<area shape="rect" title=" " alt="" coords="493,21,639,64"/>
+<area shape="rect" href="class_unit_test_1_1_test_runner.html#a7a394abb0a1699654e20157a5c31918f" title=" " alt="" coords="300,21,445,64"/>
+<area shape="poly" title=" " alt="" coords="475,43,446,45,446,40,481,43"/>
+<area shape="rect" href="namespace_unit_test.html#a08a349c935f82a63e8fb834fddfbb93f" title=" " alt="" coords="103,29,252,56"/>
+<area shape="poly" title=" " alt="" coords="282,43,252,45,252,40,287,43"/>
+<area shape="poly" title=" " alt="" coords="201,14,193,10,177,8,162,10,154,14,152,20,156,30,151,28,147,21,150,11,161,5,177,3,195,5,206,14"/>
+<area shape="rect" href="unittest-cpp_2tests_2main_8cpp.html#a7e16548afc479c8cfb8e1a49412655dd" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" title=" " alt="" coords="85,44,55,45,54,40,90,42"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5cf671ce5d7348a9907e0beed8d9e01a" name="a5cf671ce5d7348a9907e0beed8d9e01a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cf671ce5d7348a9907e0beed8d9e01a">&#9670;&#160;</a></span>RunTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnitTest::TestRunner::RunTest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_unit_test_1_1_test_results.html">TestResults</a> *const</td>          <td class="paramname"><span class="paramname"><em>result</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_unit_test_1_1_test.html">Test</a> *const</td>          <td class="paramname"><span class="paramname"><em>curTest</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int const</td>          <td class="paramname"><span class="paramname"><em>maxTestTimeInMs</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_test_runner_a5cf671ce5d7348a9907e0beed8d9e01a_cgraph.png" border="0" usemap="#aclass_unit_test_1_1_test_runner_a5cf671ce5d7348a9907e0beed8d9e01a_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_test_runner_a5cf671ce5d7348a9907e0beed8d9e01a_cgraph" id="aclass_unit_test_1_1_test_runner_a5cf671ce5d7348a9907e0beed8d9e01a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,215,151,257"/>
+<area shape="rect" href="class_unit_test_1_1_memory_out_stream.html#ad1b647ead0264b56de981a460f1ccfd7" title=" " alt="" coords="646,5,835,48"/>
+<area shape="poly" title=" " alt="" coords="87,213,104,182,128,146,159,110,197,82,250,57,306,38,364,25,422,16,534,9,633,13,628,15,534,14,422,21,365,30,308,43,252,62,200,86,163,114,132,149,108,185,92,215"/>
+<area shape="rect" href="class_unit_test_1_1_timer.html#a2db92a1fe2b44811712d2efd27b27f63" title=" " alt="" coords="199,248,397,275"/>
+<area shape="poly" title=" " alt="" coords="150,242,186,247,181,249,152,247"/>
+<area shape="rect" href="class_unit_test_1_1_test_results.html#a37dbb0baa9ba978238a4ba7c2a89b53c" title=" " alt="" coords="666,139,815,181"/>
+<area shape="poly" title=" " alt="" coords="150,220,198,212,444,183,653,166,648,168,444,188,199,217,152,225"/>
+<area shape="rect" href="class_unit_test_1_1_test_results.html#a0b35af87ce16d6064bc3cef5b6d85d0f" title=" " alt="" coords="224,299,372,341"/>
+<area shape="poly" title=" " alt="" coords="128,255,200,284,218,292,213,294,198,289,128,260"/>
+<area shape="rect" href="class_unit_test_1_1_test_results.html#ad37dd4b529bbdcd83f6c48e9140a6007" title=" " alt="" coords="224,365,372,408"/>
+<area shape="poly" title=" " alt="" coords="96,255,141,304,169,329,200,351,212,359,207,359,197,356,166,333,138,307,96,260"/>
+<area shape="rect" href="namespace_unit_test_1_1_current_test.html#a13d86ce0711035003f650247323291f0" title=" " alt="" coords="667,205,814,248"/>
+<area shape="poly" title=" " alt="" coords="151,232,652,225,651,230,151,238"/>
+<area shape="rect" href="class_unit_test_1_1_test.html#a8b266c253b945d9552c56012a96a55a2" title=" " alt="" coords="230,96,366,123"/>
+<area shape="poly" title=" " alt="" coords="100,212,143,175,197,139,230,126,226,130,200,144,146,179,104,216"/>
+<area shape="rect" href="class_unit_test_1_1_timer.html#acb9c2831775e37497e40f3df652eb9d9" title=" " alt="" coords="224,432,372,459"/>
+<area shape="poly" title=" " alt="" coords="88,255,105,293,129,336,161,381,200,418,213,427,207,426,197,422,157,384,124,339,101,295,87,261"/>
+<area shape="rect" href="class_unit_test_1_1_test_reporter.html#a55195826cc03302f7a54f728c79102d5" title=" " alt="" coords="883,139,1036,181"/>
+<area shape="poly" title=" " alt="" coords="815,157,870,160,865,160,815,163"/>
+<area shape="rect" href="class_unit_test_1_1_test_reporter.html#a6492379c31985a77a22f1ccf684e44da" title=" " alt="" coords="445,299,598,341"/>
+<area shape="poly" title=" " alt="" coords="372,317,432,319,427,321,373,323"/>
+<area shape="rect" href="class_unit_test_1_1_test_reporter.html#a94f1ab9311190188a2f96f8c2da785b1" title=" " alt="" coords="445,365,598,408"/>
+<area shape="poly" title=" " alt="" coords="372,384,432,386,427,387,372,389"/>
+<area shape="rect" href="namespace_unit_test.html#a192e777864b15dad1189fa0953146942" title=" " alt="" coords="446,96,597,123"/>
+<area shape="poly" title=" " alt="" coords="365,107,433,108,428,110,367,112"/>
+<area shape="poly" title=" " alt="" coords="556,93,645,58,665,53,661,55,647,62,558,98"/>
+<area shape="poly" title=" " alt="" coords="582,121,654,139,648,140,583,126"/>
+<area shape="poly" title=" " alt="" coords="540,120,588,155,648,191,661,199,655,199,645,196,585,159,540,126"/>
+<area shape="poly" title=" " alt="" coords="484,95,478,87,483,77,497,71,522,69,548,72,563,80,558,81,546,77,522,75,499,77,486,81,483,87,490,96"/>
+<area shape="rect" href="namespace_unit_test_1_1_current_test.html#acc95c3abe1309706099ed4ba6e96215a" title=" " alt="" coords="667,72,814,115"/>
+<area shape="poly" title=" " alt="" coords="597,101,655,99,650,101,599,106"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_test_runner_a5cf671ce5d7348a9907e0beed8d9e01a_icgraph.png" border="0" usemap="#aclass_unit_test_1_1_test_runner_a5cf671ce5d7348a9907e0beed8d9e01a_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_test_runner_a5cf671ce5d7348a9907e0beed8d9e01a_icgraph" id="aclass_unit_test_1_1_test_runner_a5cf671ce5d7348a9907e0beed8d9e01a_icgraph">
+<area shape="rect" title=" " alt="" coords="493,21,639,64"/>
+<area shape="rect" href="class_unit_test_1_1_test_runner.html#a7a394abb0a1699654e20157a5c31918f" title=" " alt="" coords="300,21,445,64"/>
+<area shape="poly" title=" " alt="" coords="475,43,446,45,446,40,481,43"/>
+<area shape="rect" href="namespace_unit_test.html#a08a349c935f82a63e8fb834fddfbb93f" title=" " alt="" coords="103,29,252,56"/>
+<area shape="poly" title=" " alt="" coords="282,43,252,45,252,40,287,43"/>
+<area shape="poly" title=" " alt="" coords="201,14,193,10,177,8,162,10,154,14,152,20,156,30,151,28,147,21,150,11,161,5,177,3,195,5,206,14"/>
+<area shape="rect" href="unittest-cpp_2tests_2main_8cpp.html#a7e16548afc479c8cfb8e1a49412655dd" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" title=" " alt="" coords="85,44,55,45,54,40,90,42"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7a394abb0a1699654e20157a5c31918f" name="a7a394abb0a1699654e20157a5c31918f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a394abb0a1699654e20157a5c31918f">&#9670;&#160;</a></span>RunTestsIf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Predicate&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UnitTest::TestRunner::RunTestsIf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_unit_test_1_1_test_list.html">TestList</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>list</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *</td>          <td class="paramname"><span class="paramname"><em>suiteName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Predicate &amp;</td>          <td class="paramname"><span class="paramname"><em>predicate</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>maxTestTimeInMs</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_test_runner_a7a394abb0a1699654e20157a5c31918f_cgraph.png" border="0" usemap="#aclass_unit_test_1_1_test_runner_a7a394abb0a1699654e20157a5c31918f_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_test_runner_a7a394abb0a1699654e20157a5c31918f_cgraph" id="aclass_unit_test_1_1_test_runner_a7a394abb0a1699654e20157a5c31918f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,461,151,504"/>
+<area shape="rect" href="class_unit_test_1_1_test_runner.html#a14201b919c838330d24c08e94eac31a5" title=" " alt="" coords="199,172,344,215"/>
+<area shape="poly" title=" " alt="" coords="91,460,246,226,248,230,96,462"/>
+<area shape="rect" href="class_unit_test_1_1_test_list.html#a81b18c5549c99f3bb38bbe59d2b35e06" title=" " alt="" coords="209,495,334,537"/>
+<area shape="poly" title=" " alt="" coords="150,493,196,501,191,504,152,498"/>
+<area shape="rect" href="class_unit_test_1_1_test_runner.html#a1759788c34445789d45a10abf762d3bd" title=" " alt="" coords="199,561,344,604"/>
+<area shape="poly" title=" " alt="" coords="117,502,200,547,211,554,206,554,197,552,116,507"/>
+<area shape="rect" href="class_unit_test_1_1_test_runner.html#a5cf671ce5d7348a9907e0beed8d9e01a" title=" " alt="" coords="199,428,344,471"/>
+<area shape="poly" title=" " alt="" coords="150,468,185,463,181,466,152,472"/>
+<area shape="rect" href="class_unit_test_1_1_test_results.html#aa6bbe9f8067b3533fbe1007b1989971b" title=" " alt="" coords="417,5,565,48"/>
+<area shape="poly" title=" " alt="" coords="284,170,328,115,357,84,390,58,405,51,401,55,394,62,361,88,332,118,289,173"/>
+<area shape="rect" href="class_unit_test_1_1_test_results.html#add30458e4cdd5907c9d192beb9999bf9" title=" " alt="" coords="417,72,565,115"/>
+<area shape="poly" title=" " alt="" coords="306,169,391,124,408,119,404,122,393,129,310,173"/>
+<area shape="rect" href="class_unit_test_1_1_timer.html#a2db92a1fe2b44811712d2efd27b27f63" title=" " alt="" coords="392,272,590,299"/>
+<area shape="poly" title=" " alt="" coords="306,213,348,236,393,258,415,266,410,268,391,262,345,241,307,218"/>
+<area shape="rect" href="class_unit_test_1_1_test_results.html#a4b62fedc088220b7816db33421652e8b" title=" " alt="" coords="417,139,565,181"/>
+<area shape="poly" title=" " alt="" coords="343,180,404,172,399,175,346,185"/>
+<area shape="rect" href="class_unit_test_1_1_test_reporter.html#a8f5010c52b4be55ac4796e24cc669274" title=" " alt="" coords="414,205,568,248"/>
+<area shape="poly" title=" " alt="" coords="344,202,401,212,397,214,345,207"/>
+<area shape="poly" title=" " alt="" coords="283,426,326,367,356,335,391,308,404,304,399,307,393,313,359,339,330,370,288,429"/>
+<area shape="rect" href="class_unit_test_1_1_memory_out_stream.html#ad1b647ead0264b56de981a460f1ccfd7" title=" " alt="" coords="840,345,1028,388"/>
+<area shape="poly" title=" " alt="" coords="343,430,392,421,623,391,827,374,822,376,623,397,392,427,345,435"/>
+<area shape="rect" href="class_unit_test_1_1_test_results.html#a37dbb0baa9ba978238a4ba7c2a89b53c" title=" " alt="" coords="860,479,1008,521"/>
+<area shape="poly" title=" " alt="" coords="344,464,392,472,515,485,637,492,847,500,841,501,637,497,514,490,392,477,345,469"/>
+<area shape="rect" href="class_unit_test_1_1_test_results.html#a0b35af87ce16d6064bc3cef5b6d85d0f" title=" " alt="" coords="417,588,565,631"/>
+<area shape="poly" title=" " alt="" coords="329,469,346,481,363,504,370,525,377,546,394,567,409,580,404,580,390,571,373,549,365,527,358,506,342,485,328,474"/>
+<area shape="rect" href="class_unit_test_1_1_test_results.html#ad37dd4b529bbdcd83f6c48e9140a6007" title=" " alt="" coords="417,655,565,697"/>
+<area shape="poly" title=" " alt="" coords="331,469,346,481,360,502,367,523,370,564,372,602,379,621,394,641,406,653,401,652,390,644,375,624,367,604,364,564,362,524,355,505,342,484,331,474"/>
+<area shape="rect" href="namespace_unit_test_1_1_current_test.html#a13d86ce0711035003f650247323291f0" title=" " alt="" coords="861,545,1007,588"/>
+<area shape="poly" title=" " alt="" coords="319,469,393,495,514,521,637,540,848,562,843,563,637,545,513,526,391,500,319,474"/>
+<area shape="rect" href="class_unit_test_1_1_test.html#a8b266c253b945d9552c56012a96a55a2" title=" " alt="" coords="424,436,559,463"/>
+<area shape="poly" title=" " alt="" coords="344,447,411,448,406,450,345,452"/>
+<area shape="rect" href="class_unit_test_1_1_timer.html#acb9c2831775e37497e40f3df652eb9d9" title=" " alt="" coords="418,323,565,349"/>
+<area shape="poly" title=" " alt="" coords="298,425,341,395,391,366,426,353,421,356,393,370,343,400,301,430"/>
+<area shape="rect" href="class_unit_test_1_1_test_reporter.html#a55195826cc03302f7a54f728c79102d5" title=" " alt="" coords="1076,479,1229,521"/>
+<area shape="poly" title=" " alt="" coords="1008,497,1063,500,1058,500,1009,503"/>
+<area shape="rect" href="class_unit_test_1_1_test_reporter.html#a6492379c31985a77a22f1ccf684e44da" title=" " alt="" coords="638,588,792,631"/>
+<area shape="poly" title=" " alt="" coords="565,607,625,609,620,610,566,612"/>
+<area shape="rect" href="class_unit_test_1_1_test_reporter.html#a94f1ab9311190188a2f96f8c2da785b1" title=" " alt="" coords="638,655,792,697"/>
+<area shape="poly" title=" " alt="" coords="565,673,625,676,620,676,566,679"/>
+<area shape="rect" href="namespace_unit_test.html#a192e777864b15dad1189fa0953146942" title=" " alt="" coords="639,436,791,463"/>
+<area shape="poly" title=" " alt="" coords="559,447,626,449,621,450,560,452"/>
+<area shape="poly" title=" " alt="" coords="749,433,839,398,854,395,859,393,841,402,751,438"/>
+<area shape="poly" title=" " alt="" coords="776,461,847,479,842,479,776,466"/>
+<area shape="poly" title=" " alt="" coords="734,460,782,495,841,531,854,539,849,539,838,536,779,499,733,466"/>
+<area shape="poly" title=" " alt="" coords="678,435,671,427,676,417,691,411,715,409,741,412,756,421,751,421,740,417,715,415,692,417,680,421,677,427,683,436"/>
+<area shape="rect" href="namespace_unit_test_1_1_current_test.html#acc95c3abe1309706099ed4ba6e96215a" title=" " alt="" coords="861,412,1007,455"/>
+<area shape="poly" title=" " alt="" coords="791,441,848,439,843,440,792,446"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_test_runner_a7a394abb0a1699654e20157a5c31918f_icgraph.png" border="0" usemap="#aclass_unit_test_1_1_test_runner_a7a394abb0a1699654e20157a5c31918f_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_test_runner_a7a394abb0a1699654e20157a5c31918f_icgraph" id="aclass_unit_test_1_1_test_runner_a7a394abb0a1699654e20157a5c31918f_icgraph">
+<area shape="rect" title=" " alt="" coords="300,21,445,64"/>
+<area shape="rect" href="namespace_unit_test.html#a08a349c935f82a63e8fb834fddfbb93f" title=" " alt="" coords="103,29,252,56"/>
+<area shape="poly" title=" " alt="" coords="282,43,252,45,252,40,287,43"/>
+<area shape="poly" title=" " alt="" coords="201,14,193,10,177,8,162,10,154,14,152,20,156,30,151,28,147,21,150,11,161,5,177,3,195,5,206,14"/>
+<area shape="rect" href="unittest-cpp_2tests_2main_8cpp.html#a7e16548afc479c8cfb8e1a49412655dd" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" title=" " alt="" coords="85,44,55,45,54,40,90,42"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a1ab241a7c159759444027b4cd81e0b59" name="a1ab241a7c159759444027b4cd81e0b59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab241a7c159759444027b4cd81e0b59">&#9670;&#160;</a></span>m_reporter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_unit_test_1_1_test_reporter.html">TestReporter</a>* UnitTest::TestRunner::m_reporter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac79b223bb46094cc85acd5280e521102" name="ac79b223bb46094cc85acd5280e521102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac79b223bb46094cc85acd5280e521102">&#9670;&#160;</a></span>m_result</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_unit_test_1_1_test_results.html">TestResults</a>* UnitTest::TestRunner::m_result</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49226fc85caddec70f0899f84ae6cbfb" name="a49226fc85caddec70f0899f84ae6cbfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49226fc85caddec70f0899f84ae6cbfb">&#9670;&#160;</a></span>m_timer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_unit_test_1_1_timer.html">Timer</a>* UnitTest::TestRunner::m_timer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>D:/first_lab_ppois_rubick/unittest-cpp/UnitTest++/<a class="el" href="_test_runner_8h_source.html">TestRunner.h</a></li>
+<li>D:/first_lab_ppois_rubick/unittest-cpp/UnitTest++/<a class="el" href="_test_runner_8cpp.html">TestRunner.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_unit_test.html">UnitTest</a></li><li class="navelem"><a href="class_unit_test_1_1_test_runner.html">TestRunner</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<map id="RubikCube::~RubikCube" name="RubikCube::~RubikCube">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,173,108"/>
+<area shape="rect" id="Node000002" href="$class_rubik_cube.html#a813fbebc51fac98c774c64bc6e0af1e6" title="Проверка правильной расстановки цветных клеток (состояние победы)." alt="" coords="233,5,378,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,78,220,41,244,36,239,38,222,47,125,83"/>
+<area shape="rect" id="Node000003" href="$class_rubik_cube.html#af7ee00b576c74bad0bc7a11e65a12fb8" title="Загрузка расположения цветов из внешнего текстового файла." alt="" coords="221,56,390,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,82,208,80,203,82,174,87"/>
+<area shape="rect" id="Node000005" href="$class_rubik_cube.html#a6e788d9ae83040d6b9b56bba14d9e36c" title="Случайное перемешивание кубика." alt="" coords="228,107,382,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="173,102,215,109,210,110,173,107"/>
+<area shape="rect" id="Node000006" href="$class_rubik_cube.html#a6dc69db384364f3bc37c08c966dee5af" title="Поворот заданной грани на 90 градусов." alt="" coords="438,144,594,171"/>
+<area shape="poly" id="edge11_Node000001_Node000006" title=" " alt="" coords="118,106,166,126,221,143,325,156,425,161,420,161,324,161,220,148,164,131,118,111"/>
+<area shape="rect" id="Node000004" href="$_rubik_cube_8cpp.html#a2828a8d3ff2a78188561699dc8d3bf65" title=" " alt="" coords="470,56,562,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="390,67,458,69,453,70,390,72"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="480,55,474,47,478,38,493,31,516,29,541,32,556,41,551,40,540,37,516,35,494,37,482,41,479,47,485,56"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="383,131,425,141,420,141,383,136"/>
+<area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="480,142,474,135,478,126,493,119,516,117,541,120,556,129,551,128,540,125,516,123,494,125,482,129,479,135,485,145"/>
+<area shape="rect" id="Node000007" href="$class_rubik_cube.html#aec2d966c7c450cb5d2e519fe6a8a587a" title="Вспомогательный метод для поворота самой плоскости грани 3x3." alt="" coords="642,119,835,145"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="595,146,624,145,629,145,595,151"/>
+<area shape="rect" id="Node000008" href="$class_rubik_cube.html#a92011cc61d2864b38e01c02cd73b3e18" title="Вспомогательная функция для безопасного преобразования enum Face в индекс массива." alt="" coords="883,144,1020,171"/>
+<area shape="poly" id="edge10_Node000006_Node000008" title=" " alt="" coords="595,155,870,157,864,157,595,160"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="835,141,870,147,864,147,835,146"/>
+</map>

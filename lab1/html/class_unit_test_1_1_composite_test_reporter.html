@@ -1,0 +1,613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Rubik&#39;s Cube Simulator: Класс UnitTest::CompositeTestReporter</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Rubik&#39;s Cube Simulator<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_unit_test_1_1_composite_test_reporter.html','','class_unit_test_1_1_composite_test_reporter-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс UnitTest::CompositeTestReporter</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_composite_test_reporter_8h_source.html">CompositeTestReporter.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:UnitTest::CompositeTestReporter:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_composite_test_reporter__inherit__graph.png" border="0" usemap="#a_unit_test_1_1_composite_test_reporter_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_unit_test_1_1_composite_test_reporter_inherit__map" id="a_unit_test_1_1_composite_test_reporter_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,222,107"/>
+<area shape="rect" href="class_unit_test_1_1_test_reporter.html" title=" " alt="" coords="37,5,190,32"/>
+<area shape="poly" title=" " alt="" coords="115,46,116,81,111,78,112,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса UnitTest::CompositeTestReporter:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_composite_test_reporter__coll__graph.png" border="0" usemap="#a_unit_test_1_1_composite_test_reporter_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_unit_test_1_1_composite_test_reporter_coll__map" id="a_unit_test_1_1_composite_test_reporter_coll__map">
+<area shape="rect" title=" " alt="" coords="5,104,222,131"/>
+<area shape="rect" href="class_unit_test_1_1_test_reporter.html" title=" " alt="" coords="37,5,190,32"/>
+<area shape="poly" title=" " alt="" coords="113,45,113,56,113,80,115,104,110,102,108,80,108,56,110,50"/>
+<area shape="poly" title=" " alt="" coords="116,46,116,105,111,103,111,49"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a6f902e32b92c2301b471f08bee27286f" id="r_a6f902e32b92c2301b471f08bee27286f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a6f902e32b92c2301b471f08bee27286f">CompositeTestReporter</a> ()</td></tr>
+<tr class="memitem:a50f76030f879a7c174a2cd223db6cfa0" id="r_a50f76030f879a7c174a2cd223db6cfa0"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a50f76030f879a7c174a2cd223db6cfa0">GetReporterCount</a> () const</td></tr>
+<tr class="memitem:a16ae62df2f1c742bed654d627d48ccb1" id="r_a16ae62df2f1c742bed654d627d48ccb1"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a16ae62df2f1c742bed654d627d48ccb1">AddReporter</a> (<a class="el" href="class_unit_test_1_1_test_reporter.html">TestReporter</a> *reporter)</td></tr>
+<tr class="memitem:af2b0c9a7cefa1eef8de6f89b1cb55ec6" id="r_af2b0c9a7cefa1eef8de6f89b1cb55ec6"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af2b0c9a7cefa1eef8de6f89b1cb55ec6">RemoveReporter</a> (<a class="el" href="class_unit_test_1_1_test_reporter.html">TestReporter</a> *reporter)</td></tr>
+<tr class="memitem:aefac3ccc4e13d62048f81ab1db33e21c" id="r_aefac3ccc4e13d62048f81ab1db33e21c"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#aefac3ccc4e13d62048f81ab1db33e21c">ReportTestStart</a> (<a class="el" href="class_unit_test_1_1_test_details.html">TestDetails</a> const &amp;test)</td></tr>
+<tr class="memitem:addfc55b6b181cd514e0a08fd0e1fc905" id="r_addfc55b6b181cd514e0a08fd0e1fc905"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#addfc55b6b181cd514e0a08fd0e1fc905">ReportFailure</a> (<a class="el" href="class_unit_test_1_1_test_details.html">TestDetails</a> const &amp;test, char const *failure)</td></tr>
+<tr class="memitem:aa171f4633c7613fd3a4d9956990f6f0d" id="r_aa171f4633c7613fd3a4d9956990f6f0d"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#aa171f4633c7613fd3a4d9956990f6f0d">ReportTestFinish</a> (<a class="el" href="class_unit_test_1_1_test_details.html">TestDetails</a> const &amp;test, float secondsElapsed)</td></tr>
+<tr class="memitem:a80d74c479a3c540a980ef93a0e2e5475" id="r_a80d74c479a3c540a980ef93a0e2e5475"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a80d74c479a3c540a980ef93a0e2e5475">ReportSummary</a> (int totalTestCount, int failedTestCount, int failureCount, float secondsElapsed)</td></tr>
+<tr class="inherit_header pub_methods_class_unit_test_1_1_test_reporter"><td colspan="2">Открытые члены унаследованные от <a class="el" href="class_unit_test_1_1_test_reporter.html">UnitTest::TestReporter</a></td></tr>
+<tr class="memitem:a3412ee15c2c808d388e4e2a9ebda1564 pub_methods_class_unit_test_1_1_test_reporter" id="r_a3412ee15c2c808d388e4e2a9ebda1564"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="class_unit_test_1_1_test_reporter.html#a3412ee15c2c808d388e4e2a9ebda1564">~TestReporter</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-types" class="groupheader"><a id="pri-types" name="pri-types"></a>
+Закрытые типы</h2></td></tr>
+<tr class="memitem:a498ee568787dfd0e60c4e248f3c3778c" id="r_a498ee568787dfd0e60c4e248f3c3778c"><td class="memItemLeft"><a class="el" href="#a498ee568787dfd0e60c4e248f3c3778c">enum </a>&#160;</td><td class="memItemRight">{ <a class="el" href="#a498ee568787dfd0e60c4e248f3c3778caf09dc3555a7663d2ff3ab79898d0fe3a">kMaxReporters</a> = 16
+ }</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a119c4c8ed84176f346b5ae66e52b608d" id="r_a119c4c8ed84176f346b5ae66e52b608d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a119c4c8ed84176f346b5ae66e52b608d">CompositeTestReporter</a> (const CompositeTestReporter &amp;)</td></tr>
+<tr class="memitem:aa639602ee21ebd95cc0e7c28f21794ce" id="r_aa639602ee21ebd95cc0e7c28f21794ce"><td class="memItemLeft"><a class="el" href="#a6f902e32b92c2301b471f08bee27286f">CompositeTestReporter</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aa639602ee21ebd95cc0e7c28f21794ce">operator=</a> (const <a class="el" href="#a6f902e32b92c2301b471f08bee27286f">CompositeTestReporter</a> &amp;)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a9e4e758b432e8f9424854b837b51dd94" id="r_a9e4e758b432e8f9424854b837b51dd94"><td class="memItemLeft"><a class="el" href="class_unit_test_1_1_test_reporter.html">TestReporter</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a9e4e758b432e8f9424854b837b51dd94">m_reporters</a> [<a class="el" href="#a498ee568787dfd0e60c4e248f3c3778caf09dc3555a7663d2ff3ab79898d0fe3a">kMaxReporters</a>]</td></tr>
+<tr class="memitem:a9010b4fee0198e4f2cb93c5beefb3124" id="r_a9010b4fee0198e4f2cb93c5beefb3124"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a9010b4fee0198e4f2cb93c5beefb3124">m_reporterCount</a></td></tr>
+</table>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Перечисления</h2>
+<a id="a498ee568787dfd0e60c4e248f3c3778c" name="a498ee568787dfd0e60c4e248f3c3778c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a498ee568787dfd0e60c4e248f3c3778c">&#9670;&#160;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a498ee568787dfd0e60c4e248f3c3778caf09dc3555a7663d2ff3ab79898d0fe3a" name="a498ee568787dfd0e60c4e248f3c3778caf09dc3555a7663d2ff3ab79898d0fe3a"></a>kMaxReporters&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a6f902e32b92c2301b471f08bee27286f" name="a6f902e32b92c2301b471f08bee27286f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f902e32b92c2301b471f08bee27286f">&#9670;&#160;</a></span>CompositeTestReporter() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnitTest::CompositeTestReporter::CompositeTestReporter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_composite_test_reporter_a6f902e32b92c2301b471f08bee27286f_icgraph.png" border="0" usemap="#aclass_unit_test_1_1_composite_test_reporter_a6f902e32b92c2301b471f08bee27286f_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_composite_test_reporter_a6f902e32b92c2301b471f08bee27286f_icgraph" id="aclass_unit_test_1_1_composite_test_reporter_a6f902e32b92c2301b471f08bee27286f_icgraph">
+<area shape="rect" title=" " alt="" coords="270,39,486,81"/>
+<area shape="rect" href="class_unit_test_1_1_composite_test_reporter.html#a119c4c8ed84176f346b5ae66e52b608d" title=" " alt="" coords="5,5,222,48"/>
+<area shape="poly" title=" " alt="" coords="252,45,222,43,222,38,257,44"/>
+<area shape="rect" href="class_unit_test_1_1_composite_test_reporter.html#aa639602ee21ebd95cc0e7c28f21794ce" title=" " alt="" coords="5,72,222,115"/>
+<area shape="poly" title=" " alt="" coords="252,76,223,82,222,77,257,75"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a119c4c8ed84176f346b5ae66e52b608d" name="a119c4c8ed84176f346b5ae66e52b608d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a119c4c8ed84176f346b5ae66e52b608d">&#9670;&#160;</a></span>CompositeTestReporter() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnitTest::CompositeTestReporter::CompositeTestReporter </td>
+          <td>(</td>
+          <td class="paramtype">const CompositeTestReporter &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_composite_test_reporter_a119c4c8ed84176f346b5ae66e52b608d_cgraph.png" border="0" usemap="#aclass_unit_test_1_1_composite_test_reporter_a119c4c8ed84176f346b5ae66e52b608d_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_composite_test_reporter_a119c4c8ed84176f346b5ae66e52b608d_cgraph" id="aclass_unit_test_1_1_composite_test_reporter_a119c4c8ed84176f346b5ae66e52b608d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,222,48"/>
+<area shape="rect" href="class_unit_test_1_1_composite_test_reporter.html#a6f902e32b92c2301b471f08bee27286f" title=" " alt="" coords="270,5,486,48"/>
+<area shape="poly" title=" " alt="" coords="222,24,257,27,251,27,222,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a16ae62df2f1c742bed654d627d48ccb1" name="a16ae62df2f1c742bed654d627d48ccb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16ae62df2f1c742bed654d627d48ccb1">&#9670;&#160;</a></span>AddReporter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UnitTest::CompositeTestReporter::AddReporter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_unit_test_1_1_test_reporter.html">TestReporter</a> *</td>          <td class="paramname"><span class="paramname"><em>reporter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50f76030f879a7c174a2cd223db6cfa0" name="a50f76030f879a7c174a2cd223db6cfa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50f76030f879a7c174a2cd223db6cfa0">&#9670;&#160;</a></span>GetReporterCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UnitTest::CompositeTestReporter::GetReporterCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa639602ee21ebd95cc0e7c28f21794ce" name="aa639602ee21ebd95cc0e7c28f21794ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa639602ee21ebd95cc0e7c28f21794ce">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a6f902e32b92c2301b471f08bee27286f">CompositeTestReporter</a> &amp; UnitTest::CompositeTestReporter::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a6f902e32b92c2301b471f08bee27286f">CompositeTestReporter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_composite_test_reporter_aa639602ee21ebd95cc0e7c28f21794ce_cgraph.png" border="0" usemap="#aclass_unit_test_1_1_composite_test_reporter_aa639602ee21ebd95cc0e7c28f21794ce_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_composite_test_reporter_aa639602ee21ebd95cc0e7c28f21794ce_cgraph" id="aclass_unit_test_1_1_composite_test_reporter_aa639602ee21ebd95cc0e7c28f21794ce_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,222,48"/>
+<area shape="rect" href="class_unit_test_1_1_composite_test_reporter.html#a6f902e32b92c2301b471f08bee27286f" title=" " alt="" coords="270,5,486,48"/>
+<area shape="poly" title=" " alt="" coords="222,24,257,27,251,27,222,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af2b0c9a7cefa1eef8de6f89b1cb55ec6" name="af2b0c9a7cefa1eef8de6f89b1cb55ec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2b0c9a7cefa1eef8de6f89b1cb55ec6">&#9670;&#160;</a></span>RemoveReporter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UnitTest::CompositeTestReporter::RemoveReporter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_unit_test_1_1_test_reporter.html">TestReporter</a> *</td>          <td class="paramname"><span class="paramname"><em>reporter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addfc55b6b181cd514e0a08fd0e1fc905" name="addfc55b6b181cd514e0a08fd0e1fc905"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addfc55b6b181cd514e0a08fd0e1fc905">&#9670;&#160;</a></span>ReportFailure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnitTest::CompositeTestReporter::ReportFailure </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_unit_test_1_1_test_details.html">TestDetails</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>test</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *</td>          <td class="paramname"><span class="paramname"><em>failure</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_unit_test_1_1_test_reporter.html#a55195826cc03302f7a54f728c79102d5">UnitTest::TestReporter</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_composite_test_reporter_addfc55b6b181cd514e0a08fd0e1fc905_cgraph.png" border="0" usemap="#aclass_unit_test_1_1_composite_test_reporter_addfc55b6b181cd514e0a08fd0e1fc905_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_composite_test_reporter_addfc55b6b181cd514e0a08fd0e1fc905_cgraph" id="aclass_unit_test_1_1_composite_test_reporter_addfc55b6b181cd514e0a08fd0e1fc905_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,222,72"/>
+<area shape="poly" title=" " alt="" coords="72,28,71,19,78,10,92,5,114,3,137,5,152,14,147,14,135,10,113,8,93,10,81,15,76,21,77,30"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_composite_test_reporter_addfc55b6b181cd514e0a08fd0e1fc905_icgraph.png" border="0" usemap="#aclass_unit_test_1_1_composite_test_reporter_addfc55b6b181cd514e0a08fd0e1fc905_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_composite_test_reporter_addfc55b6b181cd514e0a08fd0e1fc905_icgraph" id="aclass_unit_test_1_1_composite_test_reporter_addfc55b6b181cd514e0a08fd0e1fc905_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,222,72"/>
+<area shape="poly" title=" " alt="" coords="147,14,135,10,113,8,93,10,81,15,76,21,77,30,72,28,71,19,78,10,92,5,114,3,137,5,152,14"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a80d74c479a3c540a980ef93a0e2e5475" name="a80d74c479a3c540a980ef93a0e2e5475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80d74c479a3c540a980ef93a0e2e5475">&#9670;&#160;</a></span>ReportSummary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnitTest::CompositeTestReporter::ReportSummary </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>totalTestCount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>failedTestCount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>failureCount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>secondsElapsed</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_unit_test_1_1_test_reporter.html#a8f5010c52b4be55ac4796e24cc669274">UnitTest::TestReporter</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_composite_test_reporter_a80d74c479a3c540a980ef93a0e2e5475_cgraph.png" border="0" usemap="#aclass_unit_test_1_1_composite_test_reporter_a80d74c479a3c540a980ef93a0e2e5475_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_composite_test_reporter_a80d74c479a3c540a980ef93a0e2e5475_cgraph" id="aclass_unit_test_1_1_composite_test_reporter_a80d74c479a3c540a980ef93a0e2e5475_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,222,72"/>
+<area shape="poly" title=" " alt="" coords="72,28,71,19,78,10,92,5,114,3,137,5,152,14,147,14,135,10,113,8,93,10,81,15,76,21,77,30"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_composite_test_reporter_a80d74c479a3c540a980ef93a0e2e5475_icgraph.png" border="0" usemap="#aclass_unit_test_1_1_composite_test_reporter_a80d74c479a3c540a980ef93a0e2e5475_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_composite_test_reporter_a80d74c479a3c540a980ef93a0e2e5475_icgraph" id="aclass_unit_test_1_1_composite_test_reporter_a80d74c479a3c540a980ef93a0e2e5475_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,222,72"/>
+<area shape="poly" title=" " alt="" coords="147,14,135,10,113,8,93,10,81,15,76,21,77,30,72,28,71,19,78,10,92,5,114,3,137,5,152,14"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa171f4633c7613fd3a4d9956990f6f0d" name="aa171f4633c7613fd3a4d9956990f6f0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa171f4633c7613fd3a4d9956990f6f0d">&#9670;&#160;</a></span>ReportTestFinish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnitTest::CompositeTestReporter::ReportTestFinish </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_unit_test_1_1_test_details.html">TestDetails</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>test</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>secondsElapsed</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_unit_test_1_1_test_reporter.html#a6492379c31985a77a22f1ccf684e44da">UnitTest::TestReporter</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_composite_test_reporter_aa171f4633c7613fd3a4d9956990f6f0d_cgraph.png" border="0" usemap="#aclass_unit_test_1_1_composite_test_reporter_aa171f4633c7613fd3a4d9956990f6f0d_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_composite_test_reporter_aa171f4633c7613fd3a4d9956990f6f0d_cgraph" id="aclass_unit_test_1_1_composite_test_reporter_aa171f4633c7613fd3a4d9956990f6f0d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,222,72"/>
+<area shape="poly" title=" " alt="" coords="72,28,71,19,78,10,92,5,114,3,137,5,152,14,147,14,135,10,113,8,93,10,81,15,76,21,77,30"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_composite_test_reporter_aa171f4633c7613fd3a4d9956990f6f0d_icgraph.png" border="0" usemap="#aclass_unit_test_1_1_composite_test_reporter_aa171f4633c7613fd3a4d9956990f6f0d_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_composite_test_reporter_aa171f4633c7613fd3a4d9956990f6f0d_icgraph" id="aclass_unit_test_1_1_composite_test_reporter_aa171f4633c7613fd3a4d9956990f6f0d_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,222,72"/>
+<area shape="poly" title=" " alt="" coords="147,14,135,10,113,8,93,10,81,15,76,21,77,30,72,28,71,19,78,10,92,5,114,3,137,5,152,14"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aefac3ccc4e13d62048f81ab1db33e21c" name="aefac3ccc4e13d62048f81ab1db33e21c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefac3ccc4e13d62048f81ab1db33e21c">&#9670;&#160;</a></span>ReportTestStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnitTest::CompositeTestReporter::ReportTestStart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_unit_test_1_1_test_details.html">TestDetails</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>test</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_unit_test_1_1_test_reporter.html#a94f1ab9311190188a2f96f8c2da785b1">UnitTest::TestReporter</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_composite_test_reporter_aefac3ccc4e13d62048f81ab1db33e21c_cgraph.png" border="0" usemap="#aclass_unit_test_1_1_composite_test_reporter_aefac3ccc4e13d62048f81ab1db33e21c_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_composite_test_reporter_aefac3ccc4e13d62048f81ab1db33e21c_cgraph" id="aclass_unit_test_1_1_composite_test_reporter_aefac3ccc4e13d62048f81ab1db33e21c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,222,72"/>
+<area shape="poly" title=" " alt="" coords="72,28,71,19,78,10,92,5,114,3,137,5,152,14,147,14,135,10,113,8,93,10,81,15,76,21,77,30"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_unit_test_1_1_composite_test_reporter_aefac3ccc4e13d62048f81ab1db33e21c_icgraph.png" border="0" usemap="#aclass_unit_test_1_1_composite_test_reporter_aefac3ccc4e13d62048f81ab1db33e21c_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_unit_test_1_1_composite_test_reporter_aefac3ccc4e13d62048f81ab1db33e21c_icgraph" id="aclass_unit_test_1_1_composite_test_reporter_aefac3ccc4e13d62048f81ab1db33e21c_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,222,72"/>
+<area shape="poly" title=" " alt="" coords="147,14,135,10,113,8,93,10,81,15,76,21,77,30,72,28,71,19,78,10,92,5,114,3,137,5,152,14"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a9010b4fee0198e4f2cb93c5beefb3124" name="a9010b4fee0198e4f2cb93c5beefb3124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9010b4fee0198e4f2cb93c5beefb3124">&#9670;&#160;</a></span>m_reporterCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UnitTest::CompositeTestReporter::m_reporterCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e4e758b432e8f9424854b837b51dd94" name="a9e4e758b432e8f9424854b837b51dd94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e4e758b432e8f9424854b837b51dd94">&#9670;&#160;</a></span>m_reporters</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_unit_test_1_1_test_reporter.html">TestReporter</a>* UnitTest::CompositeTestReporter::m_reporters[<a class="el" href="#a498ee568787dfd0e60c4e248f3c3778caf09dc3555a7663d2ff3ab79898d0fe3a">kMaxReporters</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>D:/first_lab_ppois_rubick/unittest-cpp/UnitTest++/<a class="el" href="_composite_test_reporter_8h_source.html">CompositeTestReporter.h</a></li>
+<li>D:/first_lab_ppois_rubick/unittest-cpp/UnitTest++/<a class="el" href="_composite_test_reporter_8cpp.html">CompositeTestReporter.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_unit_test.html">UnitTest</a></li><li class="navelem"><a href="class_unit_test_1_1_composite_test_reporter.html">CompositeTestReporter</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

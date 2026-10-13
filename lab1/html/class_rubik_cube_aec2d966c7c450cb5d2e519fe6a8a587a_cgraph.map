@@ -1,0 +1,5 @@
+<map id="RubikCube::rotateFaceMatrix" name="RubikCube::rotateFaceMatrix">
+<area shape="rect" id="Node000001" title="Вспомогательный метод для поворота самой плоскости грани 3x3." alt="" coords="5,5,198,32"/>
+<area shape="rect" id="Node000002" href="$class_rubik_cube.html#a92011cc61d2864b38e01c02cd73b3e18" title="Вспомогательная функция для безопасного преобразования enum Face в индекс массива." alt="" coords="246,5,383,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,16,233,19,227,19,198,21"/>
+</map>

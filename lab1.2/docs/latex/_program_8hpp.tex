@@ -1,0 +1,25 @@
+\doxysection{include/\+\+Program.hpp File Reference}
+\hypertarget{_program_8hpp}{}\label{_program_8hpp}\index{include/Program.hpp@{include/Program.hpp}}
+
+
+Таблица правил переходов машины Тьюринга.  
+
+
+{\ttfamily \+\#include "{}Transition.\+hpp"{}}\newline
+{\ttfamily \+\#include $<$cstddef$>$}\newline
+{\ttfamily \+\#include $<$istream$>$}\newline
+{\ttfamily \+\#include $<$map$>$}\newline
+{\ttfamily \+\#include $<$optional$>$}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+{\ttfamily \+\#include $<$utility$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{class_program}{Program}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Таблица правил переходов машины Тьюринга. 
+
+Инкапсулирует отображение (state, symbol) -\/\texorpdfstring{$>$}{>} \doxylink{struct_transition_action}{Transition\+Action}. Машина останавливается либо при переходе в halt-\/состояние, либо если для текущей пары (state, symbol) правило отсутствует (get\+Action вернёт std::\+nullopt). 

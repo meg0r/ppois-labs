@@ -1,0 +1,42 @@
+\doxysection{Transition.\+hpp}
+\hypertarget{_transition_8hpp_source}{}\label{_transition_8hpp_source}\index{include/Transition.hpp@{include/Transition.hpp}}
+\doxymbox{\hyperlink{_transition_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ }\doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}}\ =\ std::string;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{enum\ class}\ \doxymbox{\hyperlink{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \doxymbox{\hyperlink{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aaa945d5e233cf7d6240f6b783b36a374ff}{Left}},\ \ \ }
+\DoxyCodeLine{00022\ \ \ \ \ \doxymbox{\hyperlink{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aaa92b09c7c48c520c3c55e497875da437c}{Right}},\ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \doxymbox{\hyperlink{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aaa89302eb620f755ea605acbdcd41d2547}{Stay}}\ \ \ \ }
+\DoxyCodeLine{00024\ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{struct_transition_action_a022cd3ed7498de5838579ce07da36783}{TransitionAction}}\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}}\ \ \ \ \ \doxymbox{\hyperlink{struct_transition_action_aa4c9c69cd9423112dd2bdee2568df274}{next\_state}};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{char}\ \ \ \ \ \ \doxymbox{\hyperlink{struct_transition_action_ade0dd8c4dc4df4bfd14fe52535880e08}{write\_symbol}};}
+\DoxyCodeLine{00035\ \ \ \ \ \doxymbox{\hyperlink{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}\ \doxymbox{\hyperlink{struct_transition_action_af92a2a4ab98e50842b18c924e2df5310}{move\_direction}};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \doxymbox{\hyperlink{struct_transition_action_a022cd3ed7498de5838579ce07da36783}{TransitionAction}}()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \doxymbox{\hyperlink{struct_transition_action_a18ad8a355c036c17780dc06826827899}{TransitionAction}}(\doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}}\ ns,\ \textcolor{keywordtype}{char}\ ws,\ \doxymbox{\hyperlink{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}\ d)}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ :\ \doxymbox{\hyperlink{struct_transition_action_aa4c9c69cd9423112dd2bdee2568df274}{next\_state}}(std::move(ns))}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ ,\ \doxymbox{\hyperlink{struct_transition_action_ade0dd8c4dc4df4bfd14fe52535880e08}{write\_symbol}}(ws)}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ ,\ \doxymbox{\hyperlink{struct_transition_action_af92a2a4ab98e50842b18c924e2df5310}{move\_direction}}(d)\ \{\}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{struct_transition_action_afdfdf44f3645f20b48d96074a2dadd99}{operator==}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{struct_transition_action_a022cd3ed7498de5838579ce07da36783}{TransitionAction}}\&\ other)\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{struct_transition_action_aa4c9c69cd9423112dd2bdee2568df274}{next\_state}}\ ==\ other.next\_state\ \&\&}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_transition_action_ade0dd8c4dc4df4bfd14fe52535880e08}{write\_symbol}}\ ==\ other.write\_symbol\ \&\&}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_transition_action_af92a2a4ab98e50842b18c924e2df5310}{move\_direction}}\ ==\ other.move\_direction;}
+\DoxyCodeLine{00048\ \ \ \ \ \}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{struct_transition_action_a71fd8ecb8bafcf1953b760c81bf581bc}{operator!=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{struct_transition_action_a022cd3ed7498de5838579ce07da36783}{TransitionAction}}\&\ other)\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !(*\textcolor{keyword}{this}\ ==\ other);}
+\DoxyCodeLine{00052\ \ \ \ \ \}}
+\DoxyCodeLine{00053\ \};}
+
+\end{DoxyCode}

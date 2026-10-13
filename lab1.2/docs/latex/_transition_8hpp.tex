@@ -1,0 +1,82 @@
+\doxysection{include/\+\+Transition.hpp File Reference}
+\hypertarget{_transition_8hpp}{}\label{_transition_8hpp}\index{include/Transition.hpp@{include/Transition.hpp}}
+
+
+Базовые типы переходов машины Тьюринга.  
+
+
+{\ttfamily \+\#include $<$string$>$}\newline
+{\ttfamily \+\#include $<$utility$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{struct_transition_action}{Transition\+Action}}
+\begin{DoxyCompactList}\small\item\em Действие, выполняемое при срабатывании правила. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} = std::\+string
+\begin{DoxyCompactList}\small\item\em Строковый идентификатор состояния ("{}q0"{}, "{}halt"{}, "{}scan"{}). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \doxymbox{\hyperlink{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} \{ \doxymbox{\hyperlink{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aaa945d5e233cf7d6240f6b783b36a374ff}{Left}}
+, \doxymbox{\hyperlink{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aaa92b09c7c48c520c3c55e497875da437c}{Right}}
+, \doxymbox{\hyperlink{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aaa89302eb620f755ea605acbdcd41d2547}{Stay}}
+ \}
+\begin{DoxyCompactList}\small\item\em Направление перемещения каретки. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Базовые типы переходов машины Тьюринга. 
+
+Используется совместно \doxylink{class_program}{Program} и \doxylink{class_turing_machine}{Turing\+Machine}, чтобы не дублировать \doxylink{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aa}{Direction} и описание действия. 
+
+\label{_transition_8hpp_doc-typedef-members}
+\Hypertarget{_transition_8hpp_doc-typedef-members}
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_transition_8hpp_accec696ec165a668ceedd88d6527c967}\index{Transition.hpp@{Transition.hpp}!State@{State}}
+\index{State@{State}!Transition.hpp@{Transition.hpp}}
+\doxysubsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily \label{_transition_8hpp_accec696ec165a668ceedd88d6527c967} 
+using \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}} = std::\+string}
+
+
+
+Строковый идентификатор состояния ("{}q0"{}, "{}halt"{}, "{}scan"{}). 
+
+
+
+\label{_transition_8hpp_doc-enum-members}
+\Hypertarget{_transition_8hpp_doc-enum-members}
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aa}\index{Transition.hpp@{Transition.hpp}!Direction@{Direction}}
+\index{Direction@{Direction}!Transition.hpp@{Transition.hpp}}
+\doxysubsubsection{\texorpdfstring{Direction}{Direction}}
+{\footnotesize\ttfamily \label{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aa} 
+enum class \doxymbox{\hyperlink{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Направление перемещения каретки. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Left@{Left}!Transition.hpp@{Transition.hpp}}
+\index{Transition.hpp@{Transition.hpp}!Left@{Left}}
+}\Hypertarget{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aaa945d5e233cf7d6240f6b783b36a374ff}\label{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aaa945d5e233cf7d6240f6b783b36a374ff} 
+Left&Сдвиг на одну ячейку влево \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Right@{Right}!Transition.hpp@{Transition.hpp}}
+\index{Transition.hpp@{Transition.hpp}!Right@{Right}}
+}\Hypertarget{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aaa92b09c7c48c520c3c55e497875da437c}\label{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aaa92b09c7c48c520c3c55e497875da437c} 
+Right&Сдвиг на одну ячейку вправо \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Stay@{Stay}!Transition.hpp@{Transition.hpp}}
+\index{Transition.hpp@{Transition.hpp}!Stay@{Stay}}
+}\Hypertarget{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aaa89302eb620f755ea605acbdcd41d2547}\label{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aaa89302eb620f755ea605acbdcd41d2547} 
+Stay&Головка остаётся на месте (расширение классической МТ). \\
+\hline
+
+\end{DoxyEnumFields}

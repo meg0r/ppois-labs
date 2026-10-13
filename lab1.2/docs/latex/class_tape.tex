@@ -1,0 +1,177 @@
+\doxysection{Tape Class Reference}
+\hypertarget{class_tape}{}\label{class_tape}\index{Tape@{Tape}}
+
+
+{\ttfamily \+\#include $<$Tape.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_tape_a8fe5aa6e5a6b9211b9d5adcb05ee6d19}{Tape}} (\doxymbox{\hyperlink{class_alphabet}{Alphabet}} alphabet=\doxymbox{\hyperlink{class_alphabet}{Alphabet}}\{ \textquotesingle{}\_\textquotesingle{}\})
+\begin{DoxyCompactList}\small\item\em Конструктор ленты. \end{DoxyCompactList}\item 
+char \doxymbox{\hyperlink{class_tape_a03f38348722a80e99a92a045f6e2dcc4}{read}} (int64\+\_\+t position) const noexcept
+\begin{DoxyCompactList}\small\item\em Считывает символ в заданной позиции ленты (сложность O(log N)). \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_tape_ad32400f764a6e6b36ffe18729b7fdb33}{write}} (int64\+\_\+t position, char symbol)
+\begin{DoxyCompactList}\small\item\em Записывает символ в указанную позицию. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_tape_ac3de1486af4c2d6303a036155c2d36ca}{load\+String}} (std::\+string\+\_\+view input\+\_\+word, int64\+\_\+t start\+\_\+position=0)
+\begin{DoxyCompactList}\small\item\em Загружает входное слово на ленту, предварительно полностью очищая её. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_tape_ab1fd024acf7e5a7417c6679b769d2bcb}{clear}} () noexcept
+\begin{DoxyCompactList}\small\item\em Полностью очищает ленту (все ячейки становятся blank). \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_tape_a681d93c1aff1718038a6b0f53259be13}{empty}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Проверяет, пуста ли лента (содержит ли только blank-\/ячейки). \end{DoxyCompactList}\item 
+std::\+pair$<$ int64\+\_\+t, int64\+\_\+t $>$ \doxymbox{\hyperlink{class_tape_aeadaec895e1d864470cfca9073f7aa13}{get\+Bounds}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Возвращает границы значащей части ленты \+[min\+\_\+pos, max\+\_\+pos]. \end{DoxyCompactList}\item 
+std::\+string \doxymbox{\hyperlink{class_tape_a2de7e3933c7bb1017f9660db7633ce6e}{to\+String}} () const
+\begin{DoxyCompactList}\small\item\em Формирует срез значащей части ленты от min\+\_\+pos до max\+\_\+pos. \end{DoxyCompactList}\item 
+const \doxymbox{\hyperlink{class_alphabet}{Alphabet}} \& \doxymbox{\hyperlink{class_tape_a6a016b27f129feb2d51b2bd72d8183f2}{get\+Alphabet}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Возвращает константную ссылку на алфавит ленты. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{class_tape_doc-constructors}
+\Hypertarget{class_tape_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_tape_a8fe5aa6e5a6b9211b9d5adcb05ee6d19}\index{Tape@{Tape}!Tape@{Tape}}
+\index{Tape@{Tape}!Tape@{Tape}}
+\doxysubsubsection{\texorpdfstring{Tape()}{Tape()}}
+{\footnotesize\ttfamily \label{class_tape_a8fe5aa6e5a6b9211b9d5adcb05ee6d19} 
+Tape::\+\+Tape (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_alphabet}{Alphabet}}}]{alphabet}{ = {\ttfamily \doxymbox{\hyperlink{class_alphabet}{Alphabet}}\{\textquotesingle{}\_\textquotesingle{}\}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Конструктор ленты. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alphabet} & Алфавит ленты (по умолчанию пустой символ \textquotesingle{}\_\textquotesingle{}). \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_tape_doc-func-members}
+\Hypertarget{class_tape_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_tape_ab1fd024acf7e5a7417c6679b769d2bcb}\index{Tape@{Tape}!clear@{clear}}
+\index{clear@{clear}!Tape@{Tape}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_tape_ab1fd024acf7e5a7417c6679b769d2bcb} 
+void Tape::\+clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Полностью очищает ленту (все ячейки становятся blank). 
+
+\Hypertarget{class_tape_a681d93c1aff1718038a6b0f53259be13}\index{Tape@{Tape}!empty@{empty}}
+\index{empty@{empty}!Tape@{Tape}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily \label{class_tape_a681d93c1aff1718038a6b0f53259be13} 
+bool Tape::\+empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Проверяет, пуста ли лента (содержит ли только blank-\/ячейки). 
+
+\Hypertarget{class_tape_a6a016b27f129feb2d51b2bd72d8183f2}\index{Tape@{Tape}!getAlphabet@{getAlphabet}}
+\index{getAlphabet@{getAlphabet}!Tape@{Tape}}
+\doxysubsubsection{\texorpdfstring{getAlphabet()}{getAlphabet()}}
+{\footnotesize\ttfamily \label{class_tape_a6a016b27f129feb2d51b2bd72d8183f2} 
+const \doxymbox{\hyperlink{class_alphabet}{Alphabet}} \& Tape::\+get\+Alphabet (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Возвращает константную ссылку на алфавит ленты. 
+
+\Hypertarget{class_tape_aeadaec895e1d864470cfca9073f7aa13}\index{Tape@{Tape}!getBounds@{getBounds}}
+\index{getBounds@{getBounds}!Tape@{Tape}}
+\doxysubsubsection{\texorpdfstring{getBounds()}{getBounds()}}
+{\footnotesize\ttfamily \label{class_tape_aeadaec895e1d864470cfca9073f7aa13} 
+std::\+pair$<$ int64\+\_\+t, int64\+\_\+t $>$ Tape::\+get\+Bounds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Возвращает границы значащей части ленты \+[min\+\_\+pos, max\+\_\+pos]. 
+
+Инвариант: min\+\_\+pos \texorpdfstring{$<$}{<}= max\+\_\+pos. Значение \{0, -\/1\} является маркером пустой ленты. \begin{DoxyReturn}{Returns}
+Пара \+[min\+\_\+pos, max\+\_\+pos] или \{0, -\/1\}, если лента пуста. 
+\end{DoxyReturn}
+\Hypertarget{class_tape_ac3de1486af4c2d6303a036155c2d36ca}\index{Tape@{Tape}!loadString@{loadString}}
+\index{loadString@{loadString}!Tape@{Tape}}
+\doxysubsubsection{\texorpdfstring{loadString()}{loadString()}}
+{\footnotesize\ttfamily \label{class_tape_ac3de1486af4c2d6303a036155c2d36ca} 
+void Tape::\+load\+String (\begin{DoxyParamCaption}\item[{std::\+string\+\_\+view}]{input\+\_\+word}{, }\item[{int64\+\_\+t}]{start\+\_\+position}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+Загружает входное слово на ленту, предварительно полностью очищая её. 
+
+Поддерживаются произвольные знаковые start\+\_\+position (включая отрицательные). Если входное слово содержит blank-\/символы, соответствующие позиции остаются незанятыми («дырками»).
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+\_\+word} & Строка для загрузки. \\
+\hline
+{\em start\+\_\+position} & Координата начального символа (по умолчанию 0). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+invalid\+\_\+argument} & Если во входной строке встретился символ вне алфавита. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_tape_a03f38348722a80e99a92a045f6e2dcc4}\index{Tape@{Tape}!read@{read}}
+\index{read@{read}!Tape@{Tape}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_tape_a03f38348722a80e99a92a045f6e2dcc4} 
+char Tape::\+read (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{position}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [noexcept]}}
+
+
+
+Считывает символ в заданной позиции ленты (сложность O(log N)). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Знаковая координата ячейки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Символ ячейки или alphabet\+\_\+.\+get\+Blank(), если ячейка пуста. 
+\end{DoxyReturn}
+\Hypertarget{class_tape_a2de7e3933c7bb1017f9660db7633ce6e}\index{Tape@{Tape}!toString@{toString}}
+\index{toString@{toString}!Tape@{Tape}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{class_tape_a2de7e3933c7bb1017f9660db7633ce6e} 
+std::\+string Tape::\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Формирует срез значащей части ленты от min\+\_\+pos до max\+\_\+pos. 
+
+Любые незаписанные «дырки» между крайними символами подменяются на blank-\/символ. Если лента пуста, возвращается пустая строка. \Hypertarget{class_tape_ad32400f764a6e6b36ffe18729b7fdb33}\index{Tape@{Tape}!write@{write}}
+\index{write@{write}!Tape@{Tape}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_tape_ad32400f764a6e6b36ffe18729b7fdb33} 
+void Tape::\+write (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{position}{, }\item[{char}]{symbol}{}\end{DoxyParamCaption})}
+
+
+
+Записывает символ в указанную позицию. 
+
+Если symbol == alphabet\+\_\+.\+get\+Blank(), ячейка удаляется из памяти, сохраняя инвариант разреженности ленты.
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Знаковая координата ячейки. \\
+\hline
+{\em symbol} & Записываемый символ. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+invalid\+\_\+argument} & Если символ отсутствует в alphabet\_. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+include/\doxymbox{\hyperlink{_tape_8hpp}{Tape.\+hpp}}\item 
+src/\doxymbox{\hyperlink{_tape_8cpp}{Tape.\+cpp}}\end{DoxyCompactItemize}

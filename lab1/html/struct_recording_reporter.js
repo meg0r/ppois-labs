@@ -1,0 +1,25 @@
+var struct_recording_reporter =
+[
+    [ "RecordingReporter", "struct_recording_reporter.html#a95e35da00ce7d0da9825a23112361f41", null ],
+    [ "ReportFailure", "struct_recording_reporter.html#a8d71a40d918bf2394fc0771b152b4da3", null ],
+    [ "ReportSummary", "struct_recording_reporter.html#a48ee25cf86b9e1dcb4f3bccaca022169", null ],
+    [ "ReportTestFinish", "struct_recording_reporter.html#a076db0aaf4089fb2f4ed1afc58e1f5b3", null ],
+    [ "ReportTestStart", "struct_recording_reporter.html#a54f2108962d66c3d619cbe183b06a697", null ],
+    [ "lastFailedFile", "struct_recording_reporter.html#a9996349ac2742047496b3888bb021489", null ],
+    [ "lastFailedLine", "struct_recording_reporter.html#a72a38433a031165d2a49f42347500b65", null ],
+    [ "lastFailedMessage", "struct_recording_reporter.html#a78a8e2ca635c0cc3194cd444047c13c9", null ],
+    [ "lastFailedSuite", "struct_recording_reporter.html#a5343637d20d52156662a9ac26ef08b53", null ],
+    [ "lastFailedTest", "struct_recording_reporter.html#a7fd128c233a57bc3e1d7d62b6f2f874f", null ],
+    [ "lastFinishedSuite", "struct_recording_reporter.html#af37bc616262eb5ed8bc50376bc268f0c", null ],
+    [ "lastFinishedTest", "struct_recording_reporter.html#a48022ac92513d5ba00a795a316ae00b2", null ],
+    [ "lastFinishedTestTime", "struct_recording_reporter.html#a152d60d01b6222bc1d2dc716194666eb", null ],
+    [ "lastStartedSuite", "struct_recording_reporter.html#a51904891bff9de877dc9b70be57ef74c", null ],
+    [ "lastStartedTest", "struct_recording_reporter.html#af88b0f10c3bf4682e461b3bee65f2bae", null ],
+    [ "summaryFailedTestCount", "struct_recording_reporter.html#a0c5a5536aaba612c4e7a97308ca8ddc2", null ],
+    [ "summaryFailureCount", "struct_recording_reporter.html#ae5b682f675907c53d1c0134a5d6b10bb", null ],
+    [ "summarySecondsElapsed", "struct_recording_reporter.html#aeb4fdb43f94b59127905f9b99b1f0f29", null ],
+    [ "summaryTotalTestCount", "struct_recording_reporter.html#a244a5e003f9752f956c4e2fe2733e52d", null ],
+    [ "testFailedCount", "struct_recording_reporter.html#a0bb590848441de20544dfa7681779266", null ],
+    [ "testFinishedCount", "struct_recording_reporter.html#aef8e0e0c72acb13de124f1981f575823", null ],
+    [ "testRunCount", "struct_recording_reporter.html#a27b2782320861b3d25158021b3e54859", null ]
+];

@@ -1,0 +1,21 @@
+<map id="RubikCube::RubikCube" name="RubikCube::RubikCube">
+<area shape="rect" id="Node000001" title="Конструктор по умолчанию." alt="" coords="213,207,372,233"/>
+<area shape="rect" id="Node000002" href="$class_rubik_cube.html#ab5a548521a4688fbdb6f6161e32551fe" title=" " alt="" coords="8,5,162,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,193,233,120,201,80,163,46,145,35,143,30,166,42,205,77,237,117,281,193"/>
+<area shape="rect" id="Node000003" href="$class_rubik_cube.html#aefac84a10c9021688de5474cec83034a" title="Потоковый вывод текстовой развертки кубика." alt="" coords="6,80,164,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="264,197,220,159,163,121,139,110,138,105,166,116,223,155,270,196"/>
+<area shape="rect" id="Node000004" href="$class_rubik_cube.html#a95fed4776637e8dafe28a05ca64e9ee0" title=" " alt="" coords="10,131,160,157"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="242,201,164,172,132,160,130,155,166,167,246,199"/>
+<area shape="rect" id="Node000005" href="$class_rubik_cube.html#a5a6d380fea632fd8db5b156022a96b4c" title=" " alt="" coords="10,181,160,208"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="195,210,161,206,159,201,200,207"/>
+<area shape="rect" id="Node000006" href="$class_rubik_cube.html#a5e82bf9c1225b13ec29be271d14b7593" title="Операторы сравнения двух кубиков на полное совпадение расположения цветов." alt="" coords="6,232,164,259"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="195,233,165,238,163,233,200,230"/>
+<area shape="rect" id="Node000007" href="$class_rubik_cube.html#a74298a0831b2fd8fdec1d808b06c9792" title="Потоковый ввод состояния кубика." alt="" coords="6,307,164,333"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="248,243,116,309,113,304,250,238"/>
+<area shape="rect" id="Node000008" href="$class_rubik_cube.html#a0ccfed256f8ba1b3198fac553dd05911" title=" " alt="" coords="5,357,165,384"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="273,244,228,298,198,325,166,348,142,359,140,354,163,343,195,320,224,294,269,247"/>
+<area shape="rect" id="Node000009" href="$class_rubik_cube.html#a5f28eac8b018310c78da83058e4f6b0b" title=" " alt="" coords="5,408,165,435"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="281,246,237,323,205,363,166,398,145,410,143,405,163,394,201,360,233,320,276,249"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="119,66,108,61,85,59,63,61,52,65,49,71,55,79,49,80,44,71,48,62,62,55,85,53,110,56,124,64"/>
+<area shape="poly" id="edge8_Node000007_Node000007" title=" " alt="" coords="119,292,108,288,85,285,63,287,52,292,49,297,55,306,49,307,44,298,48,288,62,282,85,280,110,283,124,291"/>
+</map>

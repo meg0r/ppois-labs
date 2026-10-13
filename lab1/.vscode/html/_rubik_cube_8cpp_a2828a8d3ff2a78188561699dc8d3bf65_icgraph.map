@@ -1,0 +1,14 @@
+<map id="charToColor" name="charToColor">
+<area shape="rect" id="Node000001" title=" " alt="" coords="438,92,529,119"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="513,76,503,73,484,71,465,73,455,77,453,83,458,93,453,90,448,83,451,74,464,67,484,65,505,68,518,77"/>
+<area shape="rect" id="Node000002" href="$class_rubik_cube.html#af7ee00b576c74bad0bc7a11e65a12fb8" title="Загрузка расположения цветов из внешнего текстового файла." alt="" coords="221,55,390,81"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="420,93,372,85,372,79,425,93"/>
+<area shape="rect" id="Node000005" href="$class_rubik_cube.html#a74298a0831b2fd8fdec1d808b06c9792" title="Потоковый ввод состояния кубика." alt="" coords="227,129,384,156"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="425,118,373,131,372,126,420,118"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="64,29,114,56"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="203,58,114,48,114,43,207,55"/>
+<area shape="rect" id="Node000004" href="$class_rubik_cube.html#acad1b8c3939b039d149f9dd66f6b7443" title=" " alt="" coords="5,80,173,107"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="203,80,174,86,173,81,208,79"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="124,24,127,19,123,14,110,10,89,8,64,11,52,16,53,23,66,33,61,35,48,26,48,14,62,6,89,3,111,4,126,9,132,18,129,27"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="334,114,325,110,305,108,287,110,277,115,275,120,279,130,275,128,269,121,273,111,285,105,305,103,327,105,339,115"/>
+</map>

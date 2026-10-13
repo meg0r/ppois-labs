@@ -1,0 +1,16 @@
+<map id="UnitTest::AreClose" name="UnitTest::AreClose">
+<area shape="rect" id="Node000001" title=" " alt="" coords="463,104,595,131"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="561,88,551,85,529,83,509,85,498,89,495,95,500,105,496,102,490,95,494,86,507,79,529,77,553,80,566,89"/>
+<area shape="rect" id="Node000002" href="$namespace_unit_test.html#a6175181392e3877c68457c6bf336788d" title=" " alt="" coords="252,67,415,93"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="445,102,407,97,407,91,450,102"/>
+<area shape="rect" id="Node000005" href="$namespace_unit_test.html#ab81d49d915767894dce832e6c5071506" title=" " alt="" coords="258,141,408,168"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="450,133,407,143,407,138,445,133"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="365,51,355,48,333,45,313,47,302,52,299,57,305,67,300,65,294,58,298,48,312,42,333,40,357,43,371,52"/>
+<area shape="rect" id="Node000003" href="$namespace_unit_test.html#a614182d50c1bc260a86fddf7898beaa8" title=" " alt="" coords="5,29,204,56"/>
+<area shape="poly" id="edge4_Node000002_Node000003" title=" " alt="" coords="234,65,191,59,190,54,239,64"/>
+<area shape="rect" id="Node000004" href="$namespace_unit_test.html#ace5111724b6a5172403b132d1a4f5429" title=" " alt="" coords="14,104,195,131"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="234,96,191,106,190,101,239,95"/>
+<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="143,15,131,10,104,8,80,10,67,15,64,20,71,28,66,29,59,21,64,11,79,5,105,3,132,5,148,14"/>
+<area shape="poly" id="edge7_Node000004_Node000004" title=" " alt="" coords="143,90,131,85,104,83,80,85,67,89,64,95,71,103,65,104,59,95,64,85,79,79,105,77,132,80,148,89"/>
+<area shape="poly" id="edge9_Node000005_Node000005" title=" " alt="" coords="365,126,355,122,333,120,313,122,302,127,299,132,305,142,300,140,294,133,298,123,312,117,333,115,357,117,371,127"/>
+</map>

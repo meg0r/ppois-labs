@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Turing App",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/lab1.2/build/Debug/turing_app.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/lab1.2",
+      "environment": [
+        { "name": "PYTHONIOENCODING", "value": "UTF-8" }
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}

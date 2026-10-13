@@ -1,0 +1,49 @@
+\doxysection{Program.\+hpp}
+\hypertarget{_program_8hpp_source}{}\label{_program_8hpp_source}\index{include/Program.hpp@{include/Program.hpp}}
+\doxymbox{\hyperlink{_program_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_transition_8hpp}{Transition.hpp}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <cstddef>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <istream>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <optional>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_program_af4921832ac59b89bbd70720b89b849cc}{Program}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{using\ }\doxymbox{\hyperlink{class_program_a6ea9ab77ffcab68ad90fbbb267f7357b}{RuleKey}}\ =\ std::pair<State,\ char>;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00031\ \ \ \ \ RuleTable\ rules\_;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}}\ initial\_state\_;\ \ \ }
+\DoxyCodeLine{00033\ \ \ \ \ \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}}\ halt\_state\_;\ \ \ \ \ \ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{explicit}\ \doxymbox{\hyperlink{class_program_af4921832ac59b89bbd70720b89b849cc}{Program}}(\doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}}\ init\_state\ =\ \textcolor{stringliteral}{"{}q0"{}},\ \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}}\ halt\_state\ =\ \textcolor{stringliteral}{"{}halt"{}});}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_program_ab79b0612fc31804aea8503c5fdc7a83a}{addRule}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}}\&\ state,\ \textcolor{keywordtype}{char}\ symbol,}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}}\&\ next\_state,\ \textcolor{keywordtype}{char}\ write\_symbol,\ \doxymbox{\hyperlink{_transition_8hpp_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}\ dir);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00055\ \ \ \ \ [[nodiscard]]\ std::optional<TransitionAction>\ \doxymbox{\hyperlink{class_program_a0973a8c5f2190124a6930fb483ac6c03}{getAction}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}}\&\ state,\ \textcolor{keywordtype}{char}\ symbol)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00065\ \ \ \ \ std::size\_t\ \doxymbox{\hyperlink{class_program_abec9334ff4926f6b65e5d2d5f7307020}{loadFromStream}}(std::istream\&\ is);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00070\ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_program_a759ee3aa2dd131b339660f2d217dd08d}{isHaltState}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}}\&\ state)\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}}\&\ \doxymbox{\hyperlink{class_program_a5f861c0b0e01d495592bbfc3c0020f5a}{getInitialState}}()\ const\ noexcept;}
+\DoxyCodeLine{00073\ \ \ \ \ [[nodiscard]]\ const\ \doxymbox{\hyperlink{_transition_8hpp_accec696ec165a668ceedd88d6527c967}{State}}\&\ \doxymbox{\hyperlink{class_program_a89f32d785bf37377bf757f5e6c6ccc74}{getHaltState}}()\ const\ noexcept;}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ [[nodiscard]]\ std::\textcolor{keywordtype}{size\_t}\ \doxymbox{\hyperlink{class_program_aa8eca5ac0b95b84a446e991c55f226bb}{size}}()\ const\ noexcept;}
+\DoxyCodeLine{00076\ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_program_a622fdf4984dd86eb0eaf215b4adf8573}{empty}}()\ const\ noexcept;}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_program_a21dabd504ff36d9c6d44c981c2809261}{clear}}()\ noexcept;}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ [[nodiscard]]\ const\ RuleTable\&\ \doxymbox{\hyperlink{class_program_acd02ccd74960ea7db7abf77b48dfe52d}{getAllRules}}()\ const\ noexcept;}
+\DoxyCodeLine{00080\ \};}
+
+\end{DoxyCode}

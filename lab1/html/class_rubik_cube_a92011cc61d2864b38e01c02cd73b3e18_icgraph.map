@@ -1,0 +1,20 @@
+<map id="RubikCube::toIndex" name="RubikCube::toIndex">
+<area shape="rect" id="Node000001" title="Вспомогательная функция для безопасного преобразования enum Face в индекс массива." alt="" coords="965,67,1102,93"/>
+<area shape="rect" id="Node000002" href="$class_rubik_cube.html#a6dc69db384364f3bc37c08c966dee5af" title="Поворот заданной грани на 90 градусов." alt="" coords="520,67,677,93"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="947,80,677,83,677,77,952,80"/>
+<area shape="rect" id="Node000007" href="$class_rubik_cube.html#aec2d966c7c450cb5d2e519fe6a8a587a" title="Вспомогательный метод для поворота самой плоскости грани 3x3." alt="" coords="725,92,917,119"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="952,90,918,96,917,91,947,90"/>
+<area shape="poly" id="edge8_Node000002_Node000002" title=" " alt="" coords="632,51,621,48,598,45,577,47,566,52,563,57,569,67,564,65,558,58,562,48,576,42,599,40,623,43,637,52"/>
+<area shape="rect" id="Node000003" href="$src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="162,29,211,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="521,63,472,57,324,47,212,45,211,40,324,41,473,52,526,63"/>
+<area shape="rect" id="Node000005" href="$class_rubik_cube.html#a6e788d9ae83040d6b9b56bba14d9e36c" title="Случайное перемешивание кубика." alt="" coords="318,67,472,93"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="502,80,473,83,473,77,508,80"/>
+<area shape="rect" id="Node000006" href="$class_rubik_cube.html#acad1b8c3939b039d149f9dd66f6b7443" title=" " alt="" coords="103,92,270,119"/>
+<area shape="poly" id="edge9_Node000002_Node000006" title=" " alt="" coords="529,97,473,108,367,113,270,112,270,107,367,108,472,103,523,97"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="211,14,203,10,186,8,170,10,162,15,160,20,164,29,159,28,154,21,158,11,169,5,186,3,205,5,217,14"/>
+<area shape="rect" id="Node000004" href="$unittest-cpp_2tests_2main_8cpp.html#a7e16548afc479c8cfb8e1a49412655dd" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="145,45,55,45,54,40,148,40"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="300,64,211,50,211,44,305,63"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="305,91,271,98,270,93,300,91"/>
+<area shape="poly" id="edge11_Node000007_Node000002" title=" " alt="" coords="707,93,677,92,677,86,712,93"/>
+</map>

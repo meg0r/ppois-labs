@@ -1,0 +1,40 @@
+\doxysection{Tape.\+hpp}
+\hypertarget{_tape_8hpp_source}{}\label{_tape_8hpp_source}\index{include/Tape.hpp@{include/Tape.hpp}}
+\doxymbox{\hyperlink{_tape_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_alphabet_8hpp}{Alphabet.hpp}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string\_view>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_tape_a8fe5aa6e5a6b9211b9d5adcb05ee6d19}{Tape}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \doxymbox{\hyperlink{class_alphabet}{Alphabet}}\ alphabet\_;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ std::map<int64\_t,\ char>\ cells\_;\ \ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{explicit}\ \doxymbox{\hyperlink{class_tape_a8fe5aa6e5a6b9211b9d5adcb05ee6d19}{Tape}}(\doxymbox{\hyperlink{class_alphabet}{Alphabet}}\ alphabet\ =\ \doxymbox{\hyperlink{class_alphabet}{Alphabet}}\{\textcolor{charliteral}{'\_'}\});}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00038\ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{char}\ \doxymbox{\hyperlink{class_tape_a03f38348722a80e99a92a045f6e2dcc4}{read}}(int64\_t\ position)\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_tape_ad32400f764a6e6b36ffe18729b7fdb33}{write}}(int64\_t\ position,\ \textcolor{keywordtype}{char}\ symbol);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_tape_ac3de1486af4c2d6303a036155c2d36ca}{loadString}}(std::string\_view\ input\_word,\ int64\_t\ start\_position\ =\ 0);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_tape_ab1fd024acf7e5a7417c6679b769d2bcb}{clear}}()\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00073\ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_tape_a681d93c1aff1718038a6b0f53259be13}{empty}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00081\ \ \ \ \ [[nodiscard]]\ std::pair<int64\_t,\ int64\_t>\ \doxymbox{\hyperlink{class_tape_aeadaec895e1d864470cfca9073f7aa13}{getBounds}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00089\ \ \ \ \ [[nodiscard]]\ std::string\ \doxymbox{\hyperlink{class_tape_a2de7e3933c7bb1017f9660db7633ce6e}{toString}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00094\ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_alphabet}{Alphabet}}\&\ \doxymbox{\hyperlink{class_tape_a6a016b27f129feb2d51b2bd72d8183f2}{getAlphabet}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00095\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,11 @@
+<map id="RubikCube::randomize" name="RubikCube::randomize">
+<area shape="rect" id="Node000001" title="Случайное перемешивание кубика." alt="" coords="5,31,160,57"/>
+<area shape="rect" id="Node000002" href="$class_rubik_cube.html#a6dc69db384364f3bc37c08c966dee5af" title="Поворот заданной грани на 90 градусов." alt="" coords="208,31,364,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,41,195,44,190,44,160,47"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="251,29,245,22,249,12,263,6,286,4,310,7,324,16,319,15,309,12,286,9,265,11,253,16,250,21,256,31"/>
+<area shape="rect" id="Node000003" href="$class_rubik_cube.html#aec2d966c7c450cb5d2e519fe6a8a587a" title="Вспомогательный метод для поворота самой плоскости грани 3x3." alt="" coords="412,5,604,32"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="364,32,394,32,399,31,365,38"/>
+<area shape="rect" id="Node000004" href="$class_rubik_cube.html#a92011cc61d2864b38e01c02cd73b3e18" title="Вспомогательная функция для безопасного преобразования enum Face в индекс массива." alt="" coords="652,31,790,57"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="364,41,639,44,634,44,365,47"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="605,27,639,34,634,34,605,33"/>
+</map>

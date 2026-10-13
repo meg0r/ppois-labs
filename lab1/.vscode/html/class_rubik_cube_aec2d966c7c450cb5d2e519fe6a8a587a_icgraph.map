@@ -1,0 +1,15 @@
+<map id="RubikCube::rotateFaceMatrix" name="RubikCube::rotateFaceMatrix">
+<area shape="rect" id="Node000001" title="Вспомогательный метод для поворота самой плоскости грани 3x3." alt="" coords="627,55,820,81"/>
+<area shape="rect" id="Node000002" href="$class_rubik_cube.html#a6dc69db384364f3bc37c08c966dee5af" title="Поворот заданной грани на 90 градусов." alt="" coords="423,55,579,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="609,68,580,71,580,65,615,68"/>
+<area shape="poly" id="edge7_Node000002_Node000002" title=" " alt="" coords="534,39,524,36,501,33,480,35,468,40,466,45,471,55,466,53,460,46,465,36,479,30,501,28,525,31,540,40"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="64,29,114,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="426,51,375,45,300,41,227,40,114,44,114,38,227,34,301,35,375,40,431,51"/>
+<area shape="rect" id="Node000004" href="$class_rubik_cube.html#a6e788d9ae83040d6b9b56bba14d9e36c" title="Случайное перемешивание кубика." alt="" coords="221,55,375,81"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="405,68,376,71,375,65,410,68"/>
+<area shape="rect" id="Node000005" href="$class_rubik_cube.html#acad1b8c3939b039d149f9dd66f6b7443" title=" " alt="" coords="5,92,173,119"/>
+<area shape="poly" id="edge8_Node000002_Node000005" title=" " alt="" coords="429,85,375,96,270,105,173,108,173,103,270,99,375,91,423,85"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="124,23,125,18,121,14,109,10,89,8,65,11,54,16,54,23,67,33,61,35,49,25,49,14,63,5,89,3,110,4,124,9,130,17,128,26"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="203,58,114,48,114,43,207,55"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="208,84,168,94,167,89,203,85"/>
+</map>

@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C/C++: cl.exe build active file",
+            "command": "cl.exe",
+            "args": [
+                "/Zi",
+                "/EHsc",
+                "/nologo",
+                "/std:c++17",
+                "/I",
+                "${workspaceFolder}\\include",
+                "${workspaceFolder}\\src\\main.cpp",
+                "${workspaceFolder}\\src\\RubikCube.cpp",
+                "/Fe:",
+                "${workspaceFolder}\\src\\main.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}\\src"
+            },
+            "problemMatcher": ["$msCompile"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Сборка main.cpp и RubikCube.cpp"
+        }
+    ]
+}

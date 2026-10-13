@@ -1,0 +1,914 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Rubik&#39;s Cube Simulator: Класс RubikCube</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Rubik&#39;s Cube Simulator<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_rubik_cube.html','','class_rubik_cube-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс RubikCube</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс, реализующий модель кубика Рубика 3x3.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_rubik_cube_8h_source.html">RubikCube.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a69ff5477763b85c8cdaf605ce19114ab" id="r_a69ff5477763b85c8cdaf605ce19114ab"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a69ff5477763b85c8cdaf605ce19114ab">RubikCube</a> ()</td></tr>
+<tr class="memdesc:a69ff5477763b85c8cdaf605ce19114ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию.  <br /></td></tr>
+<tr class="memitem:a0ccfed256f8ba1b3198fac553dd05911" id="r_a0ccfed256f8ba1b3198fac553dd05911"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0ccfed256f8ba1b3198fac553dd05911">RubikCube</a> (const <a class="el" href="class_rubik_cube.html">RubikCube</a> &amp;other)=default</td></tr>
+<tr class="memitem:a95fed4776637e8dafe28a05ca64e9ee0" id="r_a95fed4776637e8dafe28a05ca64e9ee0"><td class="memItemLeft"><a class="el" href="class_rubik_cube.html">RubikCube</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a95fed4776637e8dafe28a05ca64e9ee0">operator=</a> (const <a class="el" href="class_rubik_cube.html">RubikCube</a> &amp;other)=default</td></tr>
+<tr class="memitem:a5f28eac8b018310c78da83058e4f6b0b" id="r_a5f28eac8b018310c78da83058e4f6b0b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a5f28eac8b018310c78da83058e4f6b0b">RubikCube</a> (<a class="el" href="class_rubik_cube.html">RubikCube</a> &amp;&amp;other)=default</td></tr>
+<tr class="memitem:a5a6d380fea632fd8db5b156022a96b4c" id="r_a5a6d380fea632fd8db5b156022a96b4c"><td class="memItemLeft"><a class="el" href="class_rubik_cube.html">RubikCube</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a5a6d380fea632fd8db5b156022a96b4c">operator=</a> (<a class="el" href="class_rubik_cube.html">RubikCube</a> &amp;&amp;other)=default</td></tr>
+<tr class="memitem:acad1b8c3939b039d149f9dd66f6b7443" id="r_acad1b8c3939b039d149f9dd66f6b7443"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#acad1b8c3939b039d149f9dd66f6b7443">~RubikCube</a> ()=default</td></tr>
+<tr class="memitem:a6e788d9ae83040d6b9b56bba14d9e36c" id="r_a6e788d9ae83040d6b9b56bba14d9e36c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6e788d9ae83040d6b9b56bba14d9e36c">randomize</a> ()</td></tr>
+<tr class="memdesc:a6e788d9ae83040d6b9b56bba14d9e36c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Случайное перемешивание кубика.  <br /></td></tr>
+<tr class="memitem:af7ee00b576c74bad0bc7a11e65a12fb8" id="r_af7ee00b576c74bad0bc7a11e65a12fb8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af7ee00b576c74bad0bc7a11e65a12fb8">loadFromFile</a> (const std::string &amp;filePath)</td></tr>
+<tr class="memdesc:af7ee00b576c74bad0bc7a11e65a12fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загрузка расположения цветов из внешнего текстового файла.  <br /></td></tr>
+<tr class="memitem:a6dc69db384364f3bc37c08c966dee5af" id="r_a6dc69db384364f3bc37c08c966dee5af"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6dc69db384364f3bc37c08c966dee5af">rotateFace</a> (<a class="el" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294f">Face</a> face, bool clockwise=true)</td></tr>
+<tr class="memdesc:a6dc69db384364f3bc37c08c966dee5af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поворот заданной грани на 90 градусов.  <br /></td></tr>
+<tr class="memitem:a813fbebc51fac98c774c64bc6e0af1e6" id="r_a813fbebc51fac98c774c64bc6e0af1e6"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a813fbebc51fac98c774c64bc6e0af1e6">isSolved</a> () const</td></tr>
+<tr class="memdesc:a813fbebc51fac98c774c64bc6e0af1e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка правильной расстановки цветных клеток (состояние победы).  <br /></td></tr>
+<tr class="memitem:a5e82bf9c1225b13ec29be271d14b7593" id="r_a5e82bf9c1225b13ec29be271d14b7593"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a5e82bf9c1225b13ec29be271d14b7593">operator==</a> (const <a class="el" href="class_rubik_cube.html">RubikCube</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a5e82bf9c1225b13ec29be271d14b7593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Операторы сравнения двух кубиков на полное совпадение расположения цветов.  <br /></td></tr>
+<tr class="memitem:ab5a548521a4688fbdb6f6161e32551fe" id="r_ab5a548521a4688fbdb6f6161e32551fe"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab5a548521a4688fbdb6f6161e32551fe">operator!=</a> (const <a class="el" href="class_rubik_cube.html">RubikCube</a> &amp;rhs) const</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:aec2d966c7c450cb5d2e519fe6a8a587a" id="r_aec2d966c7c450cb5d2e519fe6a8a587a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aec2d966c7c450cb5d2e519fe6a8a587a">rotateFaceMatrix</a> (<a class="el" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294f">Face</a> face, bool clockwise)</td></tr>
+<tr class="memdesc:aec2d966c7c450cb5d2e519fe6a8a587a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательный метод для поворота самой плоскости грани 3x3.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Закрытые статические члены</h2></td></tr>
+<tr class="memitem:a92011cc61d2864b38e01c02cd73b3e18" id="r_a92011cc61d2864b38e01c02cd73b3e18"><td class="memItemLeft">static std::size_t&#160;</td><td class="memItemRight"><a class="el" href="#a92011cc61d2864b38e01c02cd73b3e18">toIndex</a> (<a class="el" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294f">Face</a> face)</td></tr>
+<tr class="memdesc:a92011cc61d2864b38e01c02cd73b3e18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для безопасного преобразования enum <a class="el" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294f" title="Грани кубика Рубика (нотация Singmaster).">Face</a> в индекс массива.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a376d6530719f4e6d19c3fff1afeae1cd" id="r_a376d6530719f4e6d19c3fff1afeae1cd"><td class="memItemLeft">std::array&lt; std::array&lt; <a class="el" href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a>, 9 &gt;, 6 &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a376d6530719f4e6d19c3fff1afeae1cd">state_</a></td></tr>
+<tr class="memdesc:a376d6530719f4e6d19c3fff1afeae1cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Внутреннее состояние: 6 граней, на каждой по 9 клеток (3x3).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:aefac84a10c9021688de5474cec83034a" id="r_aefac84a10c9021688de5474cec83034a"><td class="memItemLeft">std::ostream &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aefac84a10c9021688de5474cec83034a">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_rubik_cube.html">RubikCube</a> &amp;cube)</td></tr>
+<tr class="memdesc:aefac84a10c9021688de5474cec83034a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Потоковый вывод текстовой развертки кубика.  <br /></td></tr>
+<tr class="memitem:a74298a0831b2fd8fdec1d808b06c9792" id="r_a74298a0831b2fd8fdec1d808b06c9792"><td class="memItemLeft">std::istream &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a74298a0831b2fd8fdec1d808b06c9792">operator&gt;&gt;</a> (std::istream &amp;is, <a class="el" href="class_rubik_cube.html">RubikCube</a> &amp;cube)</td></tr>
+<tr class="memdesc:a74298a0831b2fd8fdec1d808b06c9792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Потоковый ввод состояния кубика.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс, реализующий модель кубика Рубика 3x3. </p>
+<p>Обеспечивает контроль инварианта собранности, поворот граней, генерацию случайных перестановок и потоковый ввод-вывод. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a69ff5477763b85c8cdaf605ce19114ab" name="a69ff5477763b85c8cdaf605ce19114ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69ff5477763b85c8cdaf605ce19114ab">&#9670;&#160;</a></span>RubikCube() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RubikCube::RubikCube </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор по умолчанию. </p>
+<p>Создает идеально собранный кубик (каждая грань монохромна). </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rubik_cube_a69ff5477763b85c8cdaf605ce19114ab_icgraph.png" border="0" usemap="#aclass_rubik_cube_a69ff5477763b85c8cdaf605ce19114ab_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_rubik_cube_a69ff5477763b85c8cdaf605ce19114ab_icgraph" id="aclass_rubik_cube_a69ff5477763b85c8cdaf605ce19114ab_icgraph">
+<area shape="rect" title="Конструктор по умолчанию." alt="" coords="213,207,372,233"/>
+<area shape="rect" href="class_rubik_cube.html#ab5a548521a4688fbdb6f6161e32551fe" title=" " alt="" coords="8,5,162,32"/>
+<area shape="poly" title=" " alt="" coords="276,193,233,120,201,80,163,46,145,35,143,30,166,42,205,77,237,117,281,193"/>
+<area shape="rect" href="class_rubik_cube.html#aefac84a10c9021688de5474cec83034a" title="Потоковый вывод текстовой развертки кубика." alt="" coords="6,80,164,107"/>
+<area shape="poly" title=" " alt="" coords="264,197,220,159,163,121,139,110,138,105,166,116,223,155,270,196"/>
+<area shape="rect" href="class_rubik_cube.html#a95fed4776637e8dafe28a05ca64e9ee0" title=" " alt="" coords="10,131,160,157"/>
+<area shape="poly" title=" " alt="" coords="242,201,164,172,132,160,130,155,166,167,246,199"/>
+<area shape="rect" href="class_rubik_cube.html#a5a6d380fea632fd8db5b156022a96b4c" title=" " alt="" coords="10,181,160,208"/>
+<area shape="poly" title=" " alt="" coords="195,210,161,206,159,201,200,207"/>
+<area shape="rect" href="class_rubik_cube.html#a5e82bf9c1225b13ec29be271d14b7593" title="Операторы сравнения двух кубиков на полное совпадение расположения цветов." alt="" coords="6,232,164,259"/>
+<area shape="poly" title=" " alt="" coords="195,233,165,238,163,233,200,230"/>
+<area shape="rect" href="class_rubik_cube.html#a74298a0831b2fd8fdec1d808b06c9792" title="Потоковый ввод состояния кубика." alt="" coords="6,307,164,333"/>
+<area shape="poly" title=" " alt="" coords="248,243,116,309,113,304,250,238"/>
+<area shape="rect" href="class_rubik_cube.html#a0ccfed256f8ba1b3198fac553dd05911" title=" " alt="" coords="5,357,165,384"/>
+<area shape="poly" title=" " alt="" coords="273,244,228,298,198,325,166,348,142,359,140,354,163,343,195,320,224,294,269,247"/>
+<area shape="rect" href="class_rubik_cube.html#a5f28eac8b018310c78da83058e4f6b0b" title=" " alt="" coords="5,408,165,435"/>
+<area shape="poly" title=" " alt="" coords="281,246,237,323,205,363,166,398,145,410,143,405,163,394,201,360,233,320,276,249"/>
+<area shape="poly" title=" " alt="" coords="119,66,108,61,85,59,63,61,52,65,49,71,55,79,49,80,44,71,48,62,62,55,85,53,110,56,124,64"/>
+<area shape="poly" title=" " alt="" coords="119,292,108,288,85,285,63,287,52,292,49,297,55,306,49,307,44,298,48,288,62,282,85,280,110,283,124,291"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0ccfed256f8ba1b3198fac553dd05911" name="a0ccfed256f8ba1b3198fac553dd05911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ccfed256f8ba1b3198fac553dd05911">&#9670;&#160;</a></span>RubikCube() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RubikCube::RubikCube </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_rubik_cube.html">RubikCube</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rubik_cube_a0ccfed256f8ba1b3198fac553dd05911_cgraph.png" border="0" usemap="#aclass_rubik_cube_a0ccfed256f8ba1b3198fac553dd05911_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_rubik_cube_a0ccfed256f8ba1b3198fac553dd05911_cgraph" id="aclass_rubik_cube_a0ccfed256f8ba1b3198fac553dd05911_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,165,32"/>
+<area shape="rect" href="class_rubik_cube.html#a69ff5477763b85c8cdaf605ce19114ab" title="Конструктор по умолчанию." alt="" coords="213,5,372,32"/>
+<area shape="poly" title=" " alt="" coords="165,16,200,19,195,19,165,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5f28eac8b018310c78da83058e4f6b0b" name="a5f28eac8b018310c78da83058e4f6b0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f28eac8b018310c78da83058e4f6b0b">&#9670;&#160;</a></span>RubikCube() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RubikCube::RubikCube </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_rubik_cube.html">RubikCube</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rubik_cube_a5f28eac8b018310c78da83058e4f6b0b_cgraph.png" border="0" usemap="#aclass_rubik_cube_a5f28eac8b018310c78da83058e4f6b0b_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_rubik_cube_a5f28eac8b018310c78da83058e4f6b0b_cgraph" id="aclass_rubik_cube_a5f28eac8b018310c78da83058e4f6b0b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,165,32"/>
+<area shape="rect" href="class_rubik_cube.html#a69ff5477763b85c8cdaf605ce19114ab" title="Конструктор по умолчанию." alt="" coords="213,5,372,32"/>
+<area shape="poly" title=" " alt="" coords="165,16,200,19,195,19,165,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acad1b8c3939b039d149f9dd66f6b7443" name="acad1b8c3939b039d149f9dd66f6b7443"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad1b8c3939b039d149f9dd66f6b7443">&#9670;&#160;</a></span>~RubikCube()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RubikCube::~RubikCube </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rubik_cube_acad1b8c3939b039d149f9dd66f6b7443_cgraph.png" border="0" usemap="#aclass_rubik_cube_acad1b8c3939b039d149f9dd66f6b7443_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_rubik_cube_acad1b8c3939b039d149f9dd66f6b7443_cgraph" id="aclass_rubik_cube_acad1b8c3939b039d149f9dd66f6b7443_cgraph">
+<area shape="rect" title=" " alt="" coords="5,81,173,108"/>
+<area shape="rect" href="class_rubik_cube.html#a813fbebc51fac98c774c64bc6e0af1e6" title="Проверка правильной расстановки цветных клеток (состояние победы)." alt="" coords="233,5,378,32"/>
+<area shape="poly" title=" " alt="" coords="123,78,220,41,244,36,239,38,222,47,125,83"/>
+<area shape="rect" href="class_rubik_cube.html#af7ee00b576c74bad0bc7a11e65a12fb8" title="Загрузка расположения цветов из внешнего текстового файла." alt="" coords="221,56,390,83"/>
+<area shape="poly" title=" " alt="" coords="172,82,208,80,203,82,174,87"/>
+<area shape="rect" href="class_rubik_cube.html#a6e788d9ae83040d6b9b56bba14d9e36c" title="Случайное перемешивание кубика." alt="" coords="228,107,382,133"/>
+<area shape="poly" title=" " alt="" coords="173,102,215,109,210,110,173,107"/>
+<area shape="rect" href="class_rubik_cube.html#a6dc69db384364f3bc37c08c966dee5af" title="Поворот заданной грани на 90 градусов." alt="" coords="438,144,594,171"/>
+<area shape="poly" title=" " alt="" coords="118,106,166,126,221,143,325,156,425,161,420,161,324,161,220,148,164,131,118,111"/>
+<area shape="rect" href="_rubik_cube_8cpp.html#a2828a8d3ff2a78188561699dc8d3bf65" title=" " alt="" coords="470,56,562,83"/>
+<area shape="poly" title=" " alt="" coords="390,67,458,69,453,70,390,72"/>
+<area shape="poly" title=" " alt="" coords="480,55,474,47,478,38,493,31,516,29,541,32,556,41,551,40,540,37,516,35,494,37,482,41,479,47,485,56"/>
+<area shape="poly" title=" " alt="" coords="383,131,425,141,420,141,383,136"/>
+<area shape="poly" title=" " alt="" coords="480,142,474,135,478,126,493,119,516,117,541,120,556,129,551,128,540,125,516,123,494,125,482,129,479,135,485,145"/>
+<area shape="rect" href="class_rubik_cube.html#aec2d966c7c450cb5d2e519fe6a8a587a" title="Вспомогательный метод для поворота самой плоскости грани 3x3." alt="" coords="642,119,835,145"/>
+<area shape="poly" title=" " alt="" coords="595,146,624,145,629,145,595,151"/>
+<area shape="rect" href="class_rubik_cube.html#a92011cc61d2864b38e01c02cd73b3e18" title="Вспомогательная функция для безопасного преобразования enum Face в индекс массива." alt="" coords="883,144,1020,171"/>
+<area shape="poly" title=" " alt="" coords="595,155,870,157,864,157,595,160"/>
+<area shape="poly" title=" " alt="" coords="835,141,870,147,864,147,835,146"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a813fbebc51fac98c774c64bc6e0af1e6" name="a813fbebc51fac98c774c64bc6e0af1e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a813fbebc51fac98c774c64bc6e0af1e6">&#9670;&#160;</a></span>isSolved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RubikCube::isSolved </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка правильной расстановки цветных клеток (состояние победы). </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если все 6 граней являются одноцветными, иначе false. </dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rubik_cube_a813fbebc51fac98c774c64bc6e0af1e6_icgraph.png" border="0" usemap="#aclass_rubik_cube_a813fbebc51fac98c774c64bc6e0af1e6_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_rubik_cube_a813fbebc51fac98c774c64bc6e0af1e6_icgraph" id="aclass_rubik_cube_a813fbebc51fac98c774c64bc6e0af1e6_icgraph">
+<area shape="rect" title="Проверка правильной расстановки цветных клеток (состояние победы)." alt="" coords="318,55,462,81"/>
+<area shape="rect" href="src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="162,29,211,56"/>
+<area shape="poly" title=" " alt="" coords="300,58,211,48,212,43,305,57"/>
+<area shape="rect" href="class_rubik_cube.html#acad1b8c3939b039d149f9dd66f6b7443" title=" " alt="" coords="103,80,270,107"/>
+<area shape="poly" title=" " alt="" coords="305,79,271,86,270,80,300,79"/>
+<area shape="poly" title=" " alt="" coords="211,14,203,10,186,8,170,10,162,15,160,20,164,30,159,28,154,21,158,11,169,5,186,3,205,5,217,14"/>
+<area shape="rect" href="unittest-cpp_2tests_2main_8cpp.html#a7e16548afc479c8cfb8e1a49412655dd" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" title=" " alt="" coords="145,45,55,45,55,40,148,40"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af7ee00b576c74bad0bc7a11e65a12fb8" name="af7ee00b576c74bad0bc7a11e65a12fb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7ee00b576c74bad0bc7a11e65a12fb8">&#9670;&#160;</a></span>loadFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RubikCube::loadFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Загрузка расположения цветов из внешнего текстового файла. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>Путь к файлу конфигурации. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если файл успешно прочитан и инвариант цветов соблюден (по 9 каждого цвета). </dd>
+<dd>
+false, если файл поврежден, не существует или содержит ошибки. </dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rubik_cube_af7ee00b576c74bad0bc7a11e65a12fb8_cgraph.png" border="0" usemap="#aclass_rubik_cube_af7ee00b576c74bad0bc7a11e65a12fb8_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_rubik_cube_af7ee00b576c74bad0bc7a11e65a12fb8_cgraph" id="aclass_rubik_cube_af7ee00b576c74bad0bc7a11e65a12fb8_cgraph">
+<area shape="rect" title="Загрузка расположения цветов из внешнего текстового файла." alt="" coords="5,29,175,56"/>
+<area shape="rect" href="_rubik_cube_8cpp.html#a2828a8d3ff2a78188561699dc8d3bf65" title=" " alt="" coords="223,29,314,56"/>
+<area shape="poly" title=" " alt="" coords="175,40,210,43,204,43,175,45"/>
+<area shape="poly" title=" " alt="" coords="238,28,232,21,236,11,248,5,268,3,290,5,302,15,297,14,288,10,268,8,250,10,240,15,238,20,242,30"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rubik_cube_af7ee00b576c74bad0bc7a11e65a12fb8_icgraph.png" border="0" usemap="#aclass_rubik_cube_af7ee00b576c74bad0bc7a11e65a12fb8_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_rubik_cube_af7ee00b576c74bad0bc7a11e65a12fb8_icgraph" id="aclass_rubik_cube_af7ee00b576c74bad0bc7a11e65a12fb8_icgraph">
+<area shape="rect" title="Загрузка расположения цветов из внешнего текстового файла." alt="" coords="318,55,487,81"/>
+<area shape="rect" href="src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="162,29,211,56"/>
+<area shape="poly" title=" " alt="" coords="300,57,212,48,212,43,305,56"/>
+<area shape="rect" href="class_rubik_cube.html#acad1b8c3939b039d149f9dd66f6b7443" title=" " alt="" coords="103,80,270,107"/>
+<area shape="poly" title=" " alt="" coords="305,79,271,86,270,81,300,80"/>
+<area shape="poly" title=" " alt="" coords="211,14,203,10,186,8,170,10,162,15,160,20,164,30,159,28,154,21,158,11,169,5,186,3,205,5,217,14"/>
+<area shape="rect" href="unittest-cpp_2tests_2main_8cpp.html#a7e16548afc479c8cfb8e1a49412655dd" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" title=" " alt="" coords="145,45,55,45,55,40,148,40"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab5a548521a4688fbdb6f6161e32551fe" name="ab5a548521a4688fbdb6f6161e32551fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a548521a4688fbdb6f6161e32551fe">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RubikCube::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_rubik_cube.html">RubikCube</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rubik_cube_ab5a548521a4688fbdb6f6161e32551fe_cgraph.png" border="0" usemap="#aclass_rubik_cube_ab5a548521a4688fbdb6f6161e32551fe_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_rubik_cube_ab5a548521a4688fbdb6f6161e32551fe_cgraph" id="aclass_rubik_cube_ab5a548521a4688fbdb6f6161e32551fe_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,159,32"/>
+<area shape="rect" href="class_rubik_cube.html#a69ff5477763b85c8cdaf605ce19114ab" title="Конструктор по умолчанию." alt="" coords="207,5,366,32"/>
+<area shape="poly" title=" " alt="" coords="159,16,194,19,188,19,159,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a95fed4776637e8dafe28a05ca64e9ee0" name="a95fed4776637e8dafe28a05ca64e9ee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95fed4776637e8dafe28a05ca64e9ee0">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rubik_cube.html">RubikCube</a> &amp; RubikCube::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_rubik_cube.html">RubikCube</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rubik_cube_a95fed4776637e8dafe28a05ca64e9ee0_cgraph.png" border="0" usemap="#aclass_rubik_cube_a95fed4776637e8dafe28a05ca64e9ee0_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_rubik_cube_a95fed4776637e8dafe28a05ca64e9ee0_cgraph" id="aclass_rubik_cube_a95fed4776637e8dafe28a05ca64e9ee0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,155,32"/>
+<area shape="rect" href="class_rubik_cube.html#a69ff5477763b85c8cdaf605ce19114ab" title="Конструктор по умолчанию." alt="" coords="203,5,362,32"/>
+<area shape="poly" title=" " alt="" coords="155,16,190,19,184,19,155,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5a6d380fea632fd8db5b156022a96b4c" name="a5a6d380fea632fd8db5b156022a96b4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a6d380fea632fd8db5b156022a96b4c">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rubik_cube.html">RubikCube</a> &amp; RubikCube::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_rubik_cube.html">RubikCube</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rubik_cube_a5a6d380fea632fd8db5b156022a96b4c_cgraph.png" border="0" usemap="#aclass_rubik_cube_a5a6d380fea632fd8db5b156022a96b4c_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_rubik_cube_a5a6d380fea632fd8db5b156022a96b4c_cgraph" id="aclass_rubik_cube_a5a6d380fea632fd8db5b156022a96b4c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,155,32"/>
+<area shape="rect" href="class_rubik_cube.html#a69ff5477763b85c8cdaf605ce19114ab" title="Конструктор по умолчанию." alt="" coords="203,5,362,32"/>
+<area shape="poly" title=" " alt="" coords="155,16,190,19,184,19,155,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5e82bf9c1225b13ec29be271d14b7593" name="a5e82bf9c1225b13ec29be271d14b7593"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e82bf9c1225b13ec29be271d14b7593">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RubikCube::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_rubik_cube.html">RubikCube</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Операторы сравнения двух кубиков на полное совпадение расположения цветов. </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rubik_cube_a5e82bf9c1225b13ec29be271d14b7593_cgraph.png" border="0" usemap="#aclass_rubik_cube_a5e82bf9c1225b13ec29be271d14b7593_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_rubik_cube_a5e82bf9c1225b13ec29be271d14b7593_cgraph" id="aclass_rubik_cube_a5e82bf9c1225b13ec29be271d14b7593_cgraph">
+<area shape="rect" title="Операторы сравнения двух кубиков на полное совпадение расположения цветов." alt="" coords="5,5,163,32"/>
+<area shape="rect" href="class_rubik_cube.html#a69ff5477763b85c8cdaf605ce19114ab" title="Конструктор по умолчанию." alt="" coords="211,5,370,32"/>
+<area shape="poly" title=" " alt="" coords="163,16,198,19,192,19,163,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6e788d9ae83040d6b9b56bba14d9e36c" name="a6e788d9ae83040d6b9b56bba14d9e36c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e788d9ae83040d6b9b56bba14d9e36c">&#9670;&#160;</a></span>randomize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RubikCube::randomize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Случайное перемешивание кубика. </p>
+<p>Генерирует последовательность из валидных поворотов, сохраняя математическую разрешимость состояния. </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rubik_cube_a6e788d9ae83040d6b9b56bba14d9e36c_cgraph.png" border="0" usemap="#aclass_rubik_cube_a6e788d9ae83040d6b9b56bba14d9e36c_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_rubik_cube_a6e788d9ae83040d6b9b56bba14d9e36c_cgraph" id="aclass_rubik_cube_a6e788d9ae83040d6b9b56bba14d9e36c_cgraph">
+<area shape="rect" title="Случайное перемешивание кубика." alt="" coords="5,31,160,57"/>
+<area shape="rect" href="class_rubik_cube.html#a6dc69db384364f3bc37c08c966dee5af" title="Поворот заданной грани на 90 градусов." alt="" coords="208,31,364,57"/>
+<area shape="poly" title=" " alt="" coords="160,41,195,44,190,44,160,47"/>
+<area shape="poly" title=" " alt="" coords="251,29,245,22,249,12,263,6,286,4,310,7,324,16,319,15,309,12,286,9,265,11,253,16,250,21,256,31"/>
+<area shape="rect" href="class_rubik_cube.html#aec2d966c7c450cb5d2e519fe6a8a587a" title="Вспомогательный метод для поворота самой плоскости грани 3x3." alt="" coords="412,5,604,32"/>
+<area shape="poly" title=" " alt="" coords="364,32,394,32,399,31,365,38"/>
+<area shape="rect" href="class_rubik_cube.html#a92011cc61d2864b38e01c02cd73b3e18" title="Вспомогательная функция для безопасного преобразования enum Face в индекс массива." alt="" coords="652,31,790,57"/>
+<area shape="poly" title=" " alt="" coords="364,41,639,44,634,44,365,47"/>
+<area shape="poly" title=" " alt="" coords="605,27,639,34,634,34,605,33"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rubik_cube_a6e788d9ae83040d6b9b56bba14d9e36c_icgraph.png" border="0" usemap="#aclass_rubik_cube_a6e788d9ae83040d6b9b56bba14d9e36c_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_rubik_cube_a6e788d9ae83040d6b9b56bba14d9e36c_icgraph" id="aclass_rubik_cube_a6e788d9ae83040d6b9b56bba14d9e36c_icgraph">
+<area shape="rect" title="Случайное перемешивание кубика." alt="" coords="318,55,472,81"/>
+<area shape="rect" href="src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="162,29,211,56"/>
+<area shape="poly" title=" " alt="" coords="300,57,211,48,211,43,305,56"/>
+<area shape="rect" href="class_rubik_cube.html#acad1b8c3939b039d149f9dd66f6b7443" title=" " alt="" coords="103,80,270,107"/>
+<area shape="poly" title=" " alt="" coords="305,79,271,86,270,81,300,79"/>
+<area shape="poly" title=" " alt="" coords="211,14,203,10,186,8,170,10,162,15,160,20,164,30,159,28,154,21,158,11,169,5,186,3,205,5,217,14"/>
+<area shape="rect" href="unittest-cpp_2tests_2main_8cpp.html#a7e16548afc479c8cfb8e1a49412655dd" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" title=" " alt="" coords="145,45,55,45,55,40,148,40"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6dc69db384364f3bc37c08c966dee5af" name="a6dc69db384364f3bc37c08c966dee5af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dc69db384364f3bc37c08c966dee5af">&#9670;&#160;</a></span>rotateFace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RubikCube::rotateFace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294f">Face</a></td>          <td class="paramname"><span class="paramname"><em>face</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>clockwise</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Поворот заданной грани на 90 градусов. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>Грань для поворота (Up, Down, Front, Back, Left, Right). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clockwise</td><td>Направление: true — по часовой стрелке, false — против часовой. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rubik_cube_a6dc69db384364f3bc37c08c966dee5af_cgraph.png" border="0" usemap="#aclass_rubik_cube_a6dc69db384364f3bc37c08c966dee5af_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_rubik_cube_a6dc69db384364f3bc37c08c966dee5af_cgraph" id="aclass_rubik_cube_a6dc69db384364f3bc37c08c966dee5af_cgraph">
+<area shape="rect" title="Поворот заданной грани на 90 градусов." alt="" coords="5,31,162,57"/>
+<area shape="poly" title=" " alt="" coords="46,30,39,22,44,12,59,6,84,4,110,7,125,15,120,16,108,12,83,9,60,11,47,16,45,21,51,30"/>
+<area shape="rect" href="class_rubik_cube.html#aec2d966c7c450cb5d2e519fe6a8a587a" title="Вспомогательный метод для поворота самой плоскости грани 3x3." alt="" coords="210,5,402,32"/>
+<area shape="poly" title=" " alt="" coords="162,32,197,31,191,32,163,38"/>
+<area shape="rect" href="class_rubik_cube.html#a92011cc61d2864b38e01c02cd73b3e18" title="Вспомогательная функция для безопасного преобразования enum Face в индекс массива." alt="" coords="450,31,587,57"/>
+<area shape="poly" title=" " alt="" coords="162,41,435,41,434,47,162,47"/>
+<area shape="poly" title=" " alt="" coords="403,27,437,34,432,34,402,33"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rubik_cube_a6dc69db384364f3bc37c08c966dee5af_icgraph.png" border="0" usemap="#aclass_rubik_cube_a6dc69db384364f3bc37c08c966dee5af_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_rubik_cube_a6dc69db384364f3bc37c08c966dee5af_icgraph" id="aclass_rubik_cube_a6dc69db384364f3bc37c08c966dee5af_icgraph">
+<area shape="rect" title="Поворот заданной грани на 90 градусов." alt="" coords="520,55,677,81"/>
+<area shape="poly" title=" " alt="" coords="632,39,621,36,598,33,577,35,566,40,563,45,569,55,564,53,558,46,562,36,576,30,599,28,623,31,637,40"/>
+<area shape="rect" href="src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="162,29,211,56"/>
+<area shape="poly" title=" " alt="" coords="523,51,472,45,398,41,324,40,212,44,211,38,324,34,398,35,473,40,529,51"/>
+<area shape="rect" href="class_rubik_cube.html#a6e788d9ae83040d6b9b56bba14d9e36c" title="Случайное перемешивание кубика." alt="" coords="318,55,472,81"/>
+<area shape="poly" title=" " alt="" coords="502,68,473,71,473,65,508,68"/>
+<area shape="rect" href="class_rubik_cube.html#acad1b8c3939b039d149f9dd66f6b7443" title=" " alt="" coords="103,92,270,119"/>
+<area shape="poly" title=" " alt="" coords="526,85,473,96,367,105,270,108,270,103,367,99,472,91,521,85"/>
+<area shape="poly" title=" " alt="" coords="211,14,203,10,186,8,170,10,162,15,160,20,164,29,159,28,154,21,158,11,169,5,186,3,205,5,217,14"/>
+<area shape="rect" href="unittest-cpp_2tests_2main_8cpp.html#a7e16548afc479c8cfb8e1a49412655dd" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" title=" " alt="" coords="145,45,55,45,54,40,148,40"/>
+<area shape="poly" title=" " alt="" coords="300,57,211,48,211,43,305,56"/>
+<area shape="poly" title=" " alt="" coords="306,84,265,94,265,89,300,85"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aec2d966c7c450cb5d2e519fe6a8a587a" name="aec2d966c7c450cb5d2e519fe6a8a587a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec2d966c7c450cb5d2e519fe6a8a587a">&#9670;&#160;</a></span>rotateFaceMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RubikCube::rotateFaceMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294f">Face</a></td>          <td class="paramname"><span class="paramname"><em>face</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>clockwise</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вспомогательный метод для поворота самой плоскости грани 3x3. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>Грань, матрицу которой нужно повернуть. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clockwise</td><td>Направление: true — по часовой, false — против. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rubik_cube_aec2d966c7c450cb5d2e519fe6a8a587a_cgraph.png" border="0" usemap="#aclass_rubik_cube_aec2d966c7c450cb5d2e519fe6a8a587a_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_rubik_cube_aec2d966c7c450cb5d2e519fe6a8a587a_cgraph" id="aclass_rubik_cube_aec2d966c7c450cb5d2e519fe6a8a587a_cgraph">
+<area shape="rect" title="Вспомогательный метод для поворота самой плоскости грани 3x3." alt="" coords="5,5,198,32"/>
+<area shape="rect" href="class_rubik_cube.html#a92011cc61d2864b38e01c02cd73b3e18" title="Вспомогательная функция для безопасного преобразования enum Face в индекс массива." alt="" coords="246,5,383,32"/>
+<area shape="poly" title=" " alt="" coords="198,16,233,19,227,19,198,21"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rubik_cube_aec2d966c7c450cb5d2e519fe6a8a587a_icgraph.png" border="0" usemap="#aclass_rubik_cube_aec2d966c7c450cb5d2e519fe6a8a587a_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_rubik_cube_aec2d966c7c450cb5d2e519fe6a8a587a_icgraph" id="aclass_rubik_cube_aec2d966c7c450cb5d2e519fe6a8a587a_icgraph">
+<area shape="rect" title="Вспомогательный метод для поворота самой плоскости грани 3x3." alt="" coords="725,55,917,81"/>
+<area shape="rect" href="class_rubik_cube.html#a6dc69db384364f3bc37c08c966dee5af" title="Поворот заданной грани на 90 градусов." alt="" coords="520,55,677,81"/>
+<area shape="poly" title=" " alt="" coords="707,68,677,71,677,65,712,68"/>
+<area shape="poly" title=" " alt="" coords="632,39,621,36,598,33,577,35,566,40,563,45,569,55,564,53,558,46,562,36,576,30,599,28,623,31,637,40"/>
+<area shape="rect" href="src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="162,29,211,56"/>
+<area shape="poly" title=" " alt="" coords="523,51,472,45,398,41,324,40,212,44,211,38,324,34,398,35,473,40,529,51"/>
+<area shape="rect" href="class_rubik_cube.html#a6e788d9ae83040d6b9b56bba14d9e36c" title="Случайное перемешивание кубика." alt="" coords="318,55,472,81"/>
+<area shape="poly" title=" " alt="" coords="502,68,473,71,473,65,508,68"/>
+<area shape="rect" href="class_rubik_cube.html#acad1b8c3939b039d149f9dd66f6b7443" title=" " alt="" coords="103,92,270,119"/>
+<area shape="poly" title=" " alt="" coords="526,85,473,96,367,105,270,108,270,103,367,99,472,91,521,85"/>
+<area shape="poly" title=" " alt="" coords="211,14,203,10,186,8,170,10,162,15,160,20,164,29,159,28,154,21,158,11,169,5,186,3,205,5,217,14"/>
+<area shape="rect" href="unittest-cpp_2tests_2main_8cpp.html#a7e16548afc479c8cfb8e1a49412655dd" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" title=" " alt="" coords="145,45,55,45,54,40,148,40"/>
+<area shape="poly" title=" " alt="" coords="300,57,211,48,211,43,305,56"/>
+<area shape="poly" title=" " alt="" coords="306,84,265,94,265,89,300,85"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a92011cc61d2864b38e01c02cd73b3e18" name="a92011cc61d2864b38e01c02cd73b3e18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92011cc61d2864b38e01c02cd73b3e18">&#9670;&#160;</a></span>toIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t RubikCube::toIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294f">Face</a></td>          <td class="paramname"><span class="paramname"><em>face</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вспомогательная функция для безопасного преобразования enum <a class="el" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294f" title="Грани кубика Рубика (нотация Singmaster).">Face</a> в индекс массива. </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_rubik_cube_a92011cc61d2864b38e01c02cd73b3e18_icgraph.png" border="0" usemap="#aclass_rubik_cube_a92011cc61d2864b38e01c02cd73b3e18_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_rubik_cube_a92011cc61d2864b38e01c02cd73b3e18_icgraph" id="aclass_rubik_cube_a92011cc61d2864b38e01c02cd73b3e18_icgraph">
+<area shape="rect" title="Вспомогательная функция для безопасного преобразования enum Face в индекс массива." alt="" coords="965,67,1102,93"/>
+<area shape="rect" href="class_rubik_cube.html#a6dc69db384364f3bc37c08c966dee5af" title="Поворот заданной грани на 90 градусов." alt="" coords="520,67,677,93"/>
+<area shape="poly" title=" " alt="" coords="947,80,677,83,677,77,952,80"/>
+<area shape="rect" href="class_rubik_cube.html#aec2d966c7c450cb5d2e519fe6a8a587a" title="Вспомогательный метод для поворота самой плоскости грани 3x3." alt="" coords="725,92,917,119"/>
+<area shape="poly" title=" " alt="" coords="952,90,918,96,917,91,947,90"/>
+<area shape="poly" title=" " alt="" coords="632,51,621,48,598,45,577,47,566,52,563,57,569,67,564,65,558,58,562,48,576,42,599,40,623,43,637,52"/>
+<area shape="rect" href="src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="162,29,211,56"/>
+<area shape="poly" title=" " alt="" coords="521,63,472,57,324,47,212,45,211,40,324,41,473,52,526,63"/>
+<area shape="rect" href="class_rubik_cube.html#a6e788d9ae83040d6b9b56bba14d9e36c" title="Случайное перемешивание кубика." alt="" coords="318,67,472,93"/>
+<area shape="poly" title=" " alt="" coords="502,80,473,83,473,77,508,80"/>
+<area shape="rect" href="class_rubik_cube.html#acad1b8c3939b039d149f9dd66f6b7443" title=" " alt="" coords="103,92,270,119"/>
+<area shape="poly" title=" " alt="" coords="529,97,473,108,367,113,270,112,270,107,367,108,472,103,523,97"/>
+<area shape="poly" title=" " alt="" coords="211,14,203,10,186,8,170,10,162,15,160,20,164,29,159,28,154,21,158,11,169,5,186,3,205,5,217,14"/>
+<area shape="rect" href="unittest-cpp_2tests_2main_8cpp.html#a7e16548afc479c8cfb8e1a49412655dd" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" title=" " alt="" coords="145,45,55,45,54,40,148,40"/>
+<area shape="poly" title=" " alt="" coords="300,64,211,50,211,44,305,63"/>
+<area shape="poly" title=" " alt="" coords="305,91,271,98,270,93,300,91"/>
+<area shape="poly" title=" " alt="" coords="707,93,677,92,677,86,712,93"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-related-members" id="doc-related-members"></a><h2 id="header-doc-related-members" class="groupheader">Друзья класса и относящимся к классу обозначения</h2>
+<a id="aefac84a10c9021688de5474cec83034a" name="aefac84a10c9021688de5474cec83034a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefac84a10c9021688de5474cec83034a">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>os</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_rubik_cube.html">RubikCube</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>cube</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Потоковый вывод текстовой развертки кубика. </p>
+
+</div>
+</div>
+<a id="a74298a0831b2fd8fdec1d808b06c9792" name="a74298a0831b2fd8fdec1d808b06c9792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74298a0831b2fd8fdec1d808b06c9792">&#9670;&#160;</a></span>operator&gt;&gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::istream &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;</td>          <td class="paramname"><span class="paramname"><em>is</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_rubik_cube.html">RubikCube</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>cube</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Потоковый ввод состояния кубика. </p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a376d6530719f4e6d19c3fff1afeae1cd" name="a376d6530719f4e6d19c3fff1afeae1cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a376d6530719f4e6d19c3fff1afeae1cd">&#9670;&#160;</a></span>state_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;std::array&lt;<a class="el" href="_rubik_cube_8h.html#ab87bacfdad76e61b9412d7124be44c1c">Color</a>, 9&gt;, 6&gt; RubikCube::state_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Внутреннее состояние: 6 граней, на каждой по 9 клеток (3x3). </p>
+<p>Порядок граней строго фиксирован индексами enum <a class="el" href="_rubik_cube_8h.html#ad3fc1d97a3c41ea9d58d0ab14f75294f" title="Грани кубика Рубика (нотация Singmaster).">Face</a>. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>D:/first_lab_ppois_rubick/include/<a class="el" href="_rubik_cube_8h_source.html">RubikCube.h</a></li>
+<li>D:/first_lab_ppois_rubick/src/<a class="el" href="_rubik_cube_8cpp.html">RubikCube.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_rubik_cube.html">RubikCube</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>
