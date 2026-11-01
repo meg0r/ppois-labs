@@ -1,0 +1,44 @@
+# Директории сборки CMake и кэш
+build/
+bin/
+out/
+CMakeUserPresets.json
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# Промежуточные файлы компиляции и отладки MSVC/GCC
+*.obj
+*.o
+*.pdb
+*.idb
+*.ilk
+*.exp
+*.lib
+*.a
+vc*.pdb
+
+# Исполняемые бинарные файлы
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Сгенерированная документация Doxygen
+docs/
+html/
+latex/
+
+# Служебные файлы Visual Studio и VS Code
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.suo
+*.user
+*.userosv
+
+# Временные системные файлы
+Thumbs.db
+.DS_Store
